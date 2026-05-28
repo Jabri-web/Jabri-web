@@ -1,0 +1,5 @@
+Variety,Dim,h_pq,A_hodge,Z_t,Pred_Algebraic,True_Algebraic,Match
+P^2,2,1,0.0,1.0,True,True,True
+K3,2,20,0.0,1.0,True,True,True
+Quintic 3-fold,3,101,0.009901,1.0,False,False,True
+T^4,2,4,0.2,1.0,False,False,True
