@@ -10,15 +10,19 @@ body{font-family:'Tajawal',sans-serif;background:#0d1117;color:#c9d1d9;margin:0;
 .container{max-width:900px;margin:auto;background:#161b22;padding:35px;border-radius:12px;border:1px solid #30363d}
 h1{color:#58a6ff;text-align:center;margin-bottom:8px}
 .subtitle{color:#8d96a0;text-align:center;margin-bottom:35px;font-size:1.05rem}
-.section-title{color:#58a6ff;margin:25px 0 12px 0;font-size:1.2rem;border-right:3px solid #58a6ff;padding-right:10px}
+.section-title{color:#58a6ff;margin:30px 0 12px 0;font-size:1.2rem;border-right:3px solid #58a6ff;padding-right:10px}
 .grid{display:grid;gap:14px}
 .card{background:#21262d;border:1px solid #30363d;border-radius:8px;padding:18px;text-decoration:none;color:#c9d1d9;transition:0.2s;display:block}
 .card:hover{background:#30363d;border-color:#58a6ff;transform:translateY(-2px)}
 .repo-name{font-weight:700;color:#58a6ff;font-size:1.1rem}
 .repo-desc{font-size:0.92rem;color:#8d96a0;margin-top:6px}
 .badge{display:inline-block;background:#238636;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75rem;margin-left:8px;font-weight:700}
-.footer{text-align:center;margin-top:35px;color:#8d96a0;font-size:0.9rem}
-.footer a{color:#58a6ff;text-decoration:none}
+.paper-list{list-style:none;padding:0}
+.paper-list li{background:#21262d;border:1px solid #30363d;border-radius:6px;padding:14px;margin-bottom:10px}
+.paper-doi{color:#58a6ff;text-decoration:none;font-size:0.9rem}
+.contact-list li{margin-bottom:12px;color:#8d96a0}
+.contact-list a{color:#58a6ff;text-decoration:none}
+.footer-text{text-align:center;margin-top:35px;color:#8d96a0;font-size:0.9rem;font-style:italic}
 @media(max-width:600px){body{padding:20px 12px}.container{padding:25px 18px}}
 </style>
 </head>
@@ -27,61 +31,46 @@ h1{color:#58a6ff;text-align:center;margin-bottom:8px}
 <h1>Jabri-web</h1>
 <p class="subtitle">Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics</p>
 
-<!-- P1 → P4 المواقع الأربعة -->
-<h2 class="section-title">Featured Sites P1 → P4</h2>
+<h2 class="section-title">Featured P1 → P4</h2>
 <div class="grid">
+<a href="https://github.com/Jabri-web/Jabri_Checkout" class="card" target="_blank">
+<div class="repo-name"><span class="badge">P1</span> Jabri_Checkout</div>
+<div class="repo-desc">Testing scripts</div></a>
 
-<a href="https://jabri-web.github.io" class="card" target="_blank">
-<div class="repo-name"><span class="badge">P1</span> Jabri-web.github.io</div>
-<div class="repo-desc">Main Hub - Profile & Overview</div>
-</a>
-
-<a href="https://jabri-web.github.io/jabri62018.github.io" class="card" target="_blank">
-<div class="repo-name"><span class="badge">P2</span> jabri-web.github.io/jabri62018.github.io</div>
-<div class="repo-desc">Previous GitHub Pages site archive</div>
-</a>
+<a href="https://jabri62018.github.io" class="card" target="_blank">
+<div class="repo-name"><span class="badge">P2</span> jabri62018.github.io</div>
+<div class="repo-desc">Previous GitHub Pages site</div></a>
 
 <a href="https://jabri-web.github.io/Zx_RieOS_v1.2" class="card" target="_blank">
-<div class="repo-name"><span class="badge">P3</span> jabri-web.github.io/Zx_RieOS_v1.2</div>
-<div class="repo-desc">RiemannOS v1.2 - Live Demo</div>
-</a>
+<div class="repo-name"><span class="badge">P3</span> Zx_RieOS_v1.2</div>
+<div class="repo-desc">v1.2 improved algorithms</div></a>
 
 <a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri" class="card" target="_blank">
-<div class="repo-name"><span class="badge">P4</span> jabri-web.github.io/Zx_Mother_Function_Jabri</div>
-<div class="repo-desc">Mother Function Zx = Z + C + A</div>
-</a>
-
+<div class="repo-name"><span class="badge">P4</span> Zx_Mother_Function_Jabri</div>
+<div class="repo-desc">Core theory - Mother Function</div></a>
 </div>
 
-<!-- باقي المستودعات -->
-<h2 class="section-title">All Repositories</h2>
-<div class="grid">
+<h2 class="section-title">📄 Published Papers with DOI</h2>
+<ul class="paper-list">
+<li><b>Riemann Hypothesis</b><br><a href="https://doi.org/10.5281/zenodo.20139904" class="paper-doi" target="_blank">10.5281/zenodo.20139904</a></li>
+<li><b>P vs NP</b><br><a href="https://doi.org/10.5281/zenodo.20145279" class="paper-doi" target="_blank">10.5281/zenodo.20145279</a></li>
+<li><b>Yang-Mills Mass Gap</b><br><a href="https://doi.org/10.5281/zenodo.20148344" class="paper-doi" target="_blank">10.5281/zenodo.20148344</a></li>
+<li><b>Navier-Stokes</b><br><a href="https://doi.org/10.5281/zenodo.20149618" class="paper-doi" target="_blank">10.5281/zenodo.20149618</a></li>
+<li><b>Zx_RiemannOS v1.3</b><br><a href="https://doi.org/10.5281/zenodo.20145337" class="paper-doi" target="_blank">10.5281/zenodo.20145337</a></li>
+<li><b>Jabri Identity</b><br><a href="https://doi.org/10.5281/zenodo.20114317" class="paper-doi" target="_blank">10.5281/zenodo.20114317</a></li>
+<li><b>Zx_RieOS v1.2 Gold</b><br><a href="https://doi.org/10.5281/zenodo.20100622" class="paper-doi" target="_blank">10.5281/zenodo.20100622</a></li>
+<li><b>Zx_RieOS v1.1</b><br><a href="https://doi.org/10.5281/zenodo.20070594" class="paper-doi" target="_blank">10.5281/zenodo.20070594</a></li>
+</ul>
 
-<a href="https://github.com/Jabri-web/Jabri-RiemannOS" class="card" target="_blank">
-<div class="repo-name">Jabri-RiemannOS</div>
-<div class="repo-desc">Zero-parameter cosmology from Riemann zeros</div>
-</a>
+<h2 class="section-title">🔗 Contact</h2>
+<ul class="contact-list">
+<li><b>ORCID:</b> <a href="https://orcid.org/0009-0001-1319-3622" target="_blank">0009-0001-1319-3622</a></li>
+<li><b>Email:</b> <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a></li>
+<li><b>Website:</b> <a href="https://jabri-web.github.io" target="_blank">Jabri-web.github.io</a></li>
+<li><b>Website:</b> <a href="https://jabri-web.github.io/jabri62018.github.io" target="_blank">Jabri-web.github.io/jabri62018.github.io</a></li>
+</ul>
 
-<a href="https://github.com/Jabri-web/Jabri_Nobble" class="card" target="_blank">
-<div class="repo-name">Jabri_Nobble</div>
-<div class="repo-desc">Millennium problems and Jabri Identity proofs</div>
-</a>
-
-<a href="https://github.com/Jabri-web/Jabri_Checkout" class="card" target="_blank">
-<div class="repo-name">Jabri_Checkout</div>
-<div class="repo-desc">Checkout and validation tools</div>
-</a>
-
-<a href="https://github.com/Jabri-web" class="card" target="_blank">
-<div class="repo-name">+ View All on GitHub</div>
-<div class="repo-desc">See all repositories and activity</div>
-</a>
-
-</div>
-
-<div class="footer">
-<a href="https://github.com/Jabri-web" target="_blank">github.com/Jabri-web</a> | Contact: <a href="mailto:jabri62018@gmail.com">jabri62018@gmail.com</a>
-</div>
+<div class="footer-text">From Sana'a to the Universe / من صنعاء إلى الكون</div>
 </div>
 </body>
 </html>
