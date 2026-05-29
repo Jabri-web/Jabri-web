@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdulla Al-Jabri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -56,22 +57,11 @@
       border-radius: 15px;
       border: none;
       cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
     }
     .btn:active { transform: scale(0.98); background: #333; }
     .btn-exit { background: #c62828; }
-    .btn-back { 
-      background: #0a3d62; 
-      margin-top: 30px;
-      justify-content: center;
-      width: 100%;
-      padding: 18px;
-      border-radius: 15px;
-      border: none;
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
     .site-footer {
       background: #0a3d62;
       color: white;
@@ -80,121 +70,61 @@
       font-size: 13px;
       border-top: 3px solid #f39c12;
     }
-    .page { display: none; padding: 30px 20px; text-align: right; line-height: 2; font-size: 18px; }
-    .page.active { display: block; }
-    .page h2 { color: #0a3d62; margin-bottom: 20px; text-align: center; font-size: 26px; }
-    #home { display: block; }
   </style>
 </head>
 <body>
   <header class="site-header">
     <h1>Eng. Abdulla Al-Jabri</h1>
-    <p>م / عبدالله الجبري</p>
+    <p>賲 / 毓亘丿丕賱賱賴 丕賱噩亘乇賷</p>
   </header>
 
   <div class="container">
     
-    <!-- الصفحة الرئيسية -->
-    <div id="home">
-      <div class="top-line">
-        <span class="eye">👁️</span>
-        <h1>سندباد اليمن</h1>
-        <span class="eye">👁️</span>
-      </div>
-
-      <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Yemen Sindbad</div>
-      <div class="sub-ar">م/ عبدالله الجبري</div>
-      <div class="sub-en">Eng. Abdulla Al-Jabri</div>
-
-      <button class="btn" onclick="openPage('sindbad')">
-        <span>سندباد اليمن</span>
-        <span>Yemen Sindbad</span>
-      </button>
-
-      <button class="btn" onclick="openPage('bird')">
-        <span>طائر اليمن</span>
-        <span>Yemen Bird</span>
-      </button>
-
-      <button class="btn" onclick="openPage('ankaboot')">
-        <span>عنكبوت اليمن</span>
-        <span>Yemen Ankaboot</span>
-      </button>
-
-      <button class="btn" onclick="openPage('research')">
-        <span>صفحات وبحوث</span>
-        <span>Pages & Researches</span>
-      </button>
-
-      <button class="btn" onclick="openPage('maktaba')">
-        <span>مكتبتي</span>
-        <span>My Library</span>
-      </button>
-
-      <button class="btn btn-exit" onclick="alert('تم الخروج')">
-        <span>خروج</span>
-        <span>Exit</span>
-      </button>
+    <div class="top-line">
+      <span class="eye">馃憗锔�</span>
+      <h1>爻賳丿亘丕丿 丕賱賷賲賳</h1>
+      <span class="eye">馃憗锔�</span>
     </div>
 
-    <!-- صفحة سندباد - هنا الصق محتواك -->
-    <div id="sindbad" class="page">
-      <h2>سندباد اليمن</h2>
-      
-      <!-- احذف السطرين اللي تحت والصق محتوى sindbad/index.html هنا -->
-      <p>مثال: نص، فقرات، صور...</p>
-      <img src="صورتك.png" style="width:100%; border-radius:10px; margin:15px 0;">
-      
-      <button class="btn-back" onclick="closePage()">رجوع</button>
-    </div>
+    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Yemen Sindbad</div>
+    <div class="sub-ar">賲/ 毓亘丿丕賱賱賴 丕賱噩亘乇賷</div>
+    <div class="sub-en">Eng. Abdulla Al-Jabri</div>
 
-    <!-- صفحة طائر اليمن -->
-    <div id="bird" class="page">
-      <h2>طائر اليمن</h2>
-      <p>محتوى طائر اليمن</p>
-      <button class="btn-back" onclick="closePage()">رجوع</button>
-    </div>
+    <!-- 乇賵丕亘胤 GitHub Pages 丕賱賳賴丕卅賷丞 -->
+    <a class="btn" href="https://jabri-web.github.io/Yemen-Sindad.html">
+      <span>爻賳丿亘丕丿 丕賱賷賲賳</span>
+      <span>Yemen Sindbad</span>
+    </a>
 
-    <!-- صفحة عنكبوت اليمن -->
-    <div id="ankaboot" class="page">
-      <h2>عنكبوت اليمن</h2>
-      <p>محتوى عنكبوت اليمن</p>
-      <button class="btn-back" onclick="closePage()">رجوع</button>
-    </div>
+    <a class="btn" href="https://jabri-web.github.io/Yemen-bird.html">
+      <span>胤丕卅乇 丕賱賷賲賳</span>
+      <span>Yemen Bird</span>
+    </a>
 
-    <!-- صفحة البحوث -->
-    <div id="research" class="page">
-      <h2>صفحات وبحوث</h2>
-      <p>أبحاثك</p>
-      <button class="btn-back" onclick="closePage()">رجوع</button>
-    </div>
+    <a class="btn" href="https://jabri-web.github.io/Yemen-Ankboot.html">
+      <span>毓賳賰亘賵鬲 丕賱賷賲賳</span>
+      <span>Yemen Ankaboot</span>
+    </a>
 
-    <!-- صفحة مكتبتي -->
-    <div id="maktaba" class="page">
-      <h2>مكتبتي</h2>
-      <p>محتوى مكتبتي</p>
-      <button class="btn-back" onclick="closePage()">رجوع</button>
-    </div>
+    <a class="btn" href="https://jabri-web.github.io/Pages-Researches.html">
+      <span>氐賮丨丕鬲 賵亘丨賵孬</span>
+      <span>Pages & Researches</span>
+    </a>
 
+    <a class="btn" href="https://jabri-web.github.io/Yemen-library.html">
+      <span>賲賰鬲亘鬲賷</span>
+      <span>My Library</span>
+    </a>
+
+    <button class="btn btn-exit" onclick="alert('鬲賲 丕賱禺乇賵噩')">
+      <span>禺乇賵噩</span>
+      <span>Exit</span>
+    </button>
   </div>
 
   <footer class="site-footer">
-    <p>© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
-    <p>صنع بحب في اليمن 🇾🇪</p>
+    <p>漏 2026 Yemen Sindbad - 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞</p>
+    <p>氐賳毓 亘丨亘 賮賷 丕賱賷賲賳 馃嚲馃嚜</p>
   </footer>
-
-  <script>
-    function openPage(id) {
-      document.getElementById('home').style.display = 'none';
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      window.scrollTo(0,0);
-    }
-    function closePage() {
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      document.getElementById('home').style.display = 'block';
-      window.scrollTo(0,0);
-    }
-  </script>
 </body>
 </html>
