@@ -1,35 +1,40 @@
 # Jabri-web
 
-Independent researcher. Working on Riemann zeta function, computational cosmology, and mathematical physics.
+Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics.
 
 ## Projects
 
-### 1. Jabri-RiemannOS
-Zero-parameter cosmology from Riemann zeros. Mother Function `Zx = Z + C + A`.
-- **Repo**: [github.com/Jabri-web/Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS)
-- **Pages**: [jabri-web.github.io/Jabri-RiemannOS](https://jabri-web.github.io/Jabri-RiemannOS)
+### 1. [Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS)
+Zero-parameter cosmology from Riemann zeros. Mother Function `Zx = Z + C + A`
 
-### 2. Zx_Mother_Function_Jabri
-Research notes and framework for the Mother Function.
-- **Repo**: [github.com/Jabri-web/Zx_Mother_Function_Jabri](https://github.com/Jabri-web/Zx_Mother_Function_Jabri)
-- **Pages**: [jabri-web.github.io/Zx_Mother_Function_Jabri](https://jabri-web.github.io/Zx_Mother_Function_Jabri)
+### 2. [Zx_Mother_Function_Jabri](https://github.com/Jabri-web/Zx_Mother_Function_Jabri)
+Research notes and framework for the Mother Function
 
-### 3. Zx_Mother_Function_Jabri-main
-Main branch / working version of the Mother Function research.
-- **Repo**: [github.com/Jabri-web/Zx_Mother_Function_Jabri-main](https://github.com/Jabri-web/Zx_Mother_Function_Jabri-main)
+### 3. [Jabri_Nobble](https://github.com/Jabri-web/Jabri_Nobble)
+Millennium problems and Jabri Identity proofs. DOIs and notebooks included
 
-### 4. Jabri_Nobble
-Research repository for the Jabri_Nobble project. Contains source code, notebooks, LaTeX sources, data, and figures for proofs using the Jabri Identity `Z_t = 1`.
-- **Repo**: [github.com/Jabri-web/Jabri_Nobble](https://github.com/Jabri-web/Jabri_Nobble)
+### 4. [Zx_RieOS_v1.2](https://github.com/Jabri-web/Zx_RieOS_v1.2)
+RiemannOS v1.2 release
 
-## License
-- **Code**: MIT License  
-- **Data & Notebooks**: CC BY 4.0
+### 5. [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
+RiemannOS v1.1 release
 
-## How to Use
-Each project repo contains its own README with setup and reproduction steps. 
+### 6. [jabri_lab](https://github.com/Jabri-web/jabri_lab)
+Research lab and computational experiments
 
-For LaTeX/Markdown research projects, open the `.pdf` in the repo root for the latest paper version.
+### 7. [Jabri_Checkout](https://github.com/Jabri-web/Jabri_Checkout)
+Checkout and validation tools
+
+### 8. [jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
+Previous GitHub Pages site
+
+### 9. [Jabri-web](https://github.com/Jabri-web/Jabri-web)
+Profile repository
+
+### 10. [View All on GitHub](https://github.com/Jabri-web)
+See all repositories and activity
 
 ---
-*“Zero free parameters. No shadow field.”*
+
+**Contact:** jabri62018@gmail.com  
+**Website:** https://jabri-web.github.io
