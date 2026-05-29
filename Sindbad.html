@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulla Al-Jabri</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .site-header {
+      background: linear-gradient(135deg, #0a3d62, #1e6f9f);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      border-bottom: 3px solid #f39c12;
+    }
+    .site-header h1 { font-size: 22px; margin: 0; font-weight: bold; }
+    .site-header p { font-size: 14px; margin: 5px 0 0 0; opacity: 0.9; }
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px 0 40px 0;
+      flex: 1;
+      text-align: center;
+    }
+    .top-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+    .eye { font-size: 28px; }
+    h1 { font-size: 28px; margin: 0; }
+    .sub-ar { font-size: 20px; margin: 10px 0 5px 0; font-weight: bold; }
+    .sub-en { font-size: 16px; margin-bottom: 35px; color: #555; }
+    .btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 14px 0;
+      padding: 18px;
+      background: #000;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:active { transform: scale(0.98); background: #333; }
+    .btn-exit { background: #c62828; }
+    .btn-back { 
+      background: #0a3d62; 
+      margin-top: 30px;
+      justify-content: center;
+      width: 100%;
+      padding: 18px;
+      border-radius: 15px;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .site-footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 13px;
+      border-top: 3px solid #f39c12;
+    }
+    .page { display: none; padding: 30px 20px; text-align: right; line-height: 2; font-size: 18px; }
+    .page.active { display: block; }
+    .page h2 { color: #0a3d62; margin-bottom: 20px; text-align: center; font-size: 26px; }
+    #home { display: block; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Eng. Abdulla Al-Jabri</h1>
+    <p>م / عبدالله الجبري</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- الصفحة الرئيسية -->
+    <div id="home">
+      <div class="top-line">
+        <span class="eye">👁️</span>
+        <h1>سندباد اليمن</h1>
+        <span class="eye">👁️</span>
+      </div>
+
+      <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Yemen Sindbad</div>
+      <div class="sub-ar">م/ عبدالله الجبري</div>
+      <div class="sub-en">Eng. Abdulla Al-Jabri</div>
+
+      <button class="btn" onclick="openPage('sindbad')">
+        <span>سندباد اليمن</span>
+        <span>Yemen Sindbad</span>
+      </button>
+
+      <button class="btn" onclick="openPage('bird')">
+        <span>طائر اليمن</span>
+        <span>Yemen Bird</span>
+      </button>
+
+      <button class="btn" onclick="openPage('ankaboot')">
+        <span>عنكبوت اليمن</span>
+        <span>Yemen Ankaboot</span>
+      </button>
+
+      <button class="btn" onclick="openPage('research')">
+        <span>صفحات وبحوث</span>
+        <span>Pages & Researches</span>
+      </button>
+
+      <button class="btn" onclick="openPage('maktaba')">
+        <span>مكتبتي</span>
+        <span>My Library</span>
+      </button>
+
+      <button class="btn btn-exit" onclick="alert('تم الخروج')">
+        <span>خروج</span>
+        <span>Exit</span>
+      </button>
+    </div>
+
+    <!-- صفحة سندباد - هنا الصق محتواك -->
+    <div id="sindbad" class="page">
+      <h2>سندباد اليمن</h2>
+      
+      <!-- احذف السطرين اللي تحت والصق محتوى sindbad/index.html هنا -->
+      <p>مثال: نص، فقرات، صور...</p>
+      <img src="صورتك.png" style="width:100%; border-radius:10px; margin:15px 0;">
+      
+      <button class="btn-back" onclick="closePage()">رجوع</button>
+    </div>
+
+    <!-- صفحة طائر اليمن -->
+    <div id="bird" class="page">
+      <h2>طائر اليمن</h2>
+      <p>محتوى طائر اليمن</p>
+      <button class="btn-back" onclick="closePage()">رجوع</button>
+    </div>
+
+    <!-- صفحة عنكبوت اليمن -->
+    <div id="ankaboot" class="page">
+      <h2>عنكبوت اليمن</h2>
+      <p>محتوى عنكبوت اليمن</p>
+      <button class="btn-back" onclick="closePage()">رجوع</button>
+    </div>
+
+    <!-- صفحة البحوث -->
+    <div id="research" class="page">
+      <h2>صفحات وبحوث</h2>
+      <p>أبحاثك</p>
+      <button class="btn-back" onclick="closePage()">رجوع</button>
+    </div>
+
+    <!-- صفحة مكتبتي -->
+    <div id="maktaba" class="page">
+      <h2>مكتبتي</h2>
+      <p>محتوى مكتبتي</p>
+      <button class="btn-back" onclick="closePage()">رجوع</button>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
+    <p>صنع بحب في اليمن 🇾🇪</p>
+  </footer>
+
+  <script>
+    function openPage(id) {
+      document.getElementById('home').style.display = 'none';
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0,0);
+    }
+    function closePage() {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('home').style.display = 'block';
+      window.scrollTo(0,0);
+    }
+  </script>
+</body>
+</html>
