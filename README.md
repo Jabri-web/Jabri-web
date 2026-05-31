@@ -2,9 +2,9 @@
 
 # Jabri-web
 
-![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
-![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
+[Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
+[GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
+[Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
 
 **Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
 
@@ -51,7 +51,9 @@ RiemannOS v1.2 release
 
 ## 📊 GitHub Stats
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Jabri-web&show_icons=true&theme=radical&hide_border=true" alt="stats"/>
+<img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<br><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
 </div>
 
 ---
