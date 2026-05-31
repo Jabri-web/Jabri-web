@@ -1,46 +1,39 @@
-<div align="center">
-
 # Jabri-web
 
-![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
-![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
+[Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
+[GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
+[Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
 
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
-
-</div>
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
-
-</div>
+Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics
 
 ---
 
-## 🔬 Research Focus
+## Research Focus
 - **Riemann Zeta Function** & zero-parameter cosmology
 - **Computational Cosmology** simulations  
 - **Mathematical Physics** & Millennium problems
 
-## 🚀 Current Focus
+## Current Work
 Working on **Zx_RieOS v1.3** release.  
 Open for research collaborations & paid consulting on computational cosmology.
 
-## 📚 Core Projects
+## Main Projects
 
 ### 1. [Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS) ⭐
 Zero-parameter cosmology from Riemann zeros.  
-**Mother Function:** `Zx = Z + C + A`
+**Main Equation:** `Zx = Z + C + A`
 
-### 2. [Zx_Mother_Function_Jabri](https://github.com/Jabri-web/Zx_Mother_Function_Jabri)
-Research notes and framework for the Mother Function
+### 2. [Zx_Main_Equation_Jabri](https://github.com/Jabri-web/Zx_Main_Equation_Jabri)
+Research notes and main equation framework
 
-### 3. [Jabri_Nobble](https://github.com/Jabri-web/Jabri_Nobble)
-Millennium problems and Jabri Identity proofs. DOIs and notebooks included
+### 3. [Jabri_Nobel](https://github.com/Jabri-web/Jabri_Nobel)
+Millennium problems and Jabri Equation proofs. DOIs and notebooks included
 
 ### 4. [Zx_RieOS_v1.2](https://github.com/Jabri-web/Zx_RieOS_v1.2)
 RiemannOS v1.2 release
 
 <details>
-<summary><b>📦 Archive</b></summary>
+<summary><b>Archive</b></summary>
 
 - [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
 - [jabri_lab](https://github.com/Jabri-web/jabri_lab) 
@@ -52,17 +45,17 @@ RiemannOS v1.2 release
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
+[GitHub Streak](https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true)
 <br><br>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+[Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true)
 </div>
 
 ---
 
-## 🤝 Partnerships & Contact
-مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
+## Partnerships & Contact
+Interested in research partnership or paid advertisement? Contact me:
 
 **Email:** jabri62018@gmail.com  
 **Website:** https://jabri-web.github.io  
@@ -70,5 +63,5 @@ RiemannOS v1.2 release
 **Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
 
 <div align="center">
-<i>"From Riemann zeros to the structure of the universe"</i>
+<em>"From Riemann zeros to the structure of the universe"</em>
 </div>
