@@ -2,8 +2,9 @@
 
 # Jabri-web
 
-![Profile views](https://komarev.com/ghpvc/?username=Jabri-web&color=blue)
-![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=social)
+![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
+![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
 
 **Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
 
@@ -20,7 +21,7 @@
 Working on **Zx_RieOS v1.3** release.  
 Open for research collaborations & paid consulting on computational cosmology.
 
-## 📚 Projects
+## 📚 Core Projects
 
 ### 1. [Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS) ⭐
 Zero-parameter cosmology from Riemann zeros.  
@@ -35,26 +36,22 @@ Millennium problems and Jabri Identity proofs. DOIs and notebooks included
 ### 4. [Zx_RieOS_v1.2](https://github.com/Jabri-web/Zx_RieOS_v1.2)
 RiemannOS v1.2 release
 
-### 5. [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
-RiemannOS v1.1 release
+<details>
+<summary><b>📦 Archive</b></summary>
 
-### 6. [jabri_lab](https://github.com/Jabri-web/jabri_lab)
-Research lab and computational experiments
+- [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
+- [jabri_lab](https://github.com/Jabri-web/jabri_lab) 
+- [Jabri_Checkout](https://github.com/Jabri-web/Jabri_Checkout)
+- [jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
+- [Jabri-web](https://github.com/Jabri-web/Jabri-web)
 
-### 7. [Jabri_Checkout](https://github.com/Jabri-web/Jabri_Checkout)
-Checkout and validation tools
-
-### 8. [jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
-Previous GitHub Pages site
-
-### 9. [Jabri-web](https://github.com/Jabri-web/Jabri-web)
-Profile repository
+</details>
 
 ---
 
-## 📈 GitHub Stats
+## 📊 GitHub Stats
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Jabri-web&show_icons=true&theme=tokyonight" alt="stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Jabri-web&show_icons=true&theme=radical&hide_border=true" alt="stats"/>
 </div>
 
 ---
@@ -64,7 +61,8 @@ Profile repository
 
 **Email:** jabri62018@gmail.com  
 **Website:** https://jabri-web.github.io  
-**GitHub:** [View All Repositories](https://github.com/Jabri-web)
+**GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
+**Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
 
 <div align="center">
 <i>"From Riemann zeros to the structure of the universe"</i>
