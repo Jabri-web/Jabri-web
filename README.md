@@ -2,10 +2,17 @@
 
 # Jabri-web
 
-[Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
-[GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
-[Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
+<div align="center">
 
+# Jabri-web
+
+![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
+![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
+
+**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
+
+</div>
 **Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
 
 </div>
