@@ -1,6 +1,3 @@
-<div align="center">
-
-# Jabri-web
 
 <div align="center">
 
