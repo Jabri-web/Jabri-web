@@ -8,6 +8,12 @@
 
 <head>
 
+<script>
+  if (location.hostname.includes('github.io')) {
+    location.replace('https://jabri-web.vercel.app' + location.pathname + location.search + location.hash);
+  }
+</script>
+  
   <script>
   if (location.hostname.includes('github.io')) {
     location.replace('https://jabri-web.vercel.app' + location.pathname + location.search);
