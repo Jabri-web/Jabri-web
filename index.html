@@ -70,6 +70,16 @@
     updateTime();
     setInterval(updateTime, 1000);
   </script>
+  <!_______
+<script>
+(function(){
+  var host = window.location.hostname;
+  if(host === 'jabri-web.github.io' || host === 'www.jabri-web.github.io'){
+    var newUrl = 'https://jabri-web.vercel.app' + window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(newUrl);
+  }
+})();
+</script>
 </body>
-
 </html>
+
