@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
-      "source": "https://jabri-web.github.io/(.*)",
-      "destination": "https://jabri-web.vercel.app/$1",
-      "permanent": true
+      "source": "/(.*)",
+      "destination": "https://jabri-web.github.io/$1"
     }
   ]
 }
