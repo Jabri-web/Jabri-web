@@ -2,24 +2,49 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الجمهورية اليمنية</title>
+
 <script>
+// #___________
+// X = git(origin) → https://Jabri-web.github.io
 const X = window.location.origin;
 const Y = window.location.pathname.split('/').filter(p => p && p!== 'index.html')[0] || '';
 
-// If x=https://Jabri-web.github.io/ → روح Sindbad.html
-if(X === 'https://Jabri-web.github.io' || X === 'https://Jabri-web.github.io/' || Y === '') {
-  window.location.replace(X + '/Sindbad.html');
+// # If x=Jabri-web.github.io Go Else Modify x
+let target = '';
+
+// If x=https://Jabri-web.github.io Go
+if(X === 'https://Jabri-web.github.io' || X === 'https://Jabri-web.github.io/') {
+  target = X + '/Sindbad.html'; // الشاشة الرئيسية
 }
+// Else Modify x حسب الريبو
 else {
-  // باقي الريبو يحول حسب Y
-  if(Y.includes('Jabri62018')) window.location.replace(X + '/Yemen-sindbad.html');
-  else if(Y.includes('Zx_RieOS_v1.2')) window.location.replace(X + '/Yemen-bird.html');
-  else if(Y.includes('Zx_Mother_Function_Jabri')) window.location.replace(X + '/Yemen-Ankboot.html');
+  if(Y.includes('Jabri62018')) {
+    target = X + '/Yemen-sindbad.html';
+  }
+  else if(Y.includes('Zx_RieOS_v1.2')) {
+    target = X + '/Yemen-bird.html';
+  }
+  else if(Y.includes('Zx_Mother_Function_Jabri')) {
+    target = X + '/Yemen-Ankboot.html';
+  }
+  else {
+    target = X + '/Sindbad.html'; // default
+  }
 }
+
+// Go
+window.location.replace(target);
 </script>
+
 </head>
-<body style="background:#1e5a8a; color:white; text-align:center; padding-top:40vh">
-  جاري التحميل... 👁
+<body style="background:#1e5a8a; color:white; text-align:center; padding-top:40vh; font-family:Tahoma">
+  جاري التحميل... 👁<br>
+  <small id="debug" style="opacity:0.7"></small>
+  <script>
+    // عشان نشوف X و Y اثناء التطوير
+    document.getElementById('debug').innerHTML = 'X=' + X + '<br>Y=' + Y;
+  </script>
 </body>
 </html>
