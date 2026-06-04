@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>爻賳丿亘丕丿 丕賱賷賲賳 - Eng. Abdulla Al-Jabri</title>
+<title>سندباد اليمن</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Tahoma;background:#f5f5f5;color:#333}
@@ -12,65 +12,49 @@ body{font-family:Tahoma;background:#f5f5f5;color:#333}
 .header h1{font-size:18px;margin:0.5vh 0}
 .header p{font-size:12px;opacity:0.9}
 .title{text-align:center;margin:4vh 0;font-size:22px;font-weight:bold;color:#1e5a8a}
-.title span{margin:0 8px}
 .subtitle{text-align:center;font-size:14px;color:#666;margin-bottom:4vh}
-.subtitle small{display:block;font-size:11px;margin-top:0.5vh}
 .container{max-width:500px;margin:0 auto;padding:0 4vw}
-.btn{display:flex;justify-content:space-between;align-items:center;width:100%;margin:1.5vh 0;padding:2.5vh 4vw;background:#000;color:white;text-decoration:none;border-radius:12px;font-size:17px;font-weight:bold;transition:0.3s}
-.btn:hover{background:#333}
+.btn{display:flex;justify-content:space-between;align-items:center;width:100%;margin:1.5vh 0;padding:2.5vh 4vw;background:#000;color:white;text-decoration:none;border-radius:12px;font-size:17px;font-weight:bold}
 .btn-red{background:#c0392b !important}
-.btn-red:hover{background:#e74c3c !important}
 .footer{background:#1e5a8a;color:white;text-align:center;padding:2vh;margin-top:5vh;font-size:11px}
-.footer small{display:block;margin-top:0.5vh;opacity:0.8}
 .box{background:white;padding:2vh 3vw;margin:2vh 4vw;border-radius:8px;font-size:12px;text-align:right;color:#555;border:1px solid #ddd}
 </style>
+<script>
+  // X = المسار الأساسي تلقائي عشان الروابط ما تخرب
+  const path = window.location.pathname;
+  const X = window.location.origin + (path.endsWith('/') ? path.slice(0,-1) : path.replace(/\/[^\/]*$/, ''));
+  function go(y){ window.location.href = X + '/' + y; }
+</script>
 </head>
 <body>
 
 <div class="header">
-  <img src="https://i.imgur.com/placeholder.png" alt="Logo">
-  <h1>丕賱噩賲賴賵乇賷丞 丕賱賷賲賳賷丞 Republic of Yemen</h1>
+  <img src="logo.png" alt="Logo">
+  <h1>الجمهورية اليمنية Republic of Yemen</h1>
   <p>Riemann zeta & Cosmology</p>
 </div>
 
-<div class="title"><span>馃憗</span> 爻賳丿亘丕丿 丕賱賷賲賳 <span>馃憗</span></div>
-<div class="subtitle">賲/毓亘丿丕賱賱賴 丕賱噩亘乇賷 <small>Eng. Abdulla Al-Jabri</small></div>
+<div class="title"><span>👁</span> سندباد اليمن <span>👁</span></div>
+<div class="subtitle">م/عبدالله الجبري<br><small>Eng. Abdulla Al-Jabri</small></div>
 
 <div class="container">
-  <a href="https://jabri-web.github.io/Jabri-web/Yemen-sindbad.html" class="btn">
-    <span>爻賳丿亘丕丿 丕賱賷賲賳</span> <span>Yemen Sindbad</span>
-  </a>
-  
-  <a href="https://jabri-web.github.io/Jabri-web/Yemen-bird.html" class="btn">
-    <span>胤丕卅乇 丕賱賷賲賳</span> <span>Yemen Bird</span>
-  </a>
-  
-  <a href="https://jabri-web.github.io/Jabri-web/Yemen-Ankboot.html" class="btn">
-    <span>毓賳賰亘賵鬲 丕賱賷賲賳</span> <span>Yemen Ankaboot</span>
-  </a>
-  
-  <a href="https://jabri-web.github.io/Jabri-web/pages.html" class="btn">
-    <span>氐賮丨丕鬲 賵亘丨賵孬</span> <span>Pages & Researches</span>
-  </a>
-  
-  <a href="https://jabri-web.github.io/Jabri-web/Yemen-library.html" class="btn">
-    <span>賲賰鬲亘鬲賷</span> <span>My Library</span>
-  </a>
-  
-  <a href="#" onclick="window.close()" class="btn btn-red">
-    <span>禺乇賵噩</span> <span>Exit 馃敀</span>
-  </a>
+  <a href="javascript:go('Yemen-sindbad.html')" class="btn"><span>سندباد اليمن</span> <span>Yemen Sindbad</span></a>
+  <a href="javascript:go('Yemen-bird.html')" class="btn"><span>طائر اليمن</span> <span>Yemen Bird</span></a>
+  <a href="javascript:go('Yemen-Ankaboot.html')" class="btn"><span>عنكبوت اليمن</span> <span>Yemen Ankaboot</span></a>
+  <a href="javascript:go('pages.html')" class="btn"><span>صفحات وبحوث</span> <span>Pages & Researches</span></a>
+  <a href="javascript:go('Yemen-library.html')" class="btn"><span>مكتبتي</span> <span>My Library</span></a>
+  <a href="javascript:window.close()" class="btn btn-red"><span>خروج</span> <span>Exit 🔒</span></a>
 </div>
 
 <div class="box">
-  丕賱鬲丨丿賷孬 2025<br>
-  丕賱鬲丨丿賷孬 3.0.0 賲<br>
-  噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞 賱賱亘丕丨孬
+  التحديث 2025<br>
+  التحديث 3.0.0 م<br>
+  جميع الحقوق محفوظة للباحث
 </div>
 
 <div class="footer">
-  漏 Yemen Sindbad 2025 - 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞<br>
-  <small>氐賳毓 亘賷丿 賷賲賳賷丞 賮賷 丕賱賷賲賳 馃嚲馃嚜</small>
+  © Yemen Sindbad 2025<br>
+  <small>صنع بيد يمنية في اليمن 🇾🇪</small>
 </div>
 
 </body>
