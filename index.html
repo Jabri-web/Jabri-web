@@ -1,5 +1,6 @@
-<!---Router=index.html
-<!--- all Dynamic يارب
+<!--Router=index.html
+<!-- all dynamic يارب
+
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -18,7 +19,7 @@ const Z = window.location.hostname;
 let seg = window.location.pathname.split('/').filter(p => p && p!== 'index.html');
 let Y = seg[0] || '';
 
-// متغيرات عامة للدوال
+// متغيرات عامة
 let S, H, F, Foot;
 
 // #___________
@@ -56,46 +57,26 @@ function Common_function() {
 
   // If x=https://Jabri-web.github.io/
   if(X === 'https://Jabri-web.github.io' || X === 'https://Jabri-web.github.io/') {
-    let arr = X.replace('https://', '').split('.');
-    let User = arr[0]; // 1st dot
-    let Domain = arr[1]; // 2nd dot
-    let Type = arr[2]; // last
-    // #bring main screen Https://x/Sindbad.html
     return Y? Y : 'home';
   }
 
-  // If (y=.NU.).and. x≠null
-  if((!Y || Y === '') && X!== null) {
-    F = Common_function(); // F= Common-function()
-    return 'home';
-  } else {
-    Y = X; // Else Y=x
-    F = Common_function(); // F=Commo-function
-  }
-
   // ===== منطق الريبو =====
-  // If repo=y= (user).(domain).(type)
   if(Y.includes('Jabri-web')) {
     return 'home'; // Create main_page buttons
   }
-  // Elseif y= Jabri62018.(domain)
   else if(Y.includes('Jabri62018')) {
-    return 'sindbad'; // Create Yemen-sindbad page buttons
+    return 'sindbad'; // Create Yemen-sindbad page
   }
-  // Elseif y= Zx_RieOS_v1.2
   else if(Y.includes('Zx_RieOS_v1.2')) {
-    return 'bird'; // Create Yemen-bird buttons
+    return 'bird'; // Create Yemen-bird page
   }
-  // Elseif y= Zx_Mother_Function_Jabri
   else if(Y.includes('Zx_Mother_Function_Jabri')) {
-    return 'ankaboot'; // Create Yemen-Ankboot buttons
+    return 'ankaboot'; // Create Yemen-Ankboot page
   }
-  // Elseif button= Pages-Researches
   else if(location.hash === '#pages-researches') {
     window.open(X + '/Pages-Researches.html', '_blank');
     return 'home';
   }
-  // Elseif button= Yemen-lobrary
   else if(location.hash === '#library') {
     window.open(X + '/Yemen-library.html', '_blank');
     return 'home';
@@ -122,6 +103,11 @@ const Router = {
   route() {
     let page = Common_function();
     let cfg = this.routes || this.routes['home'];
+
+    if(!cfg) {
+      console.error('الصفحة غير موجودة:', page);
+      cfg = this.routes['home'];
+    }
 
     H = Common_header(cfg.title, cfg.subtitle);
     document.getElementById('header').innerHTML = H;
