@@ -1,19 +1,23 @@
-// config.js - معالج الحروف الكبيرة/الصغيرة
+// file=Config.js
 const CFG = {
-  // هنا حط اسم ملف اللوجو زي ما هو في الريبو بالضبط
-  logo: './Logo.png',  // عندك L كبير في الريبو
-  
-  // المسار الذكي يشتغل github.io و github.io/repo
+  logo: './Logo.png',
   base: window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, ''),
-  
-  // دالة تروح للصفحة بدون ما تفرق كبير/صغير
-  go: function(page){
-    // نخلي كل الصفحات حروف صغيرة عشان GitHub
-    const file = page.toLowerCase() + '.html';
-    window.location.href = this.base + '/' + file;
+  PAGES: {
+    'sindbad': {file: 'Sindbad.html', ar: 'سندباد اليمن', en: 'Yemen Sindbad'},
+    'yemen-sindbad': {file: 'Yemen-Sindbad.html', ar: 'سندباد اليمن', en: 'Yemen Sindbad'},
+    'yemen-bird': {file: 'Yemen-bird.html', ar: 'طائر اليمن', en: 'Yemen Bird'},
+    'yemen-ankboot': {file: 'Yemen-Ankboot.html', ar: 'عنكبوت اليمن', en: 'Yemen Ankboot'},
+    'pages-researches': {file: 'Pages-Researches.html', ar: 'البحوث', en: 'Pages A2 Researches3'},
+    'yemen-library': {file: 'Yemen-library.html', ar: 'مكتبتي', en: 'My Library'}
   },
-  
-  // دالة القفل
+  go: function(key){
+    const page = this.PAGES[key.toLowerCase()];
+    if(page){
+      window.location.href = this.base + '/' + page.file;
+    } else {
+      alert('الصفحة غير موجودة: ' + key);
+    }
+  },
   exit: function(){
     if(window.history.length > 1) window.history.back();
     else alert('اغلق الصفحة يدوياً');
