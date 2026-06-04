@@ -33,6 +33,7 @@ window.addEventListener('load', ()=>{
       const color = colors[i] || 'btn';
       const btn = document.createElement('a');
       btn.className = 'btn ' + color;
+      btn.style.flexDirection = CFG.btnDirection; // ← نقرأه من Config
       btn.href = 'javascript:CFG.go("' + key + '")';
       btn.innerHTML = `<span>${page.en}</span><span>${page.ar}</span>`;
       container.appendChild(btn);
@@ -51,7 +52,7 @@ window.addEventListener('load', ()=>{
 </div>
 
 <div class="container" id="menu">
-  <a href="javascript:CFG.exit()" class="btn btn-red">
+  <a href="javascript:CFG.exit()" class="btn btn-red" style="flex-direction:row-reverse">
     <span>Exit</span>
     <span>قفل</span>
   </a>
