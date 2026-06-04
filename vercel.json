@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://jabri-web.github.io/$1"
-    }
-  ]
-}
