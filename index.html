@@ -1,96 +1,195 @@
+<!---Router=index.html
+
 <!DOCTYPE html>
-<!-- file=index.html -->
-<!-- repo= Jabri-web -->
-
-<!-- ___future_________ Pass2: github.io → vercel.app -->
-<script>
-(function(){
-  window.addEventListener('error', function(e){
-    console.error("You have to check this:", e.message);
-  });
-
-  const x = 'github.io';
-  const y = location.hostname;
-  if(y!== x &&!y.includes('localhost')){
-    document.querySelectorAll('a, link[href], script[src], img[src]').forEach(el => {
-      const attr = el.href? 'href' : 'src';
-      if(el[attr] && el[attr].includes(x)){
-        el[attr] = el[attr].replace(/github\.io(?=\/|$|")/g, y);
-      }
-    });
-  }
-})();
-</script>
-<!-- ____future_______ End -->
-
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="google-site-verification" content="u6HUio_bcj-43qLkWvA1iJ0dO6yXEX93WO29i8VDGx4" />
-  <title>Abdulla Al-Jabri - مكتبة اليمن</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin:0; padding:0; font-family:Tahoma,sans-serif; background:#f5f7fa; color:#000; min-height:100svh; display:flex; flex-direction:column }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الجمهورية اليمنية</title>
+
+<script>
+// #___________
+// X=git(key_pressed) → origin
+// Y=git(current_repo) → اسم المجلد من pathname
+// Z=git(local_host) → hostname
+const X = window.location.origin;
+const Z = window.location.hostname;
+let seg = window.location.pathname.split('/').filter(p => p && p!== 'index.html');
+let Y = seg[0] || '';
+
+// متغيرات عامة للدوال
+let S, H, F, Foot;
+
+// #___________
+// Function Common-setting()
+function Common_setting() {
+  return {
+    lang: 'ar',
+    dir: 'rtl',
+    align: 'center',
+    font: 'Tahoma, Arial, sans-serif',
+    bg: '#f5f7fa',
+    primary: '#1e5a8a',
+    accent: '#f39c12'
+  };
+}
+
+// Function Common-header()
+function Common_header(title, subtitle) {
+  return `
+    <img src="yemen-emblem.png" alt="" onerror="this.style.display='none'">
+    <h1>${title}</h1>
+    <p>${subtitle}</p>
+  `;
+}
+
+// #___________
+// Function Common-function()
+function Common_function() {
+  S = Common_setting();
+  document.documentElement.lang = S.lang;
+  document.documentElement.dir = S.dir;
+  document.body.style.textAlign = S.align;
+  document.body.style.fontFamily = S.font;
+  document.body.style.background = S.bg;
+
+  // If x=https://Jabri-web.github.io/
+  if(X === 'https://Jabri-web.github.io' || X === 'https://Jabri-web.github.io/') {
+    let arr = X.replace('https://', '').split('.');
+    let User = arr[0]; // 1st dot
+    let Domain = arr[1]; // 2nd dot
+    let Type = arr[2]; // last
+    // #bring main screen Https://x/Sindbad.html
+    return Y? Y : 'home';
+  }
+
+  // If (y=.NU.).and. x≠null
+  if((!Y || Y === '') && X!== null) {
+    F = Common_function(); // F= Common-function()
+    return 'home';
+  } else {
+    Y = X; // Else Y=x
+    F = Common_function(); // F=Commo-function
+  }
+
+  // ===== منطق الريبو =====
+  // If repo=y= (user).(domain).(type)
+  if(Y.includes('Jabri-web')) {
+    return 'home'; // Create main_page buttons
+  }
+  // Elseif y= Jabri62018.(domain)
+  else if(Y.includes('Jabri62018')) {
+    return 'sindbad'; // Create Yemen-sindbad page buttons
+  }
+  // Elseif y= Zx_RieOS_v1.2
+  else if(Y.includes('Zx_RieOS_v1.2')) {
+    return 'bird'; // Create Yemen-bird buttons
+  }
+  // Elseif y= Zx_Mother_Function_Jabri
+  else if(Y.includes('Zx_Mother_Function_Jabri')) {
+    return 'ankaboot'; // Create Yemen-Ankboot buttons
+  }
+  // Elseif button= Pages-Researches
+  else if(location.hash === '#pages-researches') {
+    window.open(X + '/Pages-Researches.html', '_blank');
+    return 'home';
+  }
+  // Elseif button= Yemen-lobrary
+  else if(location.hash === '#library') {
+    window.open(X + '/Yemen-library.html', '_blank');
+    return 'home';
+  }
+  else {
+    return location.hash.slice(1) || 'home';
+  }
+}
+
+// Function Common-footer()
+function Common_footer() {
+  return `© Yemen Sindbad 2026 - جميع الحقوق محفوظة`;
+}
+
+// #______End-router
+const Router = {
+  routes: {},
+  add(path, cfg) { this.routes = cfg; },
+  init() {
+    Foot = Common_footer();
+    this.route();
+    window.addEventListener('hashchange', () => this.route());
+  },
+  route() {
+    let page = Common_function();
+    let cfg = this.routes || this.routes['home'];
+
+    H = Common_header(cfg.title, cfg.subtitle);
+    document.getElementById('header').innerHTML = H;
+    document.getElementById('content').innerHTML = cfg.content;
+    document.getElementById('footer').innerHTML = Foot;
+    document.title = cfg.title;
+    window.scrollTo(0,0);
+  },
+  navigate(p) { location.hash = p; }
+};
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100svh;display:flex;flex-direction:column}
+.header{background:linear-gradient(180deg,#1e5a8a 0%,#0a3d62 100%);color:#fff;text-align:center;padding:3vh 10px;border-bottom:3px solid #f39c12}
+.header img{width:55px;height:55px;border-radius:50%;border:2px solid #fff;margin-bottom:1.5vh}
+.container{width:100%;max-width:450px;margin:0 auto;padding:3vh 25px;flex:1}
+.btn{display:flex;justify-content:space-between;align-items:center;width:100%;margin:1.5vh 0;padding:3vh 20px;background:#000;color:#fff;font-size:clamp(16px,4.5vw,19px);font-weight:bold;border-radius:12px;border:none;cursor:pointer;transition:0.2s}
+.btn:active{transform:scale(0.98)}
+.footer{background:#0a3d62;color:#fff;text-align:center;padding:2vh;border-top:3px solid #f39c12;margin-top:auto}
+.back{background:#00bfff;color:#000;margin-top:4vh}
+</style>
 </head>
 
-<body>
-  <header style="background:linear-gradient(135deg,#0a3d62,#1e6f9f);color:white;text-align:center;padding:2vh 10px;border-bottom:3px solid #f39c12">
-    <img src="Yemen-bird.png" alt="طائر اليمن" style="width:75px;height:75px;border-radius:50%;border:2px solid #00ff88;display:block;margin:0 auto 1vh">
-    <h1 style="font-size:clamp(18px,5vw,24px);margin:0;font-weight:bold">Republic of Yemen الجمهورية اليمنية</h1>
-    <p style="font-size:clamp(12px,3vw,14px);margin:1vh 0 0 0;opacity:0.9">Riemann zeta & Cosmology</p>
-  </header>
+<body onload="Router.init()">
 
-  <div style="width:100%;max-width:500px;margin:0 auto;padding:2vh 20px;flex:1;display:flex;flex-direction:column;text-align:center">
-    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:1vh">
-      <span style="font-size:clamp(24px,6vw,32px)">👁️</span>
-      <h2 style="font-size:clamp(24px,6vw,32px);margin:0">سندباد اليمن</h2>
-      <span style="font-size:clamp(24px,6vw,32px)">👁️</span>
-    </div>
-    <div style="font-size:clamp(16px,4vw,20px);font-weight:bold;margin-bottom:0.5vh">م/عبدالله الجبري</div>
-    <div style="font-size:clamp(12px,3vw,14px);color:#555;margin-bottom:4vh">Eng. Abdulla Al-Jabri</div>
+<!-- ===== # common header ===== -->
+<header id="header" class="header"></header>
 
-    <a href="https://jabri-web.github.io/jabri62018.github.io/" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#000;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;text-decoration:none">
-      <span>سندباد اليمن</span> <span>Yemen Sindbad</span>
-    </a>
-    <a href="https://jabri-web.github.io/Zx_RieOS_v1.2" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#000;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;text-decoration:none">
-      <span>طائر اليمن</span> <span>Yemen Bird</span>
-    </a>
-    <a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#000;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;text-decoration:none">
-      <span>عنكبوت اليمن</span> <span>Yemen Ankaboot</span>
-    </a>
-    <a href="https://jabri-web.github.io/Pages-Researches.html" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#000;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;text-decoration:none">
-      <span>صفحات وبحوث</span> <span>Pages & Researches</span>
-    </a>
-    <a href="https://jabri-web.github.io/Yemen-library.html" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#000;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;text-decoration:none">
-      <span>مكتبتي</span> <span>My Library</span>
-    </a>
+<!-- ===== ديناميكي ===== -->
+<main id="content" class="container"></main>
 
-    <button onclick="history.back()" style="display:flex;justify-content:space-between;align-items:center;width:100%;margin:1vh 0;padding:2vh;background:#c62828;color:#fff;font-size:clamp(16px,4vw,18px);font-weight:bold;border-radius:15px;border:none;cursor:pointer">
-      <span>🚪 Exit</span> <span>خروج</span>
-    </button>
+<!-- ===== #common Footer ===== -->
+<footer id="footer" class="footer"></footer>
 
-    <div id="info" style="margin-top:2vh;padding:2vh;background:white;border-radius:12px;text-align:right;font-size:clamp(12px,3vw,14px);color:#333;line-height:1.8;border:1px solid #ddd">
-      <b style="color:#0a3d62">التاريخ:</b> <span id="date">...</span><br>
-      <b style="color:#0a3d62">الوقت:</b> <span id="time">...</span><br>
-      <b style="color:#0a3d62">من نحن:</b> مكتبة اليمن الرقمية
-    </div>
-  </div>
+<script>
+// #Router=index.html same in all repos
+Router.add('home', {
+  title: 'الرئيسية',
+  subtitle: 'Riemann zeta & Cosmology',
+  content: `
+    <div style="text-align:center;font-size:32px;font-weight:bold">👁 سندباد اليمن 👁</div>
+    <div style="text-align:center;margin-bottom:3vh">م/عبدالله الجبري</div>
+    <button class="btn" onclick="Router.navigate('sindbad')"><span>Yemen<br>Sindbad</span><span>سندباد<br>اليمن</span></button>
+    <button class="btn" onclick="Router.navigate('bird')"><span>Yemen Bird</span><span>طائر اليمن</span></button>
+    <button class="btn" onclick="Router.navigate('ankaboot')"><span>Yemen<br>Ankaboot</span><span>عنكبوت<br>اليمن</span></button>
+    <button class="btn" onclick="Router.navigate('pages-researches')"><span>Pages &<br>Researches</span><span>صفحات<br>وبحوث</span></button>
+    <button class="btn" onclick="Router.navigate('library')"><span>My Library</span><span>مكتبتي</span></button>
+  `
+});
 
-  <footer style="background:#0a3d62;color:white;text-align:center;padding:2vh 10px;font-size:clamp(12px,3vw,14px);border-top:3px solid #f39c12">
-    <p style="margin:0">© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
-    <p style="margin:0">صنع بحب في اليمن 🇾🇪</p>
-  </footer>
+Router.add('sindbad', {
+  title: 'سندباد اليمن',
+  subtitle: 'تراث وحكايات اليمن',
+  content: `<h2 style="text-align:center">👁 سندباد اليمن</h2><p style="text-align:center">حكايات من البحر<br>رحلات سندباد السبع</p><button class="btn back" onclick="Router.navigate('home')">🚪 رجوع</button>`
+});
 
-  <script>
-    function updateTime() {
-      const now = new Date();
-      document.getElementById('date').innerText = now.toLocaleDateString('ar-EG');
-      document.getElementById('time').innerText = now.toLocaleTimeString('ar-EG');
-    }
-    updateTime();
-    setInterval(updateTime, 1000);
-  </script>
+Router.add('bird', {
+  title: 'طائر اليمن',
+  subtitle: 'Zx RiemannOS v1.2',
+  content: `<h2 style="text-align:center">🐦 طائر اليمن v1.2</h2><p style="text-align:center">خوارزميات الطائر اليمن<br>لإثبات فرضية ريمان</p><button class="btn back" onclick="Router.navigate('home')">🚪 رجوع</button>`
+});
+
+Router.add('ankaboot', {
+  title: 'عنكبوت اليمن',
+  subtitle: 'شبكة المعرفة',
+  content: `<h2 style="text-align:center">🕷 عنكبوت اليمن</h2><p style="text-align:center">فهرس البحوث المترابطة</p><button class="btn back" onclick="Router.navigate('home')">🚪 رجوع</button>`
+});
+</script>
 </body>
 </html>
