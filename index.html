@@ -1,67 +1,53 @@
-<!-- file=index.html -->
+<!--file= index.html
+
+
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yemen Sindbad</title>
+<title>Yemen Sindbad - Router</title>
+
+<!-- Common Setting -->
+<meta name="description" content="Yemen Sindbad - Riemann zeta & Cosmology">
+<meta name="author" content="Eng. Abdulla al-Jabri">
+<link rel="icon" href="./Logo.png">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Tahoma;background:linear-gradient(135deg,#0d1b2a,#1b263b);color:#eee;min-height:100vh}
-.header{padding:5vh 0;text-align:center;background:rgba(0,0,0,0.3)}
-.header img{width:70px;height:70px;border-radius:15px;border:3px solid #e94560;margin-bottom:1vh}
-.header h1{font-size:26px;color:#e94560;margin:1vh 0}
-.container{max-width:600px;margin:5vh auto;padding:0 6vw}
-.btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:3vh 5vw;margin:2vh 0;background:rgba(255,255,255,0.05);border:2px solid #e94560;border-radius:18px;color:#eee;text-decoration:none;font-size:18px;font-weight:bold;cursor:pointer}
-.btn:hover{background:#e94560;color:white}
-.btn-green{border-color:#2ecc71}
-.btn-blue{border-color:#3498db}
-.btn-red{border-color:#e74c3c}
-.footer{text-align:center;padding:4vh;font-size:12px;color:#aaa}
+body{font-family:Tahoma;background:linear-gradient(135deg,#0d1b2a,#1b263b);color:#eee;min-height:100vh;display:flex;flex-direction:column}
+.header{padding:5vh 0;text-align:center;background:rgba(0,0,0,0.3);border-bottom:2px solid rgba(233,69,96,0.3)}
+.header img{width:80px;height:80px;border-radius:20px;border:3px solid #e94560;margin-bottom:1.5vh}
+.header h1{font-size:26px;color:#e94560;margin:1vh 0;font-weight:bold}
+.header p{font-size:14px;opacity:0.85;color:#ccc}
+.content{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:5vh}
+.content h2{font-size:22px;color:#e94560;margin-bottom:2vh}
+.content p{font-size:16px;color:#aaa}
+.footer{text-align:center;padding:3vh;font-size:12px;color:#aaa;border-top:1px solid rgba(255,255,255,0.1)}
 </style>
 
 <script>
-// كسر الكاش: نضيف تاريخ+وقت لملف Config عشان الراوتر ما يخزنه
-document.write('<script src="./Config.js?v=' + new Date().getTime() + '"><\/script>');
-</script>
-
-<script>
-window.addEventListener('load', ()=>{
-  if(typeof CFG!== 'undefined'){
-    document.getElementById('logo').src = CFG.logo;
-    const container = document.getElementById('menu');
-    const colors = ['btn', 'btn-green', 'btn-blue', '', 'btn-red'];
-    let i = 0;
-    for(let key in CFG.PAGES){
-      const page = CFG.PAGES[key];
-      const color = colors[i] || 'btn';
-      const btn = document.createElement('a');
-      btn.className = 'btn ' + color;
-      btn.style.flexDirection = CFG.btnDirection;
-      btn.href = 'javascript:CFG.go("' + key + '")';
-      btn.innerHTML = `<span>${page.en}</span><span>${page.ar}</span>`;
-      container.appendChild(btn);
-      i++;
-    }
-  }
-});
+// Router: ينادي Sindbad.html مباشرة
+window.location.replace("https://Jabri-web.github.io/Sindbad.html");
 </script>
 </head>
 <body>
 
+<!-- Common Header -->
 <div class="header">
-  <img id="logo" src="./Logo.png" alt="Logo">
-  <h1>Yemen Sindbad</h1>
-  <p>الجمهورية اليمنية - Republic of Yemen</p>
+  <img src="./Logo.png" alt="Logo">
+  <h1>الجمهورية اليمنية</h1>
+  <p>Republic of Yemen - Riemann zeta & Cosmology</p>
 </div>
 
-<div class="container" id="menu">
-  <a href="javascript:CFG.exit()" class="btn btn-red" style="flex-direction:row-reverse">
-    <span>Exit</span>
-    <span>قفل</span>
-  </a>
+<div class="content">
+  <div>
+    <h2>جاري التحويل للشاشة الرئيسية...</h2>
+    <p>Loading Sindbad Main Screen...</p>
+  </div>
 </div>
-
+https://Jabri-web.github.io/Sindbad.html
 <div class="footer">
   © Yemen Sindbad 2025<br>
   <small>صنع بيد يمنية 🇾🇪 | Eng. Abdulla al-Jabri</small>
