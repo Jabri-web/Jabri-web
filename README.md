@@ -1,14 +1,12 @@
-#file= README.md
-#repo=Jabri-web
-<div align="center">
-
-# Jabri-web
-
-#Page: Jabri-web.github.io Database
+#General=README.md
 
 <div align="center">
 
-<img src="Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
+# اسم-الريبو
+
+#Page: Jabri-web.github.io
+
+<img src="../Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
@@ -23,16 +21,29 @@
 
 <!-- GitHub Stats Badges -->
 [![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
+[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/اسم-الريبو?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/اسم-الريبو)
 [![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
-
 ---
-![Zx Equations](Zx_Equations.png)
-![Zx Equation Figure](Zx_Eq_figure.png)
+<!-- MIDDLE:START -->
+## 🔬 About the whole project / عن المشروع كامل
 
-[![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+**مشروع Zx_RiemannOS** هو مشروع بحثي مستقل يهدف لربط **أصفار دالة ريمان ζ(s)** بهيكل الكون عبر **الدالة الأم Zx = Z + C + A**.
+
+### الفكرة المركزية
+بدل استخدام معاملات تجريبية في الكونيات، نبني كل شي من الصفر باستخدام الأصفار غير البديهية لدالة زيتا. كل ثابت كوني يطلع من Zx بدون تعديل يدوي.
+
+### التطبيقات
+1. **فرضية ريمان**: تحقق عددي لدقة 10^-15 لأول 10^6 صفر
+2. **P vs NP**: إطار Zx لفصل التعقيد الزمني 
+3. **Yang-Mills Mass Gap**: حساب الفجوة الكتلية من Zx
+4. **Navier-Stokes**: محاكاة الاضطراب عبر الدالة الأم
+
+### المنهجية
+**Python + NumPy + mpmath** لحسابات عالية الدقة. كل ريبو في المشروع يطبق جزء من Zx ويوثق النتائج بـ DOI.
+
+**الحالة العامة:** v1.3 قيد التطوير - من صنعاء إلى الكون 🇾🇪
+<!-- MIDDLE:END -->
 ---
-
 </div>
 
 ### 📄 License / الترخيص
@@ -42,7 +53,6 @@
 ---
 
 ## 📚 Main Repositories / المستودعات الرئيسية
-
 1. **[jabri_lab](https://Jabri-web.github.io/jabri_lab/)** - Zx function & Millennium Problems  
 2. **[Jabri_Nobble](https://Jabri-web.github.io/Jabri_Nobble/)** - Zx_RiemannOS archive  
 3. **[Zx_RiemannOS](https://Jabri-web.github.io/Zx_RiemannOS/)** - Riemann hypothesis framework  
@@ -53,105 +63,11 @@
 
 ---
 
-## 📑 Published Papers with DOI
-
-1. **Riemann Hypothesis** - [10.5281/zenodo.20139904](https://doi.org/10.5281/zenodo.20139904)  
-2. **P vs NP** - [10.5281/zenodo.20145279](https://doi.org/10.5281/zenodo.20145279)  
-3. **Yang-Mills Mass Gap** - [10.5281/zenodo.20148344](https://doi.org/10.5281/zenodo.20148344)  
-4. **Navier-Stokes** - [10.5281/zenodo.20149618](https://doi.org/10.5281/zenodo.20149618)  
-5. **Zx_RiemannOS v1.3** - [10.5281/zenodo.20145337](https://doi.org/10.5281/zenodo.20145337)  
-6. **Jabri Identity** - [10.5281/zenodo.20114317](https://doi.org/10.5281/zenodo.20114317)  
-7. **Zx_RieOS v1.2 Gold** - [10.5281/zenodo.20100622](https://doi.org/10.5281/zenodo.20100622)  
-8. **Zx_RieOS v1.1** - [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594)  
-
----
-
 ## 🔗 Contact
-
 - **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
-- **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
+- **Email:** jabri.2018@gmail.com  
 - **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
-- **Website:** [Jabri-web.github.io/jabri62018.github.io](https://Jabri-web.github.io/jabri62018.github.io)
-
----
 
 <div align="center">
 <strong>From Sana'a to the Universe / من صنعاء إلى الكون 🇾🇪</strong>
-</div>
-
-
-![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
-![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
-
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
-
-
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
-
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
-
-</div>
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
-
-</div>
-
----
-
-## 🔬 Research Focus
-- **Riemann Zeta Function** & zero-parameter cosmology
-- **Computational Cosmology** simulations  
-- **Mathematical Physics** & Millennium problems
-
-## 🚀 Current Focus
-Working on **Zx_RieOS v1.3** release.  
-Open for research collaborations & paid consulting on computational cosmology.
-
-## 📚 Core Projects
-
-### 1. [Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS) ⭐
-Zero-parameter cosmology from Riemann zeros.  
-**Mother Function:** `Zx = Z + C + A`
-
-### 2. [Zx_Mother_Function_Jabri](https://github.com/Jabri-web/Zx_Mother_Function_Jabri)
-Research notes and framework for the Mother Function
-
-### 3. [Jabri_Nobble](https://github.com/Jabri-web/Jabri_Nobble)
-Millennium problems and Jabri Identity proofs. DOIs and notebooks included
-
-### 4. [Zx_RieOS_v1.2](https://github.com/Jabri-web/Zx_RieOS_v1.2)
-RiemannOS v1.2 release
-
-<details>
-<summary><b>📦 Archive</b></summary>
-
-- [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
-- [jabri_lab](https://github.com/Jabri-web/jabri_lab) 
-- [Jabri_Checkout](https://github.com/Jabri-web/Jabri_Checkout)
-- [jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
-- [Jabri-web](https://github.com/Jabri-web/Jabri-web)
-
-</details>
-
----
-
-## 📊 GitHub Stats
-<div align="center">
-<img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
-<br><br>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
-</div>
-
----
-
-## 🤝 Partnerships & Contact
-مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
-
-**Email:** jabri62018@gmail.com  
-**Website:** https://jabri-web.github.io  
-**GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
-**Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
-
-<div align="center">
-<i>"From Riemann zeros to the structure of the universe"</i>
 </div>
