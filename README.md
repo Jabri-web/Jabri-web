@@ -84,6 +84,11 @@
 ![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
 ![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
 
+[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
+
+
+[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
+
 **Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
 
 </div>
