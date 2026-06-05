@@ -1,4 +1,5 @@
-#General=README.md
+#File=README.md
+#Repo=اسم-الريبو
 
 <div align="center">
 
@@ -17,31 +18,30 @@
 **Research Focus:** Zx Function & Millennium Problems  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
-[![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[[Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
 <!-- GitHub Stats Badges -->
-[![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/اسم-الريبو?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/اسم-الريبو)
-[![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
+[[Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
+[[GitHub Stars](https://img.shields.io/github/stars/Jabri-web/اسم-الريبو?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/اسم-الريبو)
+[[GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
 ---
 <!-- MIDDLE:START -->
-## 🔬 About the whole project / عن المشروع كامل
+## 🗂️ About This Repository / عن هذا الريبو
 
-**مشروع Zx_RiemannOS** هو مشروع بحثي مستقل يهدف لربط **أصفار دالة ريمان ζ(s)** بهيكل الكون عبر **الدالة الأم Zx = Z + C + A**.
+**Zx_RiemannOS** مشروع بحثي موحد. كل ريبو هنا فرع من **الدالة الأم: Zx = Z + C + A**
 
-### الفكرة المركزية
-بدل استخدام معاملات تجريبية في الكونيات، نبني كل شي من الصفر باستخدام الأصفار غير البديهية لدالة زيتا. كل ثابت كوني يطلع من Zx بدون تعديل يدوي.
+### الفكرة الكاملة
+نبني الكونيات والرياضيات من الصفر بدون ثوابت تجريبية. كل شي يطلع من أصفار دالة ريمان ζ(s) عبر Zx.
 
-### التطبيقات
-1. **فرضية ريمان**: تحقق عددي لدقة 10^-15 لأول 10^6 صفر
-2. **P vs NP**: إطار Zx لفصل التعقيد الزمني 
-3. **Yang-Mills Mass Gap**: حساب الفجوة الكتلية من Zx
-4. **Navier-Stokes**: محاكاة الاضطراب عبر الدالة الأم
+### هذا الريبو تحديداً: `اسم-الريبو`
+[اكتب هنا سطر واحد: ايش وظيفة الريبو هذا؟ مثال: "هذا الريبو يختص بمحاكاة جاذبية Zx"]
 
-### المنهجية
-**Python + NumPy + mpmath** لحسابات عالية الدقة. كل ريبو في المشروع يطبق جزء من Zx ويوثق النتائج بـ DOI.
+### المنهجية العامة للمشروع
+**المعادلة:** `Zx = Z + C + A`  
+**الأدوات:** Python + NumPy + mpmath دقة 50 رقم  
+**التحقق:** نتائج موثقة بـ DOI على Zenodo
 
-**الحالة العامة:** v1.3 قيد التطوير - من صنعاء إلى الكون 🇾🇪
+**الحالة:** v1.3 قيد التطوير | من صنعاء إلى الكون 🇾🇪
 <!-- MIDDLE:END -->
 ---
 </div>
