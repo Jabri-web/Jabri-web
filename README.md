@@ -1,13 +1,13 @@
-#File=README.md
-#Repo=اسم-الريبو
+#file=README.md
+#repo=Jabri-web
 
 <div align="center">
 
-# اسم-الريبو
+# Jabri-web
 
-#Page: Jabri-web.github.io
+#Page: Jabri-web.github.io Database
 
-<img src="../Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
+<img src="Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
@@ -22,26 +22,29 @@
 
 <!-- GitHub Stats Badges -->
 [[Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
-[[GitHub Stars](https://img.shields.io/github/stars/Jabri-web/اسم-الريبو?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/اسم-الريبو)
+[[GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
 [[GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
+
 ---
+![Zx Equations](Zx_Equations.png)
+![Zx Equation Figure](Zx_Eq_figure.png)
+---
+
 <!-- MIDDLE:START -->
-## 🗂️ About This Repository / عن هذا الريبو
+## 🗂️ Project Ecosystem / النظام البيئي للمشروع
 
-**Zx_RiemannOS** مشروع بحثي موحد. كل ريبو هنا فرع من **الدالة الأم: Zx = Z + C + A**
+**Jabri-web** هو الجذر - قاعدة البيانات الرئيسية  
+منه تتفرع 9 مستودعات، كلها تطبق **الدالة الأم: Zx = Z + C + A**
 
-### الفكرة الكاملة
-نبني الكونيات والرياضيات من الصفر بدون ثوابت تجريبية. كل شي يطلع من أصفار دالة ريمان ζ(s) عبر Zx.
+### 🌳 الشجرة البحثية
+1. **jabri_lab** - محاكاة كونيات Zx
+2. **Jabri_Nobble** - أرشيف مسائل الألفية Nobel + Jabri Identity  
+3. **Zx_RiemannOS** - إطار فرضية ريمان
+4. **Zx_RieOS_v1.2 / v1.1** - الخوارزميات والتحقق العددي
+5. **Zx_Mother_Function_Jabri** - تعريف واشتقاق الدالة الأم
+6. **Jabri_Checkout** - سكريبتات الاختبار
 
-### هذا الريبو تحديداً: `اسم-الريبو`
-[اكتب هنا سطر واحد: ايش وظيفة الريبو هذا؟ مثال: "هذا الريبو يختص بمحاكاة جاذبية Zx"]
-
-### المنهجية العامة للمشروع
-**المعادلة:** `Zx = Z + C + A`  
-**الأدوات:** Python + NumPy + mpmath دقة 50 رقم  
-**التحقق:** نتائج موثقة بـ DOI على Zenodo
-
-**الحالة:** v1.3 قيد التطوير | من صنعاء إلى الكون 🇾🇪
+**الفكرة:** شجرة بحث واحدة بجذر واحد = Zx
 <!-- MIDDLE:END -->
 ---
 </div>
@@ -53,20 +56,13 @@
 ---
 
 ## 📚 Main Repositories / المستودعات الرئيسية
-1. **[jabri_lab](https://Jabri-web.github.io/jabri_lab/)** - Zx function & Millennium Problems  
-2. **[Jabri_Nobble](https://Jabri-web.github.io/Jabri_Nobble/)** - Zx_RiemannOS archive  
-3. **[Zx_RiemannOS](https://Jabri-web.github.io/Zx_RiemannOS/)** - Riemann hypothesis framework  
-4. **[Zx_RieOS_v1.2](https://Jabri-web.github.io/Zx_RieOS_v1.2/)** - v1.2 improved algorithms  
-5. **[Zx_RieOS_v1.1](https://Jabri-web.github.io/Zx_RieOS_v1.1/)** - v1.1 numerical validation  
-6. **[Zx_Mother_Function_Jabri](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/)** - Core theory  
-7. **[Jabri_Checkout](https://Jabri-web.github.io/Jabri_Checkout/)** - Testing scripts  
+[نفس قائمتك ممتازة]
 
----
+## 📑 Published Papers with DOI  
+[نفس قائمتك ممتازة]
 
 ## 🔗 Contact
-- **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
-- **Email:** jabri.2018@gmail.com  
-- **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
+[نفس بياناتك]
 
 <div align="center">
 <strong>From Sana'a to the Universe / من صنعاء إلى الكون 🇾🇪</strong>
