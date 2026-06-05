@@ -1,46 +1,21 @@
-<!--- file=index.html
-
-
+<!-- ==================== ملف: index.html ==================== -->
+<!----Repo=Jabri-web
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yemen Sindbad - Router</title>
-<meta name="description" content="Yemen Sindbad - Riemann zeta & Cosmology">
-<meta name="author" content="Eng. Abdulla al-Jabri">
-<link rel="icon" href="./Logo.png">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Tahoma;background:linear-gradient(135deg,#0d1b2a,#1b263b);color:#eee;min-height:100vh;display:flex;flex-direction:column}
-.header{padding:5vh 0;text-align:center;background:rgba(0,0,0,0.3);border-bottom:2px solid rgba(233,69,96,0.3)}
-.header img{width:80px;height:80px;border-radius:20px;border:3px solid #e94560;margin-bottom:1.5vh}
-.header h1{font-size:26px;color:#e94560;margin:1vh 0;font-weight:bold}
-.header p{font-size:14px;opacity:0.85;color:#ccc}
-.content{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:5vh}
-.content h2{font-size:22px;color:#e94560;margin-bottom:2vh}
-.content p{font-size:16px;color:#aaa}
-</style>
-
+<title>الجمهورية اليمنية</title>
 <script>
-window.location.replace("Sindbad.html");
+  const path = window.location.pathname;
+  const X = window.location.origin + (path.endsWith('/') ? path.slice(0,-1) : path.replace(/\/[^\/]*$/, ''));
+  window.location.replace(X + '/Sindbad.html');
 </script>
 </head>
-<body>
-
-<div class="header">
-  <img src="./Logo.png" alt="Logo">
-  <h1>الجمهورية اليمنية</h1>
-  <p>Republic of Yemen - Riemann zeta & Cosmology</p>
-</div>
-
-<div class="content">
-  <div>
-    <h2>جاري التحويل للشاشة الرئيسية...</h2>
-    <p>Loading Sindbad Main Screen...</p>
-</div>
-</div>
-
+<body style="background:#1e5a8a;color:white;text-align:center;padding-top:40vh;font-family:Tahoma">
+  <div style="font-size:28px">👁 سندباد اليمن 👁</div>
+  <div style="margin:3vh 0">جاري التحميل...</div>
+  <a id="btn" style="padding:2vh 4vh;background:#f39c12;color:#000;text-decoration:none;border-radius:12px;font-weight:bold">اضغط هنا</a>
+  <script>document.getElementـById('btn').href = X + '/Sindbad.html';</script>
 </body>
 </html>
