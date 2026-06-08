@@ -1,7 +1,7 @@
 #general README.md
 #file= README.md
 #repo=Jabri-web
-<div align="center">
+<div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
 # Jabri-web
 
 <div align="center">
