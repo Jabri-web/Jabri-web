@@ -1,6 +1,7 @@
 #general README.md
 #file= README.md
 #repo=Jabri-web
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000"><title>Jabri Lab</title><style>*{margin:0;padding:0}html,body{min-height:100svh;background:#000!important;color:#e0e0e0;font-family:'Cairo',sans-serif}body::before{content:"";position:fixed;inset:0;background:#000;z-index:-1}.wrap{max-width:800px;margin:0 auto;padding:30px 20px}h1{color:#6ae3ff;text-align:center}.card{background:#0a0a0a;border:1px solid #1e1e2f;border-radius:12px;padding:20px;margin:15px 0}a{color:#00ffc8;text-decoration:none;display:block}</style></head><body><div class="wrap">
 <div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
 # Jabri-web
 
@@ -184,7 +185,6 @@ https://doi.org/10.5381/zenodo.20499365
 
 ## 🤝 Partnerships & Contact
 مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
-
 ## 🔗 Contact
 - **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
 - **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
@@ -197,3 +197,4 @@ https://doi.org/10.5381/zenodo.20499365
 <div align="center">
 <i>"From Riemann zeros to the structure of the universe"</i>
 </div>
+</div></body></html>
