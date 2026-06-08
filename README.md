@@ -1,10 +1,8 @@
+#general README.md
 #file= README.md
 #repo=Jabri-web
 <div align="center">
-
 # Jabri-web
-
-#Page: Jabri-web.github.io Database
 
 <div align="center">
 
@@ -12,10 +10,8 @@
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
-
 **Independent Researcher in Mathematics & Theoretical Physics**  
 **باحث مستقل في الرياضيات والفيزياء النظرية**
-
 **Research Focus:** Zx Function & Millennium Problems  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
@@ -39,8 +35,6 @@
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
----
-
 ## 📚 Main Repositories / المستودعات الرئيسية
 
 1. **[jabri_lab](https://Jabri-web.github.io/jabri_lab/)** - Zx function & Millennium Problems  
@@ -50,8 +44,6 @@
 5. **[Zx_RieOS_v1.1](https://Jabri-web.github.io/Zx_RieOS_v1.1/)** - v1.1 numerical validation  
 6. **[Zx_Mother_Function_Jabri](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/)** - Core theory  
 7. **[Jabri_Checkout](https://Jabri-web.github.io/Jabri_Checkout/)** - Testing scripts  
-
----
 
 ## 📑 Published Papers with DOI
 
@@ -64,21 +56,9 @@
 7. **Zx_RieOS v1.2 Gold** - [10.5281/zenodo.20100622](https://doi.org/10.5281/zenodo.20100622)  
 8. **Zx_RieOS v1.1** - [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594)  
 
----
-
-## 🔗 Contact
-
-- **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
-- **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
-- **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
-- **Website:** [Jabri-web.github.io/jabri62018.github.io](https://Jabri-web.github.io/jabri62018.github.io)
-
----
-
 <div align="center">
 <strong>From Sana'a to the Universe / من صنعاء إلى الكون 🇾🇪</strong>
 </div>
-
 
 ![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
@@ -86,55 +66,111 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
 
-
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
 
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
+#______________________
+#file=Dbase-all-links.txt
+#______________________
 
-</div>
-**Independent researcher working on Riemann zeta function, computational cosmology, and mathematical physics**
+#1-Jabri6218.github.io:
 
-</div>
+https://jabri-web.github.io/jabri62018.github.io/
 
----
+https://doi.org/10.5281/zenodo.20403864
 
-## 🔬 Research Focus
-- **Riemann Zeta Function** & zero-parameter cosmology
-- **Computational Cosmology** simulations  
-- **Mathematical Physics** & Millennium problems
+#2-Zx_RieOS_v1.2:
+https://jabri-web.github.io/Zx_RieOS_v1.2/
 
-## 🚀 Current Focus
-Working on **Zx_RieOS v1.3** release.  
-Open for research collaborations & paid consulting on computational cosmology.
+https://doi.org/10.5281/zenodo.20100622
 
-## 📚 Core Projects
+#3-Zx_Mother_Function_Jabri:
 
-### 1. [Jabri-RiemannOS](https://github.com/Jabri-web/Jabri-RiemannOS) ⭐
-Zero-parameter cosmology from Riemann zeros.  
-**Mother Function:** `Zx = Z + C + A`
+https://Jabri-web.github.io/Zx_Mother_Function_Jabri/
 
-### 2. [Zx_Mother_Function_Jabri](https://github.com/Jabri-web/Zx_Mother_Function_Jabri)
-Research notes and framework for the Mother Function
+#4-Jabri-web.github.io:
 
-### 3. [Jabri_Nobble](https://github.com/Jabri-web/Jabri_Nobble)
-Millennium problems and Jabri Identity proofs. DOIs and notebooks included
+https://Jabri-web.github.io/
 
-### 4. [Zx_RieOS_v1.2](https://github.com/Jabri-web/Zx_RieOS_v1.2)
-RiemannOS v1.2 release
+https://doi.org/10.5281/zenodo.20499365
 
-<details>
-<summary><b>📦 Archive</b></summary>
+https://doi.org/10.5281/zenodo.20404167
+##
+#5-Jabri_Nobble:
 
-- [Zx_RieOS_v1.1](https://github.com/Jabri-web/Zx_RieOS_v1.1)
-- [jabri_lab](https://github.com/Jabri-web/jabri_lab) 
-- [Jabri_Checkout](https://github.com/Jabri-web/Jabri_Checkout)
-- [jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
-- [Jabri-web](https://github.com/Jabri-web/Jabri-web)
+https://jabri-web.github.io/Jabri_Nobble/
 
-</details>
+https://doi.org/10.5281/zenodo.20148770
 
----
+  #5-1-Jabri_Riemann:
+  
+  https://doi.org/10.5281/zenodo.20139904
+  
+  https://doi.org/10.5281/zenodo.20145337
 
+  #5-2-Jabri_np:
+  
+  https://doi.org/10.5281/zenodo.20145279
+
+  #5-3-Jabri_gab:
+  
+  https://doi.org/10.5281/zenodo.20148344
+
+  #5-4-Jabri_Navier:
+  
+  https://doi.org/10.5281/zenodo.20149618
+
+  #5-5-Jabri_Birch:
+  
+  #5-6-Jabri_Hodge:
+  
+  #5-7-Jabri_Identity:
+  
+  https://doi.org/10.5281/zenodo.20114317
+
+#6-Jabri_lab:
+
+https://Jabri-web.github.io/Jabri_lab/
+
+  #6-1-Jabri_5:
+  
+  #6-2-Jabri_28:
+  
+  #6-3-Jabri_Gravity:
+  
+  #6-4-Jabri_Spacetime:
+  
+  #6-5-Jabri_Darkenergy:
+  
+  #6-6-Jabri_Planck:
+  
+  #6-7-Jabri_Hubble:
+  
+  #6-8-Jabri_Periodic:
+  #6-9-Jabri_all:
+
+#7-Zx_RieOS_v1.1:
+
+https://Jabri-web.github.io/Zx_RieOS_v1.1/
+
+https://doi.org/10.5281/zenodo.19981688
+
+https://doi.org/10.5281/zenodo.20070594
+
+#8-Jabri_RiemannOS:
+
+https://Jabri-web.github.io/Jabri_RiemannOS/
+
+#9-Jabri_Checkout:
+https://Jabri-web.github.io/Jabri_Checkout/
+https://doi.org/10.5281/zenodo.20513840
+
+#10-Jabri-web:
+
+https://Jabri-web.github.io/Jabri-web/
+
+https://doi.org/10.5381/zenodo.20499365
+
+#__________________
 ## 📊 GitHub Stats
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
@@ -142,13 +178,15 @@ RiemannOS v1.2 release
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
 </div>
 
----
-
 ## 🤝 Partnerships & Contact
 مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
 
-**Email:** jabri62018@gmail.com  
-**Website:** https://jabri-web.github.io  
+## 🔗 Contact
+- **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
+- **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
+- **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
+- **Website:** [Jabri-web.github.io/jabri62018.github.io](https://Jabri-web.github.io/jabri62018.github.io)
+
 **GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
 **Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
 
