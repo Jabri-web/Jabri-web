@@ -1,6 +1,5 @@
 #General README.md
 
-
 <div align="center">
 
 <img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
@@ -33,24 +32,11 @@
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
----
-
 ## 🔗 Dbase: All Research Links & DOIs
+قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
-<div align="center">
-
-### 🚪 Main Gateway / البوابة الرئيسية
-<a href="#dbase-table">
-  <img src="https://img.shields.io/badge/🚀_Open_Database_1--10-00ffc8?style=for-the-badge&logo=database&logoColor=0d1117"/>
-</a>
-
-<br><br>
-
-<details id="dbase-table">
-<summary>
-<h2 align="center">▶️ 🚀 Press here / اضغط هنا لعرض كل الروابط 📚</h2>
-<hr style="border: 2px solid #00ffc8; border-radius: 5px;">
-</summary>
+<details>
+<summary><b>🚀 Press here / اضغط هنا لعرض كل الروابط 📚</b></summary>
 
 <br>
 
@@ -59,30 +45,28 @@
 | 1 | **Jabri6218.github.io** | [Pages](https://jabri-web.github.io/jabri62018.github.io/) | [20403864](https://doi.org/10.5281/zenodo.20403864) |
 | 2 | **Zx_RieOS_v1.2** | [Pages](https://jabri-web.github.io/Zx_RieOS_v1.2/) | [20100622](https://doi.org/10.5281/zenodo.20100622) |
 | 3 | **Zx_Mother_Function_Jabri** | [Pages](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/) | - |
-| 4 | **Jabri-web.github.io** | [Pages](https://Jabri-web.github.io/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
+| 4 | **Jabri-web.github.io** | [Pages](https://Jabri-web.github.io/) | [20499365](https://doi.org/10.5281/zenodo.20499365) / [20404167](https://doi.org/10.5281/zenodo.20404167) |
 | 5 | **Jabri_Nobble** | [Pages](https://jabri-web.github.io/Jabri_Nobble/) | [20148770](https://doi.org/10.5281/zenodo.20148770) |
+| 5.1 | └─ Jabri_Riemann | - | [20139904](https://doi.org/10.5281/zenodo.20139904) / [20145337](https://doi.org/10.5281/zenodo.20145337) |
+| 5.2 | └─ Jabri_np | - | [20145279](https://doi.org/10.5281/zenodo.20145279) |
+| 5.3 | └─ Jabri_gab | - | [20148344](https://doi.org/10.5281/zenodo.20148344) |
+| 5.4 | └─ Jabri_Navier | - | [20149618](https://doi.org/10.5281/zenodo.20149618) |
+| 5.7 | └─ Jabri_Identity | - | [20114317](https://doi.org/10.5281/zenodo.20114317) |
+| 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | قيد النشر |
+| 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
+| 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
+| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
 
 > **Verified 2026-06-09 by Jabri**: كل الروابط 1-10 شغالة. DOI كله `10.5281`. لا تعديل بعد اليوم.
 
 </details>
-</div>
-
----
 
 ## 📘 About This Repo
-
 <div align="center">
-
-<h2 align="center">📘 About This Repo / حول هذا الريبو</h2>
-<hr style="border: 2px solid #6ae3ff; border-radius: 5px;">
-<br>
-
 <a href="./ABOUT.md">
-  <img src="https://img.shields.io/badge/PRESS_ABOUT_THIS_REPO-اضغط_هنا_للتفاصيل-6ae3ff?style=for-the-badge&logo=book&logoColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Press%20about%20this%20Repo...-%D8%AD%D9%88%D9%84%20%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A8%D9%88-6ae3ff?style=for-the-badge&logo=book&logoColor=white"/>
 </a>
-
-<br><br>
 </div>
 
 ---
