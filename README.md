@@ -1,11 +1,9 @@
 #file=README.md
 #repo= Jabri-web
 
-#General header of readm.md;
+<div align="center">
 
-<div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
-
-<img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
+<img src="Image/Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
@@ -31,20 +29,16 @@
 ![Zx Equations](Image/Zx_Equations.png)
 ![Zx Equation Figure](Image/Zx_Eq_figure.png)
 ---
-</div>
 
 ### 📄 License / الترخيص
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
-#General_Middle_Readme:
-
-
 ## 🔗 Dbase: All Research Links & DOIs
 قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
 <details>
-<summary>Press here to show all linksاضغط هنا لعرض كل الروابط 📚</summary>
+<summary>اضغط هنا لعرض كل الروابط 📚</summary>
 
 | # | المشروع / Project | GitHub Pages | DOI Zenodo |
 | --- | --- | --- | --- |
@@ -64,12 +58,7 @@
 | 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://Jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
 
-> **ملاحظة**: DOI رقم 10 فيه خطأ `10.5381` الصح `10.5281`. عدلته لك.
-
 </details>
-
-#General Footer of readme.md:
-
 
 ---
 ## 📊 GitHub Stats
