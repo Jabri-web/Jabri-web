@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Image/Jabri_photo.png" width="140" height="140">
+<img src="Image/Jabri-photo.png" width="140" height="140">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
