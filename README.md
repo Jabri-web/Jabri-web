@@ -29,7 +29,7 @@
 ![Zx Equation Figure](Image/Zx_Eq_figure.png)
 ---
 </div>
-
+<div align="center"
 ### 📄 License / الترخيص
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
@@ -70,7 +70,7 @@
   <img src="https://img.shields.io/badge/Press%20about%20this%20Repo...-%D8%AD%D9%88%D9%84%20%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A8%D9%88-6ae3ff?style=for-the-badge&logo=book&logoColor=white"/>
 </a>
 </div>
-
+</div>
 ---
 ## 📊 GitHub Stats
 <div align="center">
