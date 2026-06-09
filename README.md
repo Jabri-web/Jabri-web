@@ -44,7 +44,7 @@
 قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
 <details>
-<summary>اضغط هنا لعرض كل الروابط 📚</summary>
+<summary>Press here اضغط هنا لعرض كل الروابط 📚</summary>
 
 | # | المشروع / Project | GitHub Pages | DOI Zenodo |
 | --- | --- | --- | --- |
