@@ -73,107 +73,36 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
 
 #______________________
-#file=Dbase-all-links.txt
-#______________________
+#General_Middle_Readme:
 
-#1-Jabri6218.github.io:
 
-https://jabri-web.github.io/jabri62018.github.io/
+## 🔗 Dbase: All Research Links & DOIs
+قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
-https://doi.org/10.5281/zenodo.20403864
+<details>
+<summary>اضغط هنا لعرض كل الروابط 📚</summary>
 
-#2-Zx_RieOS_v1.2:
-https://jabri-web.github.io/Zx_RieOS_v1.2/
+| # | المشروع / Project | GitHub Pages | DOI Zenodo |
+| --- | --- | --- | --- |
+| 1 | **Jabri6218.github.io** | [Pages](https://jabri-web.github.io/jabri62018.github.io/) | [20403864](https://doi.org/10.5281/zenodo.20403864) |
+| 2 | **Zx_RieOS_v1.2** | [Pages](https://jabri-web.github.io/Zx_RieOS_v1.2/) | [20100622](https://doi.org/10.5281/zenodo.20100622) |
+| 3 | **Zx_Mother_Function_Jabri** | [Pages](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/) | - |
+| 4 | **Jabri-web.github.io** | [Pages](https://Jabri-web.github.io/) | [20499365](https://doi.org/10.5281/zenodo.20499365) / [20404167](https://doi.org/10.5281/zenodo.20404167) |
+| 5 | **Jabri_Nobble** | [Pages](https://jabri-web.github.io/Jabri_Nobble/) | [20148770](https://doi.org/10.5281/zenodo.20148770) |
+| 5.1 | └─ Jabri_Riemann | - | [20139904](https://doi.org/10.5281/zenodo.20139904) / [20145337](https://doi.org/10.5281/zenodo.20145337) |
+| 5.2 | └─ Jabri_np | - | [20145279](https://doi.org/10.5281/zenodo.20145279) |
+| 5.3 | └─ Jabri_gab | - | [20148344](https://doi.org/10.5281/zenodo.20148344) |
+| 5.4 | └─ Jabri_Navier | - | [20149618](https://doi.org/10.5281/zenodo.20149618) |
+| 5.7 | └─ Jabri_Identity | - | [20114317](https://doi.org/10.5281/zenodo.20114317) |
+| 6 | **Jabri_lab** | [Pages](https://Jabri-web.github.io/Jabri_lab/) | قيد النشر |
+| 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
+| 8 | **Jabri_RiemannOS** | [Pages](https://Jabri-web.github.io/Jabri_RiemannOS/) | - |
+| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
+| 10 | **Jabri-web** | [Pages](https://Jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
 
-https://doi.org/10.5281/zenodo.20100622
+> **ملاحظة**: DOI رقم 10 فيه خطأ `10.5381` الصح `10.5281`. عدلته لك.
 
-#3-Zx_Mother_Function_Jabri:
-
-https://Jabri-web.github.io/Zx_Mother_Function_Jabri/
-
-#4-Jabri-web.github.io:
-
-https://Jabri-web.github.io/
-
-https://doi.org/10.5281/zenodo.20499365
-
-https://doi.org/10.5281/zenodo.20404167
-##
-#5-Jabri_Nobble:
-
-https://jabri-web.github.io/Jabri_Nobble/
-
-https://doi.org/10.5281/zenodo.20148770
-
-  #5-1-Jabri_Riemann:
-  
-  https://doi.org/10.5281/zenodo.20139904
-  
-  https://doi.org/10.5281/zenodo.20145337
-
-  #5-2-Jabri_np:
-  
-  https://doi.org/10.5281/zenodo.20145279
-
-  #5-3-Jabri_gab:
-  
-  https://doi.org/10.5281/zenodo.20148344
-
-  #5-4-Jabri_Navier:
-  
-  https://doi.org/10.5281/zenodo.20149618
-
-  #5-5-Jabri_Birch:
-  
-  #5-6-Jabri_Hodge:
-  
-  #5-7-Jabri_Identity:
-  
-  https://doi.org/10.5281/zenodo.20114317
-
-#6-Jabri_lab:
-
-https://Jabri-web.github.io/Jabri_lab/
-
-  #6-1-Jabri_5:
-  
-  #6-2-Jabri_28:
-  
-  #6-3-Jabri_Gravity:
-  
-  #6-4-Jabri_Spacetime:
-  
-  #6-5-Jabri_Darkenergy:
-  
-  #6-6-Jabri_Planck:
-  
-  #6-7-Jabri_Hubble:
-  
-  #6-8-Jabri_Periodic:
-  #6-9-Jabri_all:
-
-#7-Zx_RieOS_v1.1:
-
-https://Jabri-web.github.io/Zx_RieOS_v1.1/
-
-https://doi.org/10.5281/zenodo.19981688
-
-https://doi.org/10.5281/zenodo.20070594
-
-#8-Jabri_RiemannOS:
-
-https://Jabri-web.github.io/Jabri_RiemannOS/
-
-#9-Jabri_Checkout:
-https://Jabri-web.github.io/Jabri_Checkout/
-https://doi.org/10.5281/zenodo.20513840
-
-#10-Jabri-web:
-
-https://Jabri-web.github.io/Jabri-web/
-
-https://doi.org/10.5381/zenodo.20499365
-
+</details>
 #__________________
 ## 📊 GitHub Stats
 <div align="center">
