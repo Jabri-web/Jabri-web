@@ -6,14 +6,6 @@
 <img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
-### م. عبدالله محمد ناصر الجبري
-**Independent Researcher in Mathematics & Theoretical Physics**  
-**باحث مستقل في الرياضيات والفيزياء النظرية**  
-**Research Focus:** Zx Function & Millennium Problems  
-**مجال البحث:** دالة Zx ومسائل الألفية
-<div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
-
-<img src="Image/Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
