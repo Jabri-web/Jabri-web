@@ -1,9 +1,4 @@
-#file=README.md
-#repo= Jabri-web
-
-#General header of readm.md;
-
-<div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
+<div align="center">
 
 <img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
@@ -31,20 +26,18 @@
 ![Zx Equations](Image/Zx_Equations.png)
 ![Zx Equation Figure](Image/Zx_Eq_figure.png)
 ---
-</div>
 
 ### 📄 License / الترخيص
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
-#General_Middle_Readme:
-
-
 ## 🔗 Dbase: All Research Links & DOIs
 قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
 <details>
-<summary>Press here اضغط هنا لعرض كل الروابط 📚</summary>
+<summary><b>🚀 Press here / اضغط هنا لعرض كل الروابط 📚</b></summary>
+
+<br>
 
 | # | المشروع / Project | GitHub Pages | DOI Zenodo |
 | --- | --- | --- | --- |
@@ -67,9 +60,6 @@
 > **ملاحظة**: DOI رقم 10 فيه خطأ `10.5381` الصح `10.5281`. عدلته لك.
 
 </details>
-
-#General Footer of readme.md:
-
 
 ---
 ## 📊 GitHub Stats
