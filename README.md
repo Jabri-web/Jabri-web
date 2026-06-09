@@ -1,18 +1,20 @@
-#File=README.md
-#Repo=Jabri_Checkout
+#file=README.md
+#repo= Jabri-web
 
-<div align="center">
+#General header of readm.md;
 
-<img src="Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
+<div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
+
+<img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
-
 **Independent Researcher in Mathematics & Theoretical Physics**  
-**باحث مستقل في الرياضيات والفيزياء النظرية**
-
+**باحث مستقل في الرياضيات والفيزياء النظرية**  
 **Research Focus:** Zx Function & Millennium Problems  
 **مجال البحث:** دالة Zx ومسائل الألفية
+
+[![ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
 
 [![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
@@ -21,311 +23,72 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
 [![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
 
+### 🏆 Achievements / الإنجازات
+[![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[![Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+
 ---
-
-[![Build and Test](https://github.com/actions/checkout/actions/workflows/test.yml/badge.svg)](https://github.com/actions/checkout/actions/workflows/test.yml)
-
-# Checkout v6
-
-## What's new
-
-- Improved credential security: `persist-credentials` now stores credentials in a separate file under `$RUNNER_TEMP` instead of directly in `.git/config`
-- No workflow changes required — `git fetch`, `git push`, etc. continue to work automatically
-- Running authenticated git commands from a [Docker container action](https://docs.github.com/actions/sharing-automations/creating-actions/creating-a-docker-container-action) requires Actions Runner [v2.329.0](https://github.com/actions/runner/releases/tag/v2.329.0) or later
-
-# Checkout v5
-
-## What's new
-
-- Updated to the node24 runtime
-  - This requires a minimum Actions Runner version of [v2.327.1](https://github.com/actions/runner/releases/tag/v2.327.1) to run.
-
-
-# Checkout v4
-
-This action checks-out your repository under `$GITHUB_WORKSPACE`, so your workflow can access it.
-
-Only a single commit is fetched by default, for the ref/SHA that triggered the workflow. Set `fetch-depth: 0` to fetch all history for all branches and tags. Refer [here](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows) to learn which commit `$GITHUB_SHA` points to for different events.
-
-The auth token is persisted in the local git config. This enables your scripts to run authenticated git commands. The token is removed during post-job cleanup. Set `persist-credentials: false` to opt-out.
-
-When Git 2.18 or higher is not in your PATH, falls back to the REST API to download the files.
-
-### Note
-
-Thank you for your interest in this GitHub action, however, right now we are not taking contributions. 
-
-We continue to focus our resources on strategic areas that help our customers be successful while making developers' lives easier. While GitHub Actions remains a key part of this vision, we are allocating resources towards other areas of Actions and are not taking contributions to this repository at this time. The GitHub public roadmap is the best place to follow along for any updates on features we’re working on and what stage they’re in.
-
-We are taking the following steps to better direct requests related to GitHub Actions, including:
-
-1. We will be directing questions and support requests to our [Community Discussions area](https://github.com/orgs/community/discussions/categories/actions)
-
-2. High Priority bugs can be reported through Community Discussions or you can report these to our support team https://support.github.com/contact/bug-report.
-
-3. Security Issues should be handled as per our [security.md](security.md)
-
-We will still provide security updates for this project and fix major breaking changes during this time.
-
-You are welcome to still raise bugs in this repo.
-
-# What's new
-
-Please refer to the [release page](https://github.com/actions/checkout/releases/latest) for the latest release notes.
-
-# Usage
-
-<!-- start usage -->
-```yaml
-- uses: actions/checkout@v6
-  with:
-    # Repository name with owner. For example, actions/checkout
-    # Default: ${{ github.repository }}
-    repository: ''
-
-    # The branch, tag or SHA to checkout. When checking out the repository that
-    # triggered a workflow, this defaults to the reference or SHA for that event.
-    # Otherwise, uses the default branch.
-    ref: ''
-
-    # Personal access token (PAT) used to fetch the repository. The PAT is configured
-    # with the local git config, which enables your scripts to run authenticated git
-    # commands. The post-job step removes the PAT.
-    #
-    # We recommend using a service account with the least permissions necessary. Also
-    # when generating a new PAT, select the least scopes necessary.
-    #
-    # [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
-    #
-    # Default: ${{ github.token }}
-    token: ''
-
-    # SSH key used to fetch the repository. The SSH key is configured with the local
-    # git config, which enables your scripts to run authenticated git commands. The
-    # post-job step removes the SSH key.
-    #
-    # We recommend using a service account with the least permissions necessary.
-    #
-    # [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
-    ssh-key: ''
-
-    # Known hosts in addition to the user and global host key database. The public SSH
-    # keys for a host may be obtained using the utility `ssh-keyscan`. For example,
-    # `ssh-keyscan github.com`. The public key for github.com is always implicitly
-    # added.
-    ssh-known-hosts: ''
-
-    # Whether to perform strict host key checking. When true, adds the options
-    # `StrictHostKeyChecking=yes` and `CheckHostIP=no` to the SSH command line. Use
-    # the input `ssh-known-hosts` to configure additional hosts.
-    # Default: true
-    ssh-strict: ''
-
-    # The user to use when connecting to the remote SSH host. By default 'git' is
-    # used.
-    # Default: git
-    ssh-user: ''
-
-    # Whether to configure the token or SSH key with the local git config
-    # Default: true
-    persist-credentials: ''
-
-    # Relative path under $GITHUB_WORKSPACE to place the repository
-    path: ''
-
-    # Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching
-    # Default: true
-    clean: ''
-
-    # Partially clone against a given filter. Overrides sparse-checkout if set.
-    # Default: null
-    filter: ''
-
-    # Do a sparse checkout on given patterns. Each pattern should be separated with
-    # new lines.
-    # Default: null
-    sparse-checkout: ''
-
-    # Specifies whether to use cone-mode when doing a sparse checkout.
-    # Default: true
-    sparse-checkout-cone-mode: ''
-
-    # Number of commits to fetch. 0 indicates all history for all branches and tags.
-    # Default: 1
-    fetch-depth: ''
-
-    # Whether to fetch tags, even if fetch-depth > 0.
-    # Default: false
-    fetch-tags: ''
-
-    # Whether to show progress status output when fetching.
-    # Default: true
-    show-progress: ''
-
-    # Whether to download Git-LFS files
-    # Default: false
-    lfs: ''
-
-    # Whether to checkout submodules: `true` to checkout submodules or `recursive` to
-    # recursively checkout submodules.
-    #
-    # When the `ssh-key` input is not provided, SSH URLs beginning with
-    # `git@github.com:` are converted to HTTPS.
-    #
-    # Default: false
-    submodules: ''
-
-    # Add repository path as safe.directory for Git global config by running `git
-    # config --global --add safe.directory <path>`
-    # Default: true
-    set-safe-directory: ''
-
-    # The base URL for the GitHub instance that you are trying to clone from, will use
-    # environment defaults to fetch from the same instance that the workflow is
-    # running from unless specified. Example URLs are https://github.com or
-    # https://my-ghes-server.example.com
-    github-server-url: ''
-```
-<!-- end usage -->
-
-# Scenarios
-
-- [Checkout V5](#checkout-v5)
-  - [What's new](#whats-new)
-- [Checkout V4](#checkout-v4)
-    - [Note](#note)
-- [What's new](#whats-new-1)
-- [Usage](#usage)
-- [Scenarios](#scenarios)
-  - [Fetch only the root files](#fetch-only-the-root-files)
-  - [Fetch only the root files and `.github` and `src` folder](#fetch-only-the-root-files-and-github-and-src-folder)
-  - [Fetch only a single file](#fetch-only-a-single-file)
-  - [Fetch all history for all tags and branches](#fetch-all-history-for-all-tags-and-branches)
-  - [Checkout a different branch](#checkout-a-different-branch)
-  - [Checkout HEAD^](#checkout-head)
-  - [Checkout multiple repos (side by side)](#checkout-multiple-repos-side-by-side)
-  - [Checkout multiple repos (nested)](#checkout-multiple-repos-nested)
-  - [Checkout multiple repos (private)](#checkout-multiple-repos-private)
-  - [Checkout pull request HEAD commit instead of merge commit](#checkout-pull-request-head-commit-instead-of-merge-commit)
-  - [Checkout pull request on closed event](#checkout-pull-request-on-closed-event)
-  - [Push a commit using the built-in token](#push-a-commit-using-the-built-in-token)
-  - [Push a commit to a PR using the built-in token](#push-a-commit-to-a-pr-using-the-built-in-token)
-- [Recommended permissions](#recommended-permissions)
-- [License](#license)
-
-## Fetch only the root files
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    sparse-checkout: .
-```
-
-## Fetch only the root files and `.github` and `src` folder
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    sparse-checkout: |
-      .github
-      src
-```
-
-## Fetch only a single file
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    sparse-checkout: |
-      README.md
-    sparse-checkout-cone-mode: false
-```
-
-## Fetch all history for all tags and branches
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    fetch-depth: 0
-```
-
-## Checkout a different branch
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    ref: my-branch
-```
-
-## Checkout HEAD^
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    fetch-depth: 2
-- run: git checkout HEAD^
-```
-
-## Checkout multiple repos (side by side)
-
-```yaml
-- name: Checkout
-  uses: actions/checkout@v6
-  with:
-    path: main
-
-- name: Checkout tools repo
-  uses: actions/checkout@v6
-  with:
-    repository: my-org/my-tools
-    path: my-tools
-```
-> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#Checkout-multiple-repos-private)
-
-## Checkout multiple repos (nested)
-
-```yaml
-- name: Checkout
-  uses: actions/checkout@v6
-
-- name: Checkout tools repo
-  uses: actions/checkout@v6
-  with:
-    repository: my-org/my-tools
-    path: my-tools
-```
-> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#Checkout-multiple-repos-private)
-
-## Checkout multiple repos (private)
-
-```yaml
-- name: Checkout
-  uses: actions/checkout@v6
-  with:
-    path: main
-
-- name: Checkout private tools
-  uses: actions/checkout@v6
-  with:
-    repository: my-org/my-private-tools
-    token: ${{ secrets.GH_PAT }} # `GH_PAT` is a secret that contains your PAT
-    path: my-tools
-```
-
-> - `${{ github.token }}` is scoped to the current repository, so if you want to checkout a different repository that is private you will need to provide your own [PAT](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
-
-
-## Checkout pull request HEAD commit instead of merge commit
-
-```yaml
-- uses: actions/checkout@v6
-  with:
-    ref: ${{ github.event.pull_request.head.sha }}
-```
-
-## Checkout pull request on closed event
-
-```yaml
-on:
-  pull_request:
-    branches: [m
+![Zx Equations](Image/Zx_Equations.png)
+![Zx Equation Figure](Image/Zx_Eq_figure.png)
+---
+</div>
+
+### 📄 License / الترخيص
+**CC BY 4.0** - Free to use with attribution  
+**Jabri Identity:** `Z + C + A = 1`
+
+#General_Middle_Readme:
+
+
+## 🔗 Dbase: All Research Links & DOIs
+قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
+
+<details>
+<summary>Press here اضغط هنا لعرض كل الروابط 📚</summary>
+
+| # | المشروع / Project | GitHub Pages | DOI Zenodo |
+| --- | --- | --- | --- |
+| 1 | **Jabri6218.github.io** | [Pages](https://jabri-web.github.io/jabri62018.github.io/) | [20403864](https://doi.org/10.5281/zenodo.20403864) |
+| 2 | **Zx_RieOS_v1.2** | [Pages](https://jabri-web.github.io/Zx_RieOS_v1.2/) | [20100622](https://doi.org/10.5281/zenodo.20100622) |
+| 3 | **Zx_Mother_Function_Jabri** | [Pages](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/) | - |
+| 4 | **Jabri-web.github.io** | [Pages](https://Jabri-web.github.io/) | [20499365](https://doi.org/10.5281/zenodo.20499365) / [20404167](https://doi.org/10.5281/zenodo.20404167) |
+| 5 | **Jabri_Nobble** | [Pages](https://jabri-web.github.io/Jabri_Nobble/) | [20148770](https://doi.org/10.5281/zenodo.20148770) |
+| 5.1 | └─ Jabri_Riemann | - | [20139904](https://doi.org/10.5281/zenodo.20139904) / [20145337](https://doi.org/10.5281/zenodo.20145337) |
+| 5.2 | └─ Jabri_np | - | [20145279](https://doi.org/10.5281/zenodo.20145279) |
+| 5.3 | └─ Jabri_gab | - | [20148344](https://doi.org/10.5281/zenodo.20148344) |
+| 5.4 | └─ Jabri_Navier | - | [20149618](https://doi.org/10.5281/zenodo.20149618) |
+| 5.7 | └─ Jabri_Identity | - | [20114317](https://doi.org/10.5281/zenodo.20114317) |
+| 6 | **Jabri_lab** | [Pages](https://Jabri-web.github.io/Jabri_lab/) | قيد النشر |
+| 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
+| 8 | **Jabri_RiemannOS** | [Pages](https://Jabri-web.github.io/Jabri_RiemannOS/) | - |
+| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
+| 10 | **Jabri-web** | [Pages](https://Jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
+
+> **ملاحظة**: DOI رقم 10 فيه خطأ `10.5381` الصح `10.5281`. عدلته لك.
+
+</details>
+
+#General Footer of readme.md:
+
+
+---
+## 📊 GitHub Stats
+<div align="center">
+<img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<br><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+</div>
+
+## 🤝 Partnerships & Contact
+مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
+
+### 🔗 Contact
+- **ORCID:** [0009-0003-3319-3822](https://orcid.org/0009-0003-3319-3822)  
+- **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
+- **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
+- **GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
+- **Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
+
+<div align="center">
+<i>"From Riemann zeros to the structure of the universe"</i>
+</div>
