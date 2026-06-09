@@ -1,21 +1,20 @@
-#general README.md
-#file= README.md
-#repo=Jabri-web
+#file=README.md
+#repo= Jabri-web
+
+#General header of readm.md;
+
 <div align="center" style="background:#000; padding:30px; border-radius:15px; color:#e0e0e0">
-# Jabri-web
 
-<div align="center">
-
-<img src="/Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
+<img src="Image/Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
 ### م. عبدالله محمد ناصر الجبري
 **Independent Researcher in Mathematics & Theoretical Physics**  
-**باحث مستقل في الرياضيات والفيزياء النظرية**
+**باحث مستقل في الرياضيات والفيزياء النظرية**  
 **Research Focus:** Zx Function & Millennium Problems  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
-[[ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
+[![ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
 
 [![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
@@ -23,56 +22,21 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
 [![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
+
 ### 🏆 Achievements / الإنجازات
 [![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 [![Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
----
-![Zx Equations](Zx_Equations.png)
-![Zx Equation Figure](Zx_Eq_figure.png)
 
-[![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 ---
-
+![Zx Equations](Image/Zx_Equations.png)
+![Zx Equation Figure](Image/Zx_Eq_figure.png)
+---
 </div>
 
 ### 📄 License / الترخيص
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
-## 📚 Main Repositories / المستودعات الرئيسية
-
-1. **[jabri_lab](https://Jabri-web.github.io/jabri_lab/)** - Zx function & Millennium Problems  
-2. **[Jabri_Nobble](https://Jabri-web.github.io/Jabri_Nobble/)** - Zx_RiemannOS archive  
-3. **[Zx_RiemannOS](https://Jabri-web.github.io/Zx_RiemannOS/)** - Riemann hypothesis framework  
-4. **[Zx_RieOS_v1.2](https://Jabri-web.github.io/Zx_RieOS_v1.2/)** - v1.2 improved algorithms  
-5. **[Zx_RieOS_v1.1](https://Jabri-web.github.io/Zx_RieOS_v1.1/)** - v1.1 numerical validation  
-6. **[Zx_Mother_Function_Jabri](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/)** - Core theory  
-7. **[Jabri_Checkout](https://Jabri-web.github.io/Jabri_Checkout/)** - Testing scripts  
-
-## 📑 Published Papers with DOI
-
-1. **Riemann Hypothesis** - [10.5281/zenodo.20139904](https://doi.org/10.5281/zenodo.20139904)  
-2. **P vs NP** - [10.5281/zenodo.20145279](https://doi.org/10.5281/zenodo.20145279)  
-3. **Yang-Mills Mass Gap** - [10.5281/zenodo.20148344](https://doi.org/10.5281/zenodo.20148344)  
-4. **Navier-Stokes** - [10.5281/zenodo.20149618](https://doi.org/10.5281/zenodo.20149618)  
-5. **Zx_RiemannOS v1.3** - [10.5281/zenodo.20145337](https://doi.org/10.5281/zenodo.20145337)  
-6. **Jabri Identity** - [10.5281/zenodo.20114317](https://doi.org/10.5281/zenodo.20114317)  
-7. **Zx_RieOS v1.2 Gold** - [10.5281/zenodo.20100622](https://doi.org/10.5281/zenodo.20100622)  
-8. **Zx_RieOS v1.1** - [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594)  
-
-<div align="center">
-<strong>From Sana'a to the Universe / من صنعاء إلى الكون 🇾🇪</strong>
-</div>
-
-![Visitors](https://komarev.com/ghpvc/?username=Jabri-web&label=Visitors&color=0e75b6&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Jabri-web?style=flat-square&color=0e75b6)
-![Followers](https://img.shields.io/github/followers/Jabri-web?style=flat-square&color=0e75b6)
-
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
-
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web/Jabri-web)
-
-#______________________
 #General_Middle_Readme:
 
 
@@ -103,7 +67,11 @@
 > **ملاحظة**: DOI رقم 10 فيه خطأ `10.5381` الصح `10.5281`. عدلته لك.
 
 </details>
-#__________________
+
+#General Footer of readme.md:
+
+
+---
 ## 📊 GitHub Stats
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
@@ -113,14 +81,13 @@
 
 ## 🤝 Partnerships & Contact
 مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
-## 🔗 Contact
-- **ORCID:** [0009-0001-1319-3622](https://orcid.org/0009-0001-1319-3622)  
+
+### 🔗 Contact
+- **ORCID:** [0009-0003-3319-3822](https://orcid.org/0009-0003-3319-3822)  
 - **Email:** [jabri.2018@gmail.com](mailto:jabri.2018@gmail.com)  
 - **Website:** [Jabri-web.github.io](https://Jabri-web.github.io)
-- **Website:** [Jabri-web.github.io/jabri62018.github.io](https://Jabri-web.github.io/jabri62018.github.io)
-
-**GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
-**Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
+- **GitHub:** [View All Repositories](https://github.com/Jabri-web?tab=repositories)  
+- **Sponsor:** [Become a sponsor](https://github.com/sponsors/Jabri-web)
 
 <div align="center">
 <i>"From Riemann zeros to the structure of the universe"</i>
