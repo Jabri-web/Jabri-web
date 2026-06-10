@@ -3,10 +3,10 @@
 <img src="Image/Jabri-photo.png" width="150" height="150" style="border-radius:50%; border:4px solid #6ae3ff;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
-### م. عبدالله محمد ناصر الجبري
+### 賲. 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷
 
 **Independent Researcher in Mathematics & Theoretical Physics**  
-**باحث مستقل في الرياضيات والفيزياء النظرية**
+**亘丕丨孬 賲爻鬲賯賱 賮賷 丕賱乇賷丕囟賷丕鬲 賵丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞**
 
 **Research Focus:** Zx Function & Millennium Problems
 
@@ -20,7 +20,7 @@
 
 ---
 
-## 🧮 Zx Function - The Universal Equation
+## 馃М Zx Function - The Universal Equation
 
 ```python
 # Zx Function Code
