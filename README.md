@@ -34,12 +34,15 @@
 **CC BY 4.0** - Free to use with attribution  
 **Jabri Identity:** `Z + C + A = 1`
 
+
+#_____________________________
+
+
 ## 🔗 Dbase: All Research Links & DOIs
 قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
 <details>
-  
-  #______________________________
+
   
 <summary><b>🚀 Press here / اضغط هنا لعرض كل الروابط 📚</b></summary>
 
