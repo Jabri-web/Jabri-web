@@ -3,10 +3,10 @@
 <img src="Image/Jabri-photo.png" width="150" height="150" style="border-radius:50%; border:4px solid #6ae3ff;">
 
 # Eng. Abdulla Mohammed Nasser Al-Jabri
-### 賲. 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷
+### م. عبدالله محمد ناصر الجبري
 
 **Independent Researcher in Mathematics & Theoretical Physics**  
-**亘丕丨孬 賲爻鬲賯賱 賮賷 丕賱乇賷丕囟賷丕鬲 賵丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞**
+**باحث مستقل في الرياضيات والفيزياء النظرية**
 
 **Research Focus:** Zx Function & Millennium Problems
 
@@ -16,8 +16,11 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
 
+</div>
 
-## 馃М Zx Function - The Universal Equation
+---
+
+## 🧮 Zx Function - The Universal Equation
 
 ```python
 # Zx Function Code
@@ -27,5 +30,3 @@ Z(x) = x**5 * log(x) * sin(2*pi/x) * exp(-x/x_p)
 A(x) = (x/x_p)**2 * exp(-x/x_p)  
 C(x) = 1 - Z(x) - A(x)
 Z_t = Z + C + A = 1
-
-</div>
