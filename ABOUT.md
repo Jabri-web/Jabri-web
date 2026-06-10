@@ -6,7 +6,7 @@
 
 <div align="center" style="background:#000;padding:20px;border-radius:12px">
 
-<img src="Jabri_photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; background:#000">
+<img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; background:#000">
 
 <h1 style="color:#6ae3ff">Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
 <h3 style="color:#e0e0e0">م. عبدالله محمد ناصر الجبري</h3>
