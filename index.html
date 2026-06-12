@@ -1,124 +1,127 @@
 <!DOCTYPE html>
-<!General index.html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سندباد اليمن - البوابة العامة</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<title>بوابة عبدالله عبدالله - P4 Gateway</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;padding:15px;font-family:'Cairo',Tahoma,sans-serif;background:#f5f7fa;color:#000}
-header{background:linear-gradient(135deg,#0a3d62,#1e6f9f);color:white;text-align:center;padding:25px 10px;border-radius:15px;margin-bottom:20px}
-header img{width:80px;height:80px;border-radius:50%;border:3px solid #00ff88;display:block;margin:0 auto 15px;object-fit:cover}
-h2{text-align:center;color:#0a3d62;margin:20px 0 10px;font-size:22px}
-.group{margin:20px 0;padding:15px;background:white;border-radius:12px;border:2px solid #ddd}
-.group-title{font-size:18px;font-weight:bold;color:#c62828;text-align:center;margin-bottom:12px}
-.repo-btn{display:flex;justify-content:space-between;align-items:center;width:100%;margin:10px 0;padding:18px;background:#000;color:#fff;font-size:16px;font-weight:bold;border-radius:12px;text-decoration:none;transition:0.3s;border:2px solid #000}
-.repo-btn:hover{background:linear-gradient(135deg,#00ffc8,#00b894);border-color:#00ffc8}
-.current-btn{background:linear-gradient(135deg,#ff6b6b,#c62828);border-color:#ff6b6b;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,107,107,0.4)}50%{box-shadow:0 0 0 12px rgba(255,107,107,0)}}
-.hidden{display:none!important}
-footer{background:#0a3d62;color:white;text-align:center;padding:15px;margin-top:25px;border-radius:12px;font-size:14px}
-.library-section{margin-top:40px;padding:25px;background:linear-gradient(135deg,#0a3d62,#1e6f9f);border-radius:15px;color:white}
-.library-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px}
-.lib-card{padding:20px;background:rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:white;text-align:center;transition:0.3s;border:2px solid rgba(0,255,136,0.3)}
-.lib-card:hover{background:rgba(0,255,136,0.2);transform:translateY(-5px)}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Cairo', Tahoma, Arial;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 30px 0;
+    letter-spacing: 3px;
+}
+.logo span { color: #ff3333; }
+h1 { 
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.current {
+    background: #ff3333;
+    border: 2px solid #ff6666;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 400px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px #ff3333; }
+    50% { box-shadow: 0 0 40px #ff6666; }
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.btn {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    color: #fff;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+}
+.btn:hover {
+    background: #2a2a2a;
+    border-color: #ff3333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,51,51,0.3);
+}
+.section-title {
+    font-size: 22px;
+    margin: 50px 0 20px;
+    color: #ff3333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.datetime {
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+}
 </style>
 </head>
 <body>
-<header>
-<img src="Yemen-bird.png" alt="طائر اليمن">
-<h1 style="margin:0;font-size:24px">Republic of Yemen</h1>
-<p style="margin:5px 0 0 0;opacity:0.9">Z + C + A = 1 | Riemann zeta & Cosmology</p>
-</header>
 
-<h2>👁️ سندباد اليمن - البوابة العامة 1→10 👁️</h2>
-<p style="text-align:center;color:#555;font-weight:bold;margin-bottom:20px">م/عبدالله الجبري</p>
+<div class="logo">Z<span>+</span>C<span>+</span>A<span>=</span>1</div>
+<h1>بوابة عبدالله عبدالله الرئيسية</h1>
 
-<a id="current-page-btn" href="#" class="repo-btn current-btn hidden">جاري الكشف...</a>
-
-<div class="group">
-<div class="group-title">المشاريع الأساسية 1→10</div>
-<div id="repos-1-10"></div>
+<div class="current">
+    الصفحة الحالية<br>
+    <b>جاري الكشف عن الشفرة...</b>
 </div>
 
-<!-- قسم مكتبي وبحوثي -->
-<div class="library-section">
-<h2 style="color:#00ff88;text-align:center;margin-bottom:10px">📚 مكتبي وبحوثي</h2>
-<p style="text-align:center;opacity:0.9">Z + C + A = 1 | Riemann zeta & Cosmology</p>
-<div class="library-grid">
-<a href="Page4.html" class="lib-card">
-<h3>📄 المكتب الرئيسي</h3>
-<p>الأبحاث والمعادلات</p>
-</a>
-<a href="Page1.html" class="lib-card">
-<h3>🧮 سندس النظرية</h3>
-<p>المعادلة الموحدة</p>
-</a>
-<a href="Sindbad.html" class="lib-card">
-<h3>🧭 سندباد</h3>
-<p>رحلة الاكتشاف</p>
-</a>
-<a href="Yemen-library.html" class="lib-card">
-<h3>🏛️ المكتبة اليمنية</h3>
-<p>تراث ومعرفة</p>
-</a>
-</div>
+<h2 class="section-title">المشاريع الأساسية 1→10</h2>
+<div class="grid">
+    <a href="Page1.html" class="btn">1. سندباد اليمن</a>
+    <a href="Page2.html" class="btn">2. طائر اليمن</a>
+    <a href="Page3.html" class="btn">3. عنكبوت اليمن</a>
+    <a href="Page4.html" class="btn">4. مكتبي وبحوثي</a>
+    <a href="Page5.html" class="btn">5. مشروع 5</a>
+    <a href="Page6.html" class="btn">6. مشروع 6</a>
+    <a href="Page7.html" class="btn">7. مشروع 7</a>
+    <a href="Page8.html" class="btn">8. مشروع 8</a>
+    <a href="Page9.html" class="btn">9. مشروع 9</a>
+    <a href="Page10.html" class="btn">10. مشروع 10</a>
 </div>
 
-<footer>
-<p style="margin:5px">© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
-<p style="margin:5px">صنع بحب في اليمن 🇾🇪</p>
-</footer>
+<h2 class="section-title">مكتبي وبحوثي</h2>
+<div class="grid">
+    <a href="Page4.html" class="btn">المكتب الرئيسي</a>
+    <a href="Page4.html#sandas" class="btn">سندس النظرية</a>
+    <a href="Page4.html#library" class="btn">المكتبة اليمنية</a>
+    <a href="Page1.html" class="btn">سندباد اليمن</a>
+</div>
+
+<div class="datetime" id="dt"></div>
 
 <script>
-try {
-const path = window.location.pathname.toLowerCase();
-let currentPage = "index";
-if(path.includes("page1")) currentPage = "page1";
-else if(path.includes("page2")) currentPage = "page2";
-else if(path.includes("page3")) currentPage = "page3";
-else if(path.includes("page4")) currentPage = "page4";
-else if(path.includes("page5")) currentPage = "page5";
-else if(path.includes("page6")) currentPage = "page6";
-else if(path.includes("page7")) currentPage = "page7";
-else if(path.includes("page8")) currentPage = "page8";
-else if(path.includes("page9")) currentPage = "page9";
-else if(path.includes("page10")) currentPage = "page10";
-
-const pages = {
-"page1": {id:1, name:"سندباد اليمن", url:"Page1.html"},
-"page2": {id:2, name:"طائر اليمن", url:"Page2.html"},
-"page3": {id:3, name:"عنكبوت اليمن", url:"Page3.html"},
-"page4": {id:4, name:"مكتبي وبحوثي", url:"Page4.html"},
-"page5": {id:5, name:"أرشيف نوبل", url:"Page5.html"},
-"page6": {id:6, name:"مختبر الجبري", url:"Page6.html"},
-"page7": {id:7, name:"RieOS v1.1", url:"Page7.html"},
-"page8": {id:8, name:"RiemannOS", url:"Page8.html"},
-"page9": {id:9, name:"Jabri Checkout", url:"Page9.html"},
-"page10": {id:10, name:"Jabri-web", url:"Page10.html"}
-};
-
-const btn = document.getElementById('current-page-btn');
-if(currentPage!== "index" && pages[currentPage]) {
-btn.classList.remove('hidden');
-btn.href = pages[currentPage].url;
-btn.innerHTML = `<span style="flex:1;text-align:right">📍 ${pages[currentPage].name} - الصفحة الحالية</span><span style="font-size:20px">${pages[currentPage].id}</span>`;
+function updateTime() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+    document.getElementById('dt').innerHTML = now.toLocaleDateString('ar-EG', options);
 }
-
-const container = document.getElementById('repos-1-10');
-for(let i=1; i<=10; i++) {
-const key = Object.keys(pages).find(k => pages[k].id === i);
-if(key && key!== currentPage) {
-const p = pages[key];
-const a = document.createElement('a');
-a.href = p.url;
-a.className = "repo-btn";
-a.innerHTML = `<span style="flex:1;text-align:right">${p.name}</span><span style="font-size:20px;opacity:0.9">${p.id}</span>`;
-container.appendChild(a);
-}
-} catch(e) {console.error(e)}
+updateTime();
+setInterval(updateTime, 60000);
 </script>
+
 </body>
 </html>
