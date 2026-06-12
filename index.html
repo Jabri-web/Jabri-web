@@ -3,36 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بوابة عبدالله عبدالله - P4 Gateway</title>
+<title>بوابة عبدالله عبدالله | Abdullah Gateway - P4</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     background: #0a0a0a;
     color: #fff;
-    font-family: 'Cairo', Tahoma, Arial;
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Arial;
     text-align: center;
     padding: 20px;
     min-height: 100vh;
+    transition: 0.3s;
+}
+body.en { direction: ltr; font-family: 'Segoe UI', Arial; }
+.lang-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ff3333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
 }
 .logo {
     font-size: 48px;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 40px 0 20px;
     letter-spacing: 3px;
 }
 .logo span { color: #ff3333; }
-h1 { 
-    font-size: 24px; 
-    margin-bottom: 10px;
-    color: #ccc;
-}
+h1 { font-size: 24px; margin-bottom: 10px; color: #ccc; }
+h1 small { display: block; font-size: 16px; color: #888; margin-top: 5px; }
 .current {
     background: #ff3333;
     border: 2px solid #ff6666;
     padding: 20px;
     border-radius: 15px;
     margin: 30px auto;
-    max-width: 400px;
+    max-width: 450px;
     animation: pulse 2s infinite;
 }
 @keyframes pulse {
@@ -41,9 +53,9 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
 }
 .btn {
@@ -62,7 +74,6 @@ h1 {
     background: #2a2a2a;
     border-color: #ff3333;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255,51,51,0.3);
 }
 .section-title {
     font-size: 22px;
@@ -77,47 +88,75 @@ h1 {
     color: #666;
     font-size: 14px;
 }
+.ar, .en { display: inline; }
+body.en .ar { display: none; }
+body:not(.en) .en { display: none; }
 </style>
 </head>
 <body>
 
+<button class="lang-btn" onclick="toggleLang()">
+    <span class="ar">EN</span>
+    <span class="en">عربي</span>
+</button>
+
 <div class="logo">Z<span>+</span>C<span>+</span>A<span>=</span>1</div>
-<h1>بوابة عبدالله عبدالله الرئيسية</h1>
+<h1>
+    <span class="ar">بوابة عبدالله عبدالله الرئيسية</span>
+    <span class="en">Abdullah Abdullah Main Gateway</span>
+    <small>
+        <span class="ar">P4 - بوابة المشاريع 1→10</span>
+        <span class="en">P4 - Projects Gateway 1→10</span>
+    </small>
+</h1>
 
 <div class="current">
-    الصفحة الحالية<br>
-    <b>جاري الكشف عن الشفرة...</b>
+    <span class="ar">الصفحة الحالية<br><b>جاري الكشف عن الشفرة...</b></span>
+    <span class="en">Current Page<br><b>Decoding in Progress...</b></span>
 </div>
 
-<h2 class="section-title">المشاريع الأساسية 1→10</h2>
+<h2 class="section-title">
+    <span class="ar">المشاريع الأساسية 1→10</span>
+    <span class="en">Core Projects 1→10</span>
+</h2>
 <div class="grid">
-    <a href="Page1.html" class="btn">1. سندباد اليمن</a>
-    <a href="Page2.html" class="btn">2. طائر اليمن</a>
-    <a href="Page3.html" class="btn">3. عنكبوت اليمن</a>
-    <a href="Page4.html" class="btn">4. مكتبي وبحوثي</a>
-    <a href="Page5.html" class="btn">5. مشروع 5</a>
-    <a href="Page6.html" class="btn">6. مشروع 6</a>
-    <a href="Page7.html" class="btn">7. مشروع 7</a>
-    <a href="Page8.html" class="btn">8. مشروع 8</a>
-    <a href="Page9.html" class="btn">9. مشروع 9</a>
-    <a href="Page10.html" class="btn">10. مشروع 10</a>
+    <a href="Page1.html" class="btn">1. <span class="ar">سندباد اليمن</span><span class="en">Sindbad Yemen</span></a>
+    <a href="Page2.html" class="btn">2. <span class="ar">طائر اليمن</span><span class="en">Yemen Bird</span></a>
+    <a href="Page3.html" class="btn">3. <span class="ar">عنكبوت اليمن</span><span class="en">Yemen Spider</span></a>
+    <a href="Page4.html" class="btn">4. <span class="ar">مكتبي وبحوثي</span><span class="en">My Office & Research</span></a>
+    <a href="Page5.html" class="btn">5. <span class="ar">مشروع 5</span><span class="en">Project 5</span></a>
+    <a href="Page6.html" class="btn">6. <span class="ar">مشروع 6</span><span class="en">Project 6</span></a>
+    <a href="Page7.html" class="btn">7. <span class="ar">مشروع 7</span><span class="en">Project 7</span></a>
+    <a href="Page8.html" class="btn">8. <span class="ar">مشروع 8</span><span class="en">Project 8</span></a>
+    <a href="Page9.html" class="btn">9. <span class="ar">مشروع 9</span><span class="en">Project 9</span></a>
+    <a href="Page10.html" class="btn">10. <span class="ar">مشروع 10</span><span class="en">Project 10</span></a>
 </div>
 
-<h2 class="section-title">مكتبي وبحوثي</h2>
+<h2 class="section-title">
+    <span class="ar">مكتبي وبحوثي</span>
+    <span class="en">My Office & Research</span>
+</h2>
 <div class="grid">
-    <a href="Page4.html" class="btn">المكتب الرئيسي</a>
-    <a href="Page4.html#sandas" class="btn">سندس النظرية</a>
-    <a href="Page4.html#library" class="btn">المكتبة اليمنية</a>
-    <a href="Page1.html" class="btn">سندباد اليمن</a>
+    <a href="Page4.html" class="btn"><span class="ar">المكتب الرئيسي</span><span class="en">Main Office</span></a>
+    <a href="Page4.html#sandas" class="btn"><span class="ar">سندس النظرية</span><span class="en">Sandas Theory</span></a>
+    <a href="Page4.html#library" class="btn"><span class="ar">المكتبة اليمنية</span><span class="en">Yemeni Library</span></a>
+    <a href="Page1.html" class="btn"><span class="ar">سندباد اليمن</span><span class="en">Sindbad Yemen</span></a>
 </div>
 
 <div class="datetime" id="dt"></div>
 
 <script>
+function toggleLang() {
+    document.body.classList.toggle('en');
+    localStorage.setItem('lang', document.body.classList.contains('en') ? 'en' : 'ar');
+}
+if(localStorage.getItem('lang') === 'en') document.body.classList.add('en');
+
 function updateTime() {
     const now = new Date();
+    const lang = document.body.classList.contains('en') ? 'en-US' : 'ar-EG';
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-    document.getElementById('dt').innerHTML = now.toLocaleDateString('ar-EG', options);
+    document.getElementById('dt').innerHTML = now.toLocaleDateString(lang, options);
 }
 updateTime();
 setInterval(updateTime, 60000);
