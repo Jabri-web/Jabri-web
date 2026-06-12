@@ -5,28 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>بوابة عبدالله عبدالله | Abdullah Gateway - P4</title>
 <style>
-/* كل ستايلك هنا زي ما هو */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Arial;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+body.en { direction: ltr; font-family: 'Segoe UI', Arial; }
+.lang-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ff3333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    letter-spacing: 3px;
+}
+.logo span { color: #ff3333; }
+h1 { font-size: 24px; margin-bottom: 10px; color: #ccc; }
+h1 small { display: block; font-size: 16px; color: #888; margin-top: 5px; }
+.current {
+    background: #ff3333;
+    border: 2px solid #ff6666;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 450px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px #ff3333; }
+    50% { box-shadow: 0 0 40px #ff6666; }
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.btn {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    color: #fff;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+}
+.btn:hover {
+    background: #2a2a2a;
+    border-color: #ff3333;
+    transform: translateY(-3px);
+}
+.section-title {
+    font-size: 22px;
+    margin: 50px 0 20px;
+    color: #ff3333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.datetime {
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+}
+.ar, .en { display: inline; }
+body.en .ar { display: none; }
+body:not(.en) .en { display: none; }
 </style>
 </head>
 <body>
 
-{% include header.html %}
+<button class="lang-btn" onclick="toggleLang()">
+    <span class="ar">EN</span>
+    <span class="en">عربي</span>
+</button>
 
-<!-- المحتوى حقك + الازرار -->
-<h1>بوابة عبدالله عبدالله</h1>
-<div class="grid">
-  <a href="..." target="_blank" class="btn">1. سندباد اليمن</a>
-</div>
-
-{% include footer.html %}
-
-<script>
-function toggleLang(){
-  document.body.classList.toggle('en');
-  document.documentElement.dir = document.body.classList.contains('en') ? 'ltr' : 'rtl';
-  localStorage.setItem('lang', document.body.classList.contains('en')?'en':'ar');
-}
-if(localStorage.getItem('lang')==='en') document.body.classList.add('en');
-</script>
-</body>
-</html>
