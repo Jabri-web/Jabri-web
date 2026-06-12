@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>爻賳丿亘丕丿 丕賱賷賲賳 - 丕賱亘賵丕亘丞 丕賱毓丕賲丞</title>
+<title>سندباد اليمن - البوابة العامة</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
 <style>
 * {box-sizing:border-box}
-body {margin:0; padding:15px; font-family:'Cairo',Tahoma; background:#f5f7fa; color:#000}
+body {margin:0; padding:15px; font-family:'Cairo',Tahoma,sans-serif; background:#f5f7fa; color:#000}
 header {
   background:linear-gradient(135deg,#0a3d62,#1e6f9f); color:white; text-align:center;
   padding:25px 10px; border-radius:15px; margin-bottom:20px
@@ -38,26 +38,26 @@ footer {background:#0a3d62; color:white; text-align:center; padding:15px; margin
 <body>
 
 <header>
-<img src="Yemen-bird.png" alt="胤丕卅乇 丕賱賷賲賳">
+<img src="Yemen-bird.png" alt="طائر اليمن">
 <h1 style="margin:0; font-size:24px">Republic of Yemen</h1>
 <p style="margin:5px 0 0 0; opacity:0.9">Z + C + A = 1 | Riemann zeta & Cosmology</p>
 </header>
 
-<h2>馃憗锔� 爻賳丿亘丕丿 丕賱賷賲賳 - 丕賱亘賵丕亘丞 丕賱毓丕賲丞 1鈫�10 馃憗锔�</h2>
-<p style="text-align:center; color:#555; font-weight:bold; margin-bottom:20px">賲/毓亘丿丕賱賱賴 丕賱噩亘乇賷</p>
+<h2>👁️ سندباد اليمن - البوابة العامة 1→10 👁️</h2>
+<p style="text-align:center; color:#555; font-weight:bold; margin-bottom:20px">م/عبدالله الجبري</p>
 
-<!-- 夭乇 丕賱氐賮丨丞 丕賱丨丕賱賷丞 -->
-<a id="current-page-btn" href="#" class="repo-btn current-btn hidden">噩丕乇賷 丕賱賰卮賮...</a>
+<!-- زر الصفحة الحالية -->
+<a id="current-page-btn" href="#" class="repo-btn current-btn hidden">جاري الكشف...</a>
 
 <!-- 1-10 -->
 <div class="group">
-<div class="group-title">丕賱賲卮丕乇賷毓 丕賱兀爻丕爻賷丞 1鈫�10</div>
+<div class="group-title">المشاريع الأساسية 1→10</div>
 <div id="repos-1-10"></div>
 </div>
 
 <footer>
-<p style="margin:5px">漏 2026 Yemen Sindbad - 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞</p>
-<p style="margin:5px">氐賳毓 亘丨亘 賮賷 丕賱賷賲賳 馃嚲馃嚜</p>
+<p style="margin:5px">© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
+<p style="margin:5px">صنع بحب في اليمن 🇾🇪</p>
 </footer>
 
 <script>
@@ -65,7 +65,6 @@ try {
   const path = window.location.pathname;
   let currentPage = "index";
 
-  // 賳毓乇賮 丕賱氐賮丨丞 丕賱丨丕賱賷丞 賲賳 丕賱乇丕亘胤
   if(path.includes("page1")) currentPage = "page1";
   else if(path.includes("page2")) currentPage = "page2";
   else if(path.includes("page3")) currentPage = "page3";
@@ -78,12 +77,12 @@ try {
   else if(path.includes("page10")) currentPage = "page10";
 
   const pages = {
-    "page1": {id:1, name:"爻賳丿亘丕丿 丕賱賷賲賳", url:"page1.html"},
-    "page2": {id:2, name:"胤丕卅乇 丕賱賷賲賳", url:"page2.html"},
-    "page3": {id:3, name:"毓賳賰亘賵鬲 丕賱賷賲賳", url:"page3.html"},
-    "page4": {id:4, name:"丕賱亘賵丕亘丞 丕賱乇卅賷爻賷丞", url:"index.html"},
-    "page5": {id:5, name:"兀乇卮賷賮 賳賵亘賱", url:"page5.html"},
-    "page6": {id:6, name:"賲禺鬲亘乇 丕賱噩亘乇賷", url:"page6.html"},
+    "page1": {id:1, name:"سندباد اليمن", url:"page1.html"},
+    "page2": {id:2, name:"طائر اليمن", url:"page2.html"},
+    "page3": {id:3, name:"عنكبوت اليمن", url:"page3.html"},
+    "page4": {id:4, name:"البوابة الرئيسية", url:"index.html"},
+    "page5": {id:5, name:"أرشيف نوبل", url:"page5.html"},
+    "page6": {id:6, name:"مختبر الجبري", url:"page6.html"},
     "page7": {id:7, name:"RieOS v1.1", url:"page7.html"},
     "page8": {id:8, name:"RiemannOS", url:"page8.html"},
     "page9": {id:9, name:"Jabri Checkout", url:"page9.html"},
@@ -92,27 +91,24 @@ try {
 
   const btn = document.getElementById('current-page-btn');
 
-  // 丕賱夭乇 丕賱兀丨賲乇 賷馗賴乇 亘爻 賱賵 丕丨賳丕 丿丕禺賱 pageX.html
   if(currentPage!== "index" && pages[currentPage]) {
     btn.classList.remove('hidden');
     btn.href = pages[currentPage].url;
-    btn.innerHTML = `<span style="flex:1;text-align:right">馃搷 ${pages[currentPage].name} - 丕賱氐賮丨丞 丕賱丨丕賱賷丞</span><span style="font-size:20px">${pages[currentPage].id}</span>`;
+    btn.innerHTML = `<span style="flex:1;text-align:right">📍 ${pages[currentPage].name} - الصفحة الحالية</span><span style="font-size:20px">${pages[currentPage].id}</span>`;
   }
 
-  // 亘賳丕亍 丕賱兀夭乇丕乇 1鈫�10
   const container = document.getElementById('repos-1-10');
   for(let i=1; i<=10; i++) {
     const key = Object.keys(pages).find(k => pages[k].id === i);
     if(key && key!== currentPage) {
       const p = pages[key];
       const a = document.createElement('a');
-      a.href = p.url; // page1.html, page2.html... 亘丿賵賳 https://x/
+      a.href = p.url;
       a.className = "repo-btn";
       a.innerHTML = `<span style="flex:1;text-align:right">${p.name}</span><span style="font-size:20px;opacity:0.9">${p.id}</span>`;
       container.appendChild(a);
     }
   }
-
 } catch(e) {console.error(e)}
 </script>
 
