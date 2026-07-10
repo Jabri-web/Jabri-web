@@ -9,6 +9,7 @@
 
 ###🇾🇪 م. عبدالله محمد ناصر الجبري
 
+Bachelore of Science in Comuter Engineering...KFUP- KSA.
 **Independent Researcher in Mathematics & Theoretical Physics**  
 **باحث مستقل في الرياضيات والفيزياء النظرية**  
 **Research Focus:** Zx Function & Millennium Problems  
