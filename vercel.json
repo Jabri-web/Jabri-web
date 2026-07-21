@@ -9,5 +9,31 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/ar/:path*",
+      "destination": "/ar/:path*"
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/en/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/ar/",
+      "statusCode": 302
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "statusCode": 302
+    }
   ]
 }
