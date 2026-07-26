@@ -33,8 +33,8 @@ Bachelore of Science in Comuter Engineering...KFUP- KSA.
 [![Author CV](https://img.shields.io/badge/📄-السيرة_الذاتية_(CV)-6ae3ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jabri-web.github.io/Author-cv.html)
 [![Al-Waha](https://img.shields.io/badge/🌐-الواحة-00c8ff?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://example.com/al-waha)  <!-- استبدل الرابط الفعلي -->
 [![Google Scholar](https://img.shields.io/badge/🎓-Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=YOUR_ID)
-[![ResearchGate](https://img.shields.io/badge/🔬-ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/YOUR_PROFILE)
-[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_ID)
+[![ResearchGate](https://img.shields.io/badge/🔬-ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile)
+[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/feed)
 [![Vercel](https://img.shields.io/badge/⚡-Jabri‑com-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://jabri-com.vercel.app)
 
 ---
