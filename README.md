@@ -28,7 +28,8 @@ Bachelore of Science in Comuter Engineering...KFUP- KSA.
 [![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 [![Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
-### 🔗 الروابط الرئيسية / Key Links
+
+الروابط الرئيسية / Key Links
 Author CV](https://img.shields.io/badge/📄-السيرة_الذاتية_(CV)-6ae3ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jabri-web.github.io/Author-cv.html)
 [[Al-Waha](https://img.shields.io/badge/🌐-الواحة-00c8ff?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app)
 [[Google Scholar](https://img.shields.io/badge/🎓-Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=YOUR_ID)
@@ -43,6 +44,7 @@ Author CV](https://img.shields.io/badge/📄-السيرة_الذاتية_(CV)-6a
 ![Zx Equations](Image/Zx_Equations.png)
 ![Zx Equation Figure](Image/Zx_Eq_figure.png)
 ---
+
 </div>
 <div align="center"
 ### 📄 License / الترخيص
