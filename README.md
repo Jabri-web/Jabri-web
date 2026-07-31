@@ -1,17 +1,15 @@
 #General README.md  (النسخة الانجليزي )
 
 <meta charset="UTF-8">
-
-<!-- ===== شريط تبديل اللغة (النسخة العربية النشطة) ===== -->
+<!-- ===== شريط تبديل اللغة (النسخة الإنجليزية النشطة) ===== -->
 <div align="center" style="margin: 10px 0 20px 0; padding: 8px; background: #161b22; border-radius: 30px; display: inline-block; width: auto; border: 1px solid #30363d;">
-    <a href="./README.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
-        🇬🇧 English
+    <a href="./README.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
+        🇬🇧 English (Default)
     </a>
-    <a href="./README-AR.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
-        🇾🇪 العربية (الافتراضية)
+    <a href="./README-AR.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
+        🇾🇪 العربية
     </a>
 </div>
-<!-- ===== نهاية الشريط ===== -->
 
 <div align="center">
 
