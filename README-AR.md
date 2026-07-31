@@ -21,7 +21,7 @@
 
 ### 🇾🇪 Eng. Abdulla Mohammed Nasser Al-Jabri
 
-**بكالوريوس علوم في هندسة الحاسوب - جامعة الملك فهد للبترول والمعادن (KFUPM)**  
+**بكالوريوس علوم في هندسة الحاسوب - جامعة الملك فهد للبترول والمعادن**  
 **باحث مستقل في الرياضيات والفيزياء النظرية**  
 **مجال البحث:** دالة `Zx` ومسائل الألفية  
 **Research Focus:** `Zx` Function & Millennium Problems
@@ -78,11 +78,44 @@
     📖 ABOUT عن هذا الريبو
   </a>
 
-  <a href="./Dbase.html" style="background: linear-gradient(135deg, #f7971e, #ffd200); color: #0a0a0f; padding: 18px 45px; border-radius: 60px; text-decoration: none; font-weight: 900; font-size: 20px; display: inline-block; box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4); transition: 0.3s; border: 2px solid #ffffff30;">
+  <a href="#dbase" onclick="document.getElementById('dbase').open = !document.getElementById('dbase').open; return false;" style="background: linear-gradient(135deg, #f7971e, #ffd200); color: #0a0a0f; padding: 18px 45px; border-radius: 60px; text-decoration: none; font-weight: 900; font-size: 20px; display: inline-block; box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4); transition: 0.3s; border: 2px solid #ffffff30; cursor: pointer;">
     📊 قاعدة البيانات / Dbase
   </a>
 
 </div>
+
+---
+
+<!-- ===== الجدول المخفي (يُفتح بالزر أعلاه) ===== -->
+<details id="dbase">
+  <summary style="background: #1a1a2e; color: #6ae3ff; padding: 15px 30px; border-radius: 40px; font-weight: 700; font-size: 18px; cursor: pointer; border: 2px solid #6ae3ff; display: inline-block; list-style: none; margin: 0 auto; text-align: center;">
+    🔽 جميع المشاريع و الـ DOIs (11 مستودع)
+  </summary>
+
+  <br>
+
+| # | المشروع / Project | GitHub Pages | DOI Zenodo |
+| --- | --- | --- | --- |
+| 1 | **Jabri6218.github.io** | [Pages](https://jabri-web.github.io/jabri62018.github.io/) | [20403864](https://doi.org/10.5281/zenodo.20403864) |
+| 2 | **Zx_RieOS_v1.2** | [Pages](https://jabri-web.github.io/Zx_RieOS_v1.2/) | [20100622](https://doi.org/10.5281/zenodo.20100622) |
+| 3 | **Zx_Mother_Function_Jabri** | [Pages](https://Jabri-web.github.io/Zx_Mother_Function_Jabri/) | - |
+| 4 | **Jabri-web.github.io** | [Pages](https://Jabri-web.github.io/) | [20499365](https://doi.org/10.5281/zenodo.20499365) / [20404167](https://doi.org/10.5281/zenodo.20404167) |
+| 5 | **Jabri_Nobble** | [Pages](https://jabri-web.github.io/Jabri_Nobble/) | [20148770](https://doi.org/10.5281/zenodo.20148770) |
+| 5.1 | └─ Jabri_Riemann | - | [20139904](https://doi.org/10.5281/zenodo.20139904) / [20145337](https://doi.org/10.5281/zenodo.20145337) |
+| 5.2 | └─ Jabri_np | - | [20145279](https://doi.org/10.5281/zenodo.20145279) |
+| 5.3 | └─ Jabri_gab | - | [20148344](https://doi.org/10.5281/zenodo.20148344) |
+| 5.4 | └─ Jabri_Navier | - | [20149618](https://doi.org/10.5281/zenodo.20149618) |
+| 5.7 | └─ Jabri_Identity | - | [20114317](https://doi.org/10.5281/zenodo.20114317) |
+| 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | قيد النشر |
+| 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
+| 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
+| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
+| 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
+| 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
+
+> **تم التحقق 2026-07-31 بواسطة الجبري**: جميع الروابط و الـ DOIs محدثة.
+
+</details>
 
 ---
 
@@ -98,8 +131,6 @@
 
 <!-- ===== الفوتر (ثابت) ===== -->
 ## 🤝 الشراكات والتواصل
-مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
-
 - **ORCID:** [0009-0003-3319-3822](https://orcid.org/0009-0003-3319-3822)  
 - **البريد الإلكتروني:** [jabri62018@gmail.com](mailto:jabri62018@gmail.com)  
 - **الموقع:** [Jabri-web.github.io](https://Jabri-web.github.io) | [فيرسل](https://jabri-com.vercel.app)  
@@ -111,5 +142,28 @@
 </div>
 
 </div>
+
+<!-- ===== سكريبت بسيط لنسخ النص ===== -->
+<script>
+document.querySelectorAll('pre, code').forEach(el => {
+  if (el.parentElement.tagName !== 'BUTTON') {
+    const btn = document.createElement('button');
+    btn.innerText = '📋 نسخ';
+    btn.style.cssText = 'background:#6ae3ff;color:#0a0a0f;border:none;padding:2px 10px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:10px;';
+    btn.onclick = function(e) {
+      e.stopPropagation();
+      const text = el.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.innerText = '✅ تم النسخ!';
+        setTimeout(() => btn.innerText = '📋 نسخ', 2000);
+      });
+    };
+    el.parentElement.style.position = 'relative';
+    el.parentElement.style.display = 'inline-block';
+    el.parentElement.appendChild(btn);
+  }
+});
+</script>
+
 </body>
 </html>
