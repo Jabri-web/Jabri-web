@@ -8,7 +8,7 @@
         🇬🇧 English
     </a>
     <a href="./README-AR.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
-        🇸🇦 العربية (الافتراضية)
+        🇾🇪 العربية (الافتراضية)
     </a>
 </div>
 <!-- ===== نهاية الشريط ===== -->
