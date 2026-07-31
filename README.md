@@ -10,7 +10,7 @@
 <!-- ===== زر اللغة (في الأعلى) ===== -->
 <div align="left" style="margin-bottom:-40px;">
   <a href="./README-AR.md" style="background:#6ae3ff; color:#0a0a0f; padding:8px 20px; border-radius:30px; text-decoration:none; font-weight:bold; font-size:16px; display:inline-block; box-shadow:0 0 20px rgba(106,227,255,0.4);">
-    🇸🇦 العربية
+    🇸🇦🇾🇪 العربية
   </a>
 </div>
 
