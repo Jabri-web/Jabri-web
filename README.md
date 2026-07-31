@@ -1,4 +1,4 @@
-#General README-AR.md (النسخة العربية)
+#General README.md  (النسخة الانجليزي )
 
 <meta charset="UTF-8">
 
