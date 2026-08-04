@@ -34,7 +34,7 @@
 **باحث مستقل في الرياضيات والفيزياء النظرية**  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
-[[ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
+[[[[ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
 [[Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 [[Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=الزوار)](https://github.com/Jabri-web)
 [[GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
