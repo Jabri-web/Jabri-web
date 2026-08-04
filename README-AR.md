@@ -17,40 +17,50 @@
 
 <img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
-# م. عبدالله محمد ناصر الجبري
+# م. عبدالله محمد ناصر الجبري | Heaven Al-Jabri
+
+### 👋 عن الباحث
+- 🧭 **الباحث**: نظرية السندباد الموحدة (Z+C+A=1)  
+- 🏛️ **التراث**: أرشيفي رقمي لليمن (صنعاء، شبام، سقطرى)
+- 🎓 **التعليم**: بكالوريوس علوم الحاسب - جامعة الملك فهد للبترول والمعادن KFUPM
+- 🌐 **الموقع الرسمي**: [jabri-com.vercel.app](https://jabri-com.vercel.app/)
+- 📫 **للتواصل**: jabri62018@gmail.com
+- 🇾🇪 **الرسالة**: توثيق تراث اليمن + البحث النظري في الرياضيات والفيزياء
+
+---
 
 بكالوريوس علوم في هندسة الحاسوب... جامعة الملك فهد للبترول والمعادن - السعودية.
 
 **باحث مستقل في الرياضيات والفيزياء النظرية**  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
-[![ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
-[![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
-[![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=الزوار)](https://github.com/Jabri-web)
-[![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
-[![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
+[[ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
+[[Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[[Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=الزوار)](https://github.com/Jabri-web)
+[[GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
+[[GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
 
 ### 🏆 الإنجازات
-[![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
-[![Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[[YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[[Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
 # الروابط الأساسية
 
-[![CV](https://img.shields.io/badge/📄-السيرة_الذاتية-6ae3ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jabri-com.vercel.app/Author-cv.html)
-[![About](https://img.shields.io/badge/ℹ️-حول-5865F2?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app/about.html)
-[![Who We](https://img.shields.io/badge/👥-من_نحن-FF8C00?style=for-the-badge&logo=handshake&logoColor=white)](https://jabri-com.vercel.app/who-we.html)
-[![Source](https://img.shields.io/badge/📂-المصدر-2E8B57?style=for-the-badge&logo=files&logoColor=white)](https://jabri-com.vercel.app/source.html)
-[![Citations](https://img.shields.io/badge/📚-الاستشهادات-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://jabri-com.vercel.app/citations.html)
-[![Al-Waha](https://img.shields.io/badge/🌐-الواحة-00c8ff?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app)
-[![Heaven](https://img.shields.io/badge/✨-Heaven-FFD700?style=for-the-badge&logo=vercel&logoColor=black)](https://jabricom.vercel.app)
+[[CV](https://img.shields.io/badge/📄-السيرة_الذاتية-6ae3ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jabri-com.vercel.app/Author-cv.html)
+[[About](https://img.shields.io/badge/ℹ️-حول-5865F2?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app/about.html)
+[[Who We](https://img.shields.io/badge/👥-من_نحن-FF8C00?style=for-the-badge&logo=handshake&logoColor=white)](https://jabri-com.vercel.app/who-we.html)
+[[Source](https://img.shields.io/badge/📂-المصدر-2E8B57?style=for-the-badge&logo=files&logoColor=white)](https://jabri-com.vercel.app/source.html)
+[[Citations](https://img.shields.io/badge/📚-الاستشهادات-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://jabri-com.vercel.app/citations.html)
+[[Al-Waha](https://img.shields.io/badge/🌐-الواحة-00c8ff?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app)
+[[Heaven](https://img.shields.io/badge/✨-Heaven-FFD700?style=for-the-badge&logo=vercel&logoColor=black)](https://jabricom.vercel.app)
 
 # روابط المشروع
 
-[![Overleaf](https://img.shields.io/badge/📝-Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://overleaf.com/project)
-[![Zenodo](https://img.shields.io/badge/📦-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://zenodo.org/records/20513840)
-[![Google Colab](https://img.shields.io/badge/▶️-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
-[![ORCID](https://img.shields.io/badge/🆔-ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
-[![Wikipedia](https://img.shields.io/badge/🌐-Wikipedia-000?style=for-the-badge&logo=wikipedia&logoColor=white)](https://en.wikipedia.org/wiki/User:Jabri2026)
+[[Overleaf](https://img.shields.io/badge/📝-Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://overleaf.com/project)
+[[Zenodo](https://img.shields.io/badge/📦-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://zenodo.org/records/20513840)
+[[Google Colab](https://img.shields.io/badge/▶️-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
+[[ORCID](https://img.shields.io/badge/🆔-ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
+[[Wikipedia](https://img.shields.io/badge/🌐-Wikipedia-000?style=for-the-badge&logo=wikipedia&logoColor=white)](https://en.wikipedia.org/wiki/User:Jabri2026)
 
 ---
 ![Zx Equations](Image/Zx_Equations.png)
