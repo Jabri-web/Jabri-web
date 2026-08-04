@@ -9,7 +9,19 @@
 </div>
 
 ---
+## 👋 About the Researcher
 
+**Hello, I'm Abdulla Al-Jabri (Heaven Al-Jabri)**
+
+- 🧭 **Researcher**: Unified Sinbad Theory (Z+C+A=1)  
+- 🏛️ **Heritage**: Digital Archivist for Yemen (Sana'a, Shibam, Socotra)
+- 🎓 **Education**: B.Sc. Computer Science - KFUPM
+- 🌐 **Official Portfolio**: [jabri-com.vercel.app](https://jabri-com.vercel.app/)
+- 📫 **Contact**: jabri62018@gmail.com
+- 🔗 **ORCID**: [Add your ORCID link]
+- 🇾🇪 **Mission**: Documenting Yemeni Heritage + Theoretical Research in Math & Physics
+
+---
 # 📌 Repository Identity Card
 
 | Field | Details |
@@ -25,20 +37,17 @@
 | **Identity** | `Z + C + A = 1` |
 
 ---
-
 # 🌐 Jabri-web
 
 **The Main Router – Gateway to All Jabri-web GitHub Projects & Repositories**
 
 ---
-
 <div align="center">
   <img src="Image/Dar2.png" width="80%" style="border-radius: 12px; border: 2px solid #6ae3ff;" alt="Dar Al-Hajar, Yemen">
   <p><i>🏛️ Dar Al-Hajar, Yemen – The heritage that bridges the ancient past to the future of technology.</i></p>
 </div>
 
 ---
-
 ## 📖 About This Repository
 
 **Jabri-web** is the **primary router and gateway** for the entire Jabri-web GitHub organization. It serves as the central hub that aggregates, organizes, and directs visitors to all active repositories, from the `Zx_Mother_Function_Jabri` to `Jabri_Checkout`.
@@ -53,7 +62,6 @@
 - 🌍 **Bilingual** – Full Arabic and English support for global accessibility.
 
 ---
-
 ## 🗂️ Repository Structure
 
 | Directory / File | Description |
@@ -67,7 +75,6 @@
 | `LICENSE` | Full text of the CC BY 4.0 license. |
 
 ---
-
 ## 🔗 Complete List of Repositories & DOIs
 
 | # | Project | GitHub Pages | DOI Zenodo |
@@ -92,7 +99,6 @@
 > **Verified 2026-06-09 by Al-Jabri**: All links 1–11 are active. All DOIs are from `10.5281`. No changes after today.
 
 ---
-
 ## 📑 Published Papers with DOI
 
 | Paper | DOI |
@@ -107,7 +113,6 @@
 | Zx_RieOS v1.1 | [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594) |
 
 ---
-
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -117,7 +122,6 @@
 </div>
 
 ---
-
 ## 🔗 Quick Links
 
 - **Live Page:** [https://jabri-web.github.io/Jabri-web/](https://jabri-web.github.io/Jabri-web/)
@@ -128,14 +132,12 @@
 - **Author Profile:** [https://github.com/Jabri-web](https://github.com/Jabri-web)
 
 ---
-
 ## 📄 License
 
 **CC BY 4.0** – Free to use with attribution.  
 **Al-Jabri Identity:** `Z + C + A = 1`
 
 ---
-
 <div align="center">
 <i>"From Riemann zeros to the structure of the universe"</i>
 </div>
