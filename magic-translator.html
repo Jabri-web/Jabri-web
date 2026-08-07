@@ -39,10 +39,9 @@
 
 <script>
 // ======================================================================
-// 1. قاموس الترجمة - زود عليه براحتك
+// 1. قاموس الترجمة (زوده براحتك)
 // ======================================================================
 const DICT = {
-  // عام
   "Repository": "المستودع", "About": "حول", "Description": "الوصف",
   "Installation": "التثبيت", "Usage": "طريقة الاستخدام", "Features": "المميزات",
   "License": "الرخصة", "Contributing": "المساهمة", "Author": "المؤلف",
@@ -50,17 +49,15 @@ const DICT = {
   "Project Board": "لوحة المشروع", "Links": "الروابط", "Version": "الإصدار",
   "Clone": "استنساخ", "Run": "تشغيل", "Requirements": "المتطلبات",
   "Contact": "تواصل", "Example": "مثال", "Code": "الكود",
-  "DOI": "معرف الرقم", "Partnerships": "الشراكات", "License": "الترخيص",
-  
-  // GitHub خاصة
-  "Pull requests": "طلبات السحب", "Issues": "المشاكل", "Actions": "الإجراءات",
-  "Projects": "المشاريع", "Wiki": "الويكي", "Insights": "الرؤى",
-  "Settings": "الإعدادات", "Releases": "الإصدارات", "Packages": "الحزم",
-  "Contributors": "المساهمون", "README": "ملف التعريف", "Star": "نجمة",
-  "Fork": "تفرع", "Watch": "متابعة", "Commit": "التزام", "Branch": "فرع",
-  "Main": "رئيسي", "Merge": "دمج", "Create": "إنشاء", "Delete": "حذف",
-  "Edit": "تعديل", "Update": "تحديث", "Close": "إغلاق", "Reopen": "إعادة فتح",
-  "Assign": "تعيين", "Labels": "تسميات", "Milestones": "معالم", "Status": "الحالة",
+  "DOI": "معرف الرقم", "Partnerships": "الشراكات", "Pull requests": "طلبات السحب",
+  "Issues": "المشاكل", "Actions": "الإجراءات", "Projects": "المشاريع",
+  "Wiki": "الويكي", "Insights": "الرؤى", "Settings": "الإعدادات",
+  "Releases": "الإصدارات", "Packages": "الحزم", "Contributors": "المساهمون",
+  "README": "ملف التعريف", "Star": "نجمة", "Fork": "تفرع", "Watch": "متابعة",
+  "Commit": "التزام", "Branch": "فرع", "Main": "رئيسي", "Merge": "دمج",
+  "Create": "إنشاء", "Delete": "حذف", "Edit": "تعديل", "Update": "تحديث",
+  "Close": "إغلاق", "Reopen": "إعادة فتح", "Assign": "تعيين",
+  "Labels": "تسميات", "Milestones": "معالم", "Status": "الحالة",
   "Reviewers": "مراجعون", "File": "ملف", "Files": "ملفات", "Folder": "مجلد",
   "Directory": "دليل", "Raw": "خام", "Blame": "إلقاء اللوم", "History": "التاريخ",
   "Comment": "تعليق", "Comments": "تعليقات", "Reply": "رد", "Resolve": "حل",
@@ -68,20 +65,19 @@ const DICT = {
   "Collaborator": "متعاون", "Admin": "مدير", "Watchers": "متابعون",
   "Stargazers": "معطو النجمة", "Forks": "تفريعات", "Discussions": "المناقشات",
   "Security": "الأمان", "Deploy": "نشر", "Build": "بناء", "Test": "اختبار",
-  
-  // مشروع الجبري
-  "Unified Sinbad Theory": "نظرية السندباد الموحدة",
+  "Workflows": "سير العمل", "Security policy": "سياسة الأمان",
+  "Dependency graph": "رسم التبعيات", "Dependabot": "ديبندابوت",
+  "Code scanning": "فحص الكود", "Secrets": "أسرار", "Environments": "البيئات",
+  "Pages": "الصفحات", "Unified Sinbad Theory": "نظرية السندباد الموحدة",
   "Yemen Heritage": "تراث اليمن", "Al-Jabri Oasis": "واحة الجبري",
   "Heaven Al-Jabri": "واحة الجبري", "Research": "بحث", "Researcher": "باحث",
   "Digital Archivist": "أمين أرشيف رقمي", "Mission": "المهمة",
-  "Gateway": "بوابة", "Router": "موجه", "Dashboard": "لوحة التحكم",
-  "Archivist": "أمين أرشيف", "Framework": "إطار عمل"
+  "Gateway": "بوابة", "Router": "موجه", "Dashboard": "لوحة التحكم"
 };
 
 function translateText(text) {
   if (!text) return text;
   let result = text;
-  // نرتب الكلمات من الأطول للأقصر عشان ما نترجم كلمة جوه كلمة
   const keys = Object.keys(DICT).sort((a, b) => b.length - a.length);
   for (const en of keys) {
     const regex = new RegExp(`\\b${en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
@@ -91,29 +87,24 @@ function translateText(text) {
 }
 
 // ======================================================================
-// 2. قراءة الباراميترز من الرابط
+// 2. قراءة الباراميترز
 // ======================================================================
 const params = new URLSearchParams(window.location.search);
 let file = params.get('file') || 'README.md';
-const lang = params.get('lang') || 'ar';
+let lang = params.get('lang') || 'ar';   // ar or en
 
-// استخراج اسم المستخدم والريبو من الرابط الحالي
 const pathParts = window.location.pathname.split('/');
 const repo = pathParts[1] || 'Jabri-web';
 const username = 'Jabri-web';
 
-// إذا كان الملف يحتوي على -AR أو -EN نتعامل معه
-let rawFile = file;
-let isArabicFile = file.includes('-AR') || file.includes('_AR');
-
-// بناء الرابط الخام
-const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/${rawFile}`;
-const githubUrl = `https://github.com/${username}/${repo}/blob/main/${rawFile}`;
+// الرابط الخام للملف
+const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/${file}`;
+const githubUrl = `https://github.com/${username}/${repo}/blob/main/${file}`;
 
 document.getElementById('backBtn').href = githubUrl;
 
 // ======================================================================
-// 3. تحميل وعرض الملف
+// 3. تحميل وعرض المحتوى
 // ======================================================================
 async function load() {
   const contentDiv = document.getElementById('content');
@@ -124,33 +115,21 @@ async function load() {
     
     let md = await res.text();
     
-    // إذا كانت العربية والملف إنجليزي، نترجم
-    if (lang === 'ar' && !isArabicFile) {
+    // نصلح مسارات الصور (تجعلها مطلقة)
+    md = md.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, function(match, alt, src) {
+      return `![${alt}](https://raw.githubusercontent.com/${username}/${repo}/main/${src})`;
+    });
+    
+    // إذا كانت اللغة عربية، نترجم
+    if (lang === 'ar') {
       md = translateText(md);
       document.documentElement.dir = 'rtl';
       document.documentElement.lang = 'ar';
       document.getElementById('langBtn').innerHTML = '🇬🇧 English';
-      document.getElementById('langBtn').onclick = () => {
-        window.location.href = `?file=${file.replace('-AR', '').replace('_AR', '')}&lang=en`;
-      };
-    } else if (lang === 'en') {
+    } else {
       document.documentElement.dir = 'ltr';
       document.documentElement.lang = 'en';
       document.getElementById('langBtn').innerHTML = '🇸🇦 العربية';
-      document.getElementById('langBtn').onclick = () => {
-        // نحول إلى النسخة العربية
-        const arFile = file.replace('.md', '-AR.md').replace('.MD', '-AR.MD');
-        window.location.href = `?file=${arFile}&lang=ar`;
-      };
-    } else {
-      // عربي والملف عربي
-      document.documentElement.dir = 'rtl';
-      document.documentElement.lang = 'ar';
-      document.getElementById('langBtn').innerHTML = '🇬🇧 English';
-      document.getElementById('langBtn').onclick = () => {
-        const enFile = file.replace('-AR.md', '.md').replace('_AR.md', '.md');
-        window.location.href = `?file=${enFile}&lang=en`;
-      };
     }
     
     // تحويل Markdown إلى HTML
@@ -172,11 +151,19 @@ async function load() {
 }
 
 // ======================================================================
-// 4. تشغيل
+// 4. زر تبديل اللغة (بدون تغيير الملف، فقط lang)
+// ======================================================================
+document.getElementById('langBtn').onclick = function() {
+  const newLang = lang === 'ar' ? 'en' : 'ar';
+  window.location.href = `?file=${file}&lang=${newLang}`;
+};
+
+// ======================================================================
+// 5. التشغيل
 // ======================================================================
 load();
 
-console.log('🔮 المترجم السحري جاهز');
+console.log('🔮 المترجم السحري جاهز (نسخة مطورة)');
 console.log(`📄 الملف: ${file}`);
 console.log(`🌍 اللغة: ${lang}`);
 console.log(`🔗 الرابط الخام: ${rawUrl}`);
