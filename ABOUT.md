@@ -1,9 +1,10 @@
+<!-- ===== Language Switch Bar (English Active) ===== -->
 <div align="center" style="margin: 10px 0 20px 0; padding: 8px; background: #161b22; border-radius: 30px; display: inline-block; width: auto; border: 1px solid #30363d;">
-    <a href="https://jabri-web.github.io/Jabri-web/magic-translator.html?file=ABOUT.md&lang=en" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
-        🇬🇧 English
+    <a href="./ABOUT.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
+        🇬🇧 English (Default)
     </a>
-    <a href="./ABOUT-AR.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
-        🇾🇪 العربية (الافتراضية)
+    <a href="https://jabri-web.github.io/Jabri-web/magic-translator.html?file=ABOUT.md&lang=ar" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
+        🇾🇪 العربية
     </a>
 </div>
 
