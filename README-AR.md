@@ -1,3 +1,7 @@
+# General README-AR.md (النسخة العربية)
+
+<meta charset="UTF-8">
+
 <!-- ===== شريط تبديل اللغة (النسخة العربية النشطة) ===== -->
 <div align="center" style="margin: 10px 0 20px 0; padding: 8px; background: #161b22; border-radius: 30px; display: inline-block; width: auto; border: 1px solid #30363d;">
     <a href="./README.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
@@ -7,30 +11,19 @@
         🇾🇪 العربية 
     </a>
 </div>
+<!-- ===== نهاية الشريط ===== -->
 
 <div align="center">
 
 <img src="Image/Jabri-photo.png" width="140" height="140" style="border-radius:50%; border:4px solid #6ae3ff; object-fit:cover;">
 
-# م. عبدالله محمد ناصر الجبري | Heaven Al-Jabri
-
-### 👋 عن الباحث
-
-- 🧭 **الباحث**: نظرية السندباد الموحدة (Z+C+A=1)  
-- 🏛️ **التراث**: أرشيفي رقمي لليمن (صنعاء، شبام، سقطرى)
-- 🎓 **التعليم**: بكالوريوس علوم الحاسب - جامعة الملك فهد للبترول والمعادن KFUPM
-- 🌐 **الموقع الرسمي**: [jabri-com.vercel.app](https://jabri-com.vercel.app/)
-- 📫 **للتواصل**: jabri62018@gmail.com
-- 🇾🇪 **الرسالة**: توثيق تراث اليمن + البحث النظري في الرياضيات والفيزياء
-
----
+# م. عبدالله محمد ناصر الجبري
 
 بكالوريوس علوم في هندسة الحاسوب... جامعة الملك فهد للبترول والمعادن - السعودية.
 
 **باحث مستقل في الرياضيات والفيزياء النظرية**  
 **مجال البحث:** دالة Zx ومسائل الألفية
 
-<!-- ======= الشارات (الصيغة الصحيحة) ======= -->
 [![ORCID iD](https://img.shields.io/badge/ORCID-0009--0003--3319--3822-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0003-3319-3822)
 [![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 [![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=الزوار)](https://github.com/Jabri-web)
@@ -38,11 +31,10 @@
 [![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
 
 ### 🏆 الإنجازات
+[![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
+[![Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 
-[![YOLO Explorer](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
-[![Arctic Code Vault](https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
-
-### 🔗 الروابط الأساسية
+# الروابط الأساسية
 
 [![CV](https://img.shields.io/badge/📄-السيرة_الذاتية-6ae3ff?style=for-the-badge&logo=readthedocs&logoColor=white)](https://jabri-com.vercel.app/Author-cv.html)
 [![About](https://img.shields.io/badge/ℹ️-حول-5865F2?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app/about.html)
@@ -52,7 +44,7 @@
 [![Al-Waha](https://img.shields.io/badge/🌐-الواحة-00c8ff?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://jabri-com.vercel.app)
 [![Heaven](https://img.shields.io/badge/✨-Heaven-FFD700?style=for-the-badge&logo=vercel&logoColor=black)](https://jabricom.vercel.app)
 
-### 📦 روابط المشروع
+# روابط المشروع
 
 [![Overleaf](https://img.shields.io/badge/📝-Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://overleaf.com/project)
 [![Zenodo](https://img.shields.io/badge/📦-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://zenodo.org/records/20513840)
@@ -65,21 +57,18 @@
 ![Zx Equation Figure](Image/Zx_Eq_figure.png)
 ---
 
+</div>
+<div align="center">
 ### 📄 الترخيص
-
 **CC BY 4.0** - Free to use with attribution  
 **هوية الجبري:** `Z + C + A = 1`
 
-</div>
-
----
-
 ## 🔗 Dbase: قاعدة بيانات جميع الروابط و DOIs
-
 قاعدة بيانات جميع مشاريع Zx + الروابط + الـ DOI
 
 <details>
 <summary><b>🚀 اضغط هنا لعرض كل الروابط 📚</b></summary>
+<br>
 
 | # | المشروع | GitHub Pages | DOI Zenodo |
 | --- | --- | --- | --- |
@@ -96,7 +85,7 @@
 | 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | قيد النشر |
 | 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
 | 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
-| 9 | **Jabri_Checkout** | [Pages](https://jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
+| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
 | 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
 
@@ -104,30 +93,24 @@
 
 </details>
 
----
-
 ## 📘 حول هذا الريبو
-
 <div align="center">
-  <a href="./ABOUT.md">
-    <img src="https://img.shields.io/badge/حول%20هذا%20الريبو-6ae3ff?style=for-the-badge&logo=book&logoColor=white"/>
-  </a>
+<a href="./ABOUT.md">
+  <img src="https://img.shields.io/badge/حول%20هذا%20الريبو-6ae3ff?style=for-the-badge&logo=book&logoColor=white"/>
+</a>
 </div>
 
 ## 📊 إحصائيات GitHub
-
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
-  <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+<img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<br><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
 </div>
 
 ## 🤝 الشراكات والتواصل
-
 مهتم بشراكة بحثية أو إعلان مدفوع؟ تواصل معي:
 
 ### 🔗 للتواصل
-
 - **ORCID:** [0009-0003-3319-3822](https://orcid.org/0009-0003-3319-3822)  
 - **البريد الإلكتروني:** [jabri62018@gmail.com](mailto:jabri62018@gmail.com)  
 - **الموقع:** [Jabri-web.github.io](https://Jabri-web.github.io)
@@ -135,8 +118,7 @@
 - **GitHub:** [عرض جميع المستودعات](https://github.com/Jabri-web?tab=repositories)  
 - **دعم مالي:** [كن راعياً](https://github.com/sponsors/Jabri-web)
 
----
-
 <div align="center">
-  <i>"From Riemann zeros to the structure of the universe"</i>
+<i>"From Riemann zeros to the structure of the universe"</i>
+</div>
 </div>
