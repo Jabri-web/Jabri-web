@@ -95,7 +95,7 @@ Database of all Zx projects + Links + DOI
 | 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
 | 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
-| 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
+| 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/Jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
 
 > **Verified 2026-06-09 by Al-Jabri**: All links 1-11 are working. All DOI `10.5281`. No changes after today.
 
