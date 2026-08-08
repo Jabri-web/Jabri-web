@@ -21,6 +21,8 @@
     .content img { max-width: 100%; border-radius: 8px; }
     .loading { text-align: center; color: #888; padding: 40px; font-size: 1.2rem; }
     .error { text-align: center; color: #ff6a6a; padding: 40px; }
+    .info-bar { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 15px; font-size: 14px; color: var(--muted); }
+    .info-bar a { color: #6ae3ff; text-decoration: none; }
     @media (max-width: 600px) { .container { padding: 15px; } .content { padding: 15px; } }
   </style>
 </head>
@@ -32,6 +34,11 @@
     <button id="langBtn" class="btn">🇬🇧 English</button>
   </div>
 
+  <div class="info-bar" id="infoBar">
+    <span>📂 المستودع: <span id="repoDisplay">-</span></span>
+    <span>📄 الملف: <span id="fileDisplay">-</span></span>
+  </div>
+
   <div id="content" class="content">
     <div class="loading">🔮 جاري تحميل الملف وترجمته...</div>
   </div>
@@ -39,9 +46,10 @@
 
 <script>
 // ======================================================================
-// 1. قاموس الترجمة (زوده براحتك)
+// 1. قاموس الترجمة – زوده براحتك (يُفضل إضافة المصطلحات الخاصة بك)
 // ======================================================================
 const DICT = {
+  // عام
   "Repository": "المستودع", "About": "حول", "Description": "الوصف",
   "Installation": "التثبيت", "Usage": "طريقة الاستخدام", "Features": "المميزات",
   "License": "الرخصة", "Contributing": "المساهمة", "Author": "المؤلف",
@@ -68,16 +76,25 @@ const DICT = {
   "Workflows": "سير العمل", "Security policy": "سياسة الأمان",
   "Dependency graph": "رسم التبعيات", "Dependabot": "ديبندابوت",
   "Code scanning": "فحص الكود", "Secrets": "أسرار", "Environments": "البيئات",
-  "Pages": "الصفحات", "Unified Sinbad Theory": "نظرية السندباد الموحدة",
-  "Yemen Heritage": "تراث اليمن", "Al-Jabri Oasis": "واحة الجبري",
-  "Heaven Al-Jabri": "واحة الجبري", "Research": "بحث", "Researcher": "باحث",
-  "Digital Archivist": "أمين أرشيف رقمي", "Mission": "المهمة",
-  "Gateway": "بوابة", "Router": "موجه", "Dashboard": "لوحة التحكم"
+  "Pages": "الصفحات",
+  // نظرية السندباد – مصطلحات خاصة
+  "Unified Sinbad Theory": "نظرية السندباد الموحدة",
+  "Yemen Heritage": "تراث اليمن",
+  "Al-Jabri Oasis": "واحة الجبري",
+  "Heaven Al-Jabri": "واحة الجبري",
+  "Research": "بحث",
+  "Researcher": "باحث",
+  "Digital Archivist": "أمين أرشيف رقمي",
+  "Mission": "المهمة",
+  "Gateway": "بوابة",
+  "Router": "موجه",
+  "Dashboard": "لوحة التحكم"
 };
 
 function translateText(text) {
   if (!text) return text;
   let result = text;
+  // ترتيب المفاتيح من الأطول للأقصر لتجنب الترجمات الجزئية
   const keys = Object.keys(DICT).sort((a, b) => b.length - a.length);
   for (const en of keys) {
     const regex = new RegExp(`\\b${en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
@@ -87,24 +104,26 @@ function translateText(text) {
 }
 
 // ======================================================================
-// 2. قراءة الباراميترز
+// 2. قراءة البارامترات: repo و file
 // ======================================================================
 const params = new URLSearchParams(window.location.search);
-let file = params.get('file') || 'README.md';
-let lang = params.get('lang') || 'ar';   // ar or en
+const repo = params.get('repo') || 'Jabri-web';
+const file = params.get('file') || 'README.md';
+const lang = params.get('lang') || 'ar';
 
-const pathParts = window.location.pathname.split('/');
-const repo = pathParts[1] || 'Jabri-web';
-const username = 'Jabri-web';
+document.getElementById('repoDisplay').textContent = repo;
+document.getElementById('fileDisplay').textContent = file;
 
-// الرابط الخام للملف
-const rawUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/${file}`;
-const githubUrl = `https://github.com/${username}/${repo}/blob/main/${file}`;
+// ======================================================================
+// 3. بناء الرابط الخام من GitHub
+// ======================================================================
+const rawUrl = `https://raw.githubusercontent.com/Jabri-web/${repo}/main/${file}`;
+const githubUrl = `https://github.com/Jabri-web/${repo}/blob/main/${file}`;
 
 document.getElementById('backBtn').href = githubUrl;
 
 // ======================================================================
-// 3. تحميل وعرض المحتوى
+// 4. تحميل وعرض المحتوى
 // ======================================================================
 async function load() {
   const contentDiv = document.getElementById('content');
@@ -114,13 +133,13 @@ async function load() {
     if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
     
     let md = await res.text();
-    
-    // نصلح مسارات الصور (تجعلها مطلقة)
+
+    // تصحيح روابط الصور لتكون مطلقة
     md = md.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, function(match, alt, src) {
-      return `![${alt}](https://raw.githubusercontent.com/${username}/${repo}/main/${src})`;
+      return `![${alt}](https://raw.githubusercontent.com/Jabri-web/${repo}/main/${src})`;
     });
-    
-    // إذا كانت اللغة عربية، نترجم
+
+    // إذا كانت اللغة عربية، نترجم (مع الاحتفاظ بالنصوص الإنجليزية غير المترجمة)
     if (lang === 'ar') {
       md = translateText(md);
       document.documentElement.dir = 'rtl';
@@ -131,11 +150,11 @@ async function load() {
       document.documentElement.lang = 'en';
       document.getElementById('langBtn').innerHTML = '🇸🇦 العربية';
     }
-    
+
     // تحويل Markdown إلى HTML
     const html = marked.parse(md);
     contentDiv.innerHTML = html;
-    
+
   } catch (e) {
     contentDiv.innerHTML = `
       <div class="error">
@@ -151,19 +170,20 @@ async function load() {
 }
 
 // ======================================================================
-// 4. زر تبديل اللغة (بدون تغيير الملف، فقط lang)
+// 5. زر تبديل اللغة – يغير فقط lang
 // ======================================================================
 document.getElementById('langBtn').onclick = function() {
   const newLang = lang === 'ar' ? 'en' : 'ar';
-  window.location.href = `?file=${file}&lang=${newLang}`;
+  window.location.href = `?repo=${repo}&file=${file}&lang=${newLang}`;
 };
 
 // ======================================================================
-// 5. التشغيل
+// 6. تشغيل التحميل
 // ======================================================================
 load();
 
-console.log('🔮 المترجم السحري جاهز (نسخة مطورة)');
+console.log('🔮 المترجم السحري جاهز (ديناميكي)');
+console.log(`📂 المستودع: ${repo}`);
 console.log(`📄 الملف: ${file}`);
 console.log(`🌍 اللغة: ${lang}`);
 console.log(`🔗 الرابط الخام: ${rawUrl}`);
