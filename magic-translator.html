@@ -1,547 +1,193 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المترجم السحري - واحة الجبري</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Marked.js لتحويل Markdown إلى HTML -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    
-    <style>
-        /* ===== RESET ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background: #0a0a0f;
-            color: #e8e8f0;
-            font-family: 'Tajawal', Arial, sans-serif;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            background: #11131a;
-            padding: 25px;
-            border-radius: 16px;
-            border: 1px solid #1f2233;
-            flex: 1;
-        }
-        
-        /* ===== الشريط العلوي ===== */
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #1f2233;
-        }
-        
-        .top-bar .left {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            background: #6ae3ff;
-            color: #0a0a0f;
-            padding: 8px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            transition: 0.3s;
-            display: inline-block;
-        }
-        
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(106, 227, 255, 0.3);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: #6ae3ff;
-            border: 1px solid #6ae3ff;
-        }
-        
-        .btn-secondary:hover {
-            background: #6ae3ff22;
-        }
-        
-        .lang-btns {
-            display: flex;
-            gap: 5px;
-        }
-        
-        .lang-btns button {
-            background: transparent;
-            border: 1px solid #2a2a3e;
-            color: #888;
-            padding: 5px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 13px;
-            transition: 0.3s;
-            font-family: inherit;
-        }
-        
-        .lang-btns button.active {
-            background: #6ae3ff;
-            color: #0a0a0f;
-            border-color: #6ae3ff;
-        }
-        
-        .lang-btns button:hover {
-            border-color: #6ae3ff;
-        }
-        
-        /* ===== المحتوى ===== */
-        .content {
-            background: #0a0a0f;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #1f2233;
-            line-height: 1.9;
-            min-height: 300px;
-            overflow-wrap: break-word;
-        }
-        
-        .content h1,
-        .content h2,
-        .content h3,
-        .content h4 {
-            color: #6ae3ff;
-            margin: 20px 0 10px;
-        }
-        
-        .content h1 {
-            font-size: 2rem;
-            text-align: center;
-        }
-        
-        .content h2 {
-            font-size: 1.5rem;
-            border-bottom: 1px solid #1f2233;
-            padding-bottom: 8px;
-        }
-        
-        .content h3 {
-            font-size: 1.2rem;
-        }
-        
-        .content a {
-            color: #6ae3ff;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-        
-        .content a:hover {
-            text-decoration: underline;
-            color: #8af0ff;
-        }
-        
-        .content ul,
-        .content ol {
-            padding-right: 25px;
-        }
-        
-        .content li {
-            margin: 5px 0;
-        }
-        
-        .content table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            font-size: 14px;
-        }
-        
-        .content th,
-        .content td {
-            border: 1px solid #2a2a3e;
-            padding: 10px 15px;
-            text-align: center;
-        }
-        
-        .content th {
-            background: #1a1a2e;
-            color: #6ae3ff;
-            font-weight: 700;
-        }
-        
-        .content td {
-            background: #0f0f1a;
-        }
-        
-        .content tr:hover td {
-            background: #16162a;
-        }
-        
-        .content img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        
-        .content blockquote {
-            border-right: 4px solid #6ae3ff;
-            padding-right: 15px;
-            color: #aaa;
-            margin: 10px 0;
-        }
-        
-        .content hr {
-            border: none;
-            border-top: 1px solid #1f2233;
-            margin: 20px 0;
-        }
-        
-        .content code {
-            background: #1a1a2e;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.9em;
-            color: #6ae3ff;
-        }
-        
-        .content pre {
-            background: #1a1a2e;
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-            border: 1px solid #1f2233;
-        }
-        
-        .content pre code {
-            background: none;
-            padding: 0;
-            color: #e8e8f0;
-        }
-        
-        /* ===== حالات التحميل والخطأ ===== */
-        .loading {
-            text-align: center;
-            padding: 50px;
-            color: #6ae3ff;
-            font-size: 1.2rem;
-        }
-        
-        .error {
-            color: #ff6a6a;
-            text-align: center;
-            padding: 40px;
-        }
-        
-        .error small {
-            display: block;
-            margin-top: 10px;
-            color: #888;
-            font-size: 13px;
-        }
-        
-        /* ===== الفوتر ===== */
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 13px;
-            border-top: 1px solid #1f2233;
-            padding-top: 15px;
-        }
-        
-        /* ===== التجاوب مع الموبايل ===== */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 15px;
-            }
-            .content {
-                padding: 15px;
-                font-size: 15px;
-            }
-            .top-bar {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .top-bar .left {
-                justify-content: center;
-            }
-            .lang-btns {
-                justify-content: center;
-            }
-            .btn {
-                text-align: center;
-                font-size: 13px;
-                padding: 6px 15px;
-            }
-            .content h1 {
-                font-size: 1.5rem;
-            }
-            .content h2 {
-                font-size: 1.2rem;
-            }
-            .content table {
-                font-size: 12px;
-            }
-            .content th,
-            .content td {
-                padding: 6px 8px;
-            }
-        }
-        
-        /* ===== وضع الإنجليزي ===== */
-        body.en {
-            direction: ltr;
-        }
-        body.en .content {
-            text-align: left;
-        }
-        body.en .content table {
-            direction: ltr;
-        }
-        body.en .content blockquote {
-            border-right: none;
-            border-left: 4px solid #6ae3ff;
-            padding-right: 0;
-            padding-left: 15px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المترجم السحري - واحة الجبري</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Cairo', sans-serif; background: #0a0a0f; color: #e8e8f0; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; background: #1a1a2e; border-radius: 20px; padding: 30px; border: 1px solid #2a2a3e; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
+    .btn { padding: 10px 25px; border: 2px solid #6ae3ff; border-radius: 30px; background: #6ae3ff; color: #0a0a0f; font-weight: 700; cursor: pointer; text-decoration: none; transition: 0.3s; font-family: 'Cairo', sans-serif; }
+    .btn:hover { transform: scale(1.05); }
+    .btn-alt { background: transparent; color: #6ae3ff; }
+    .content { background: #0a0a0f; border-radius: 12px; padding: 30px; border: 1px solid #2a2a3e; line-height: 1.8; min-height: 300px; }
+    .content h1, .content h2, .content h3 { color: #6ae3ff; margin: 15px 0; }
+    .content a { color: #6affb5; }
+    .content pre { background: #1a1a2e; padding: 15px; border-radius: 8px; overflow-x: auto; }
+    .content img { max-width: 100%; border-radius: 8px; }
+    .loading { text-align: center; color: #888; padding: 40px; font-size: 1.2rem; }
+    .error { text-align: center; color: #ff6a6a; padding: 40px; }
+    .info-bar { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 15px; font-size: 14px; color: var(--muted); }
+    .info-bar a { color: #6ae3ff; text-decoration: none; }
+    @media (max-width: 600px) { .container { padding: 15px; } .content { padding: 15px; } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- ===== الشريط العلوي ===== -->
-        <div class="top-bar">
-            <div class="left">
-                <a href="https://jabri-com.vercel.app/" class="btn">🏠 الرئيسية</a>
-                <a href="https://github.com/Jabri-web" class="btn btn-secondary">🐙 GitHub</a>
-            </div>
-            <div class="lang-btns">
-                <button id="langBtnAr" class="active" onclick="setUILang('ar')">🇾🇪 عربي</button>
-                <button id="langBtnEn" onclick="setUILang('en')">🇬🇧 English</button>
-            </div>
-        </div>
 
-        <!-- ===== المحتوى ===== -->
-        <div id="content" class="content">
-            <div class="loading">🔮 جاري التحميل...</div>
-        </div>
+<div class="container">
+  <div class="topbar">
+    <a href="#" id="backBtn" class="btn btn-alt">⬅️ الرجوع للجيتهاب</a>
+    <button id="langBtn" class="btn">🇬🇧 English</button>
+  </div>
 
-        <!-- ===== الفوتر ===== -->
-        <div class="footer">
-            <span id="footerText">© 2026 م/ عبدالله محمد ناصر الجبري</span>
-            <span style="margin: 0 10px; color: #333;">|</span>
-            <span id="repoInfo" style="color: #555; font-size: 12px;"></span>
-        </div>
-    </div>
+  <div class="info-bar" id="infoBar">
+    <span>📂 المستودع: <span id="repoDisplay">-</span></span>
+    <span>📄 الملف: <span id="fileDisplay">-</span></span>
+  </div>
 
-    <script>
-        // ================================================================
-        //  1. قراءة البارامترات من الرابط
-        // ================================================================
-        const params = new URLSearchParams(window.location.search);
-        const repo = params.get('repo') || 'Jabri-web';
-        const file = params.get('file') || 'README.md';
-        const branch = params.get('branch') || 'main';
-        const langParam = params.get('lang') || 'ar';
+  <div id="content" class="content">
+    <div class="loading">🔮 جاري تحميل الملف وترجمته...</div>
+  </div>
+</div>
 
-        // ================================================================
-        //  2. قاموس الترجمة (للترجمة المباشرة للنص الإنجليزي فقط)
-        // ================================================================
-        const DICT = {
-            // عام
-            "Repository": "المستودع",
-            "README": "ملف التعريف",
-            "Installation": "التثبيت",
-            "Usage": "الاستخدام",
-            "Welcome": "مرحباً",
-            "Home": "الرئيسية",
-            "About": "عن",
-            "Contact": "اتصل",
-            "English": "الإنجليزية",
-            "Arabic": "العربية",
-            "Default": "الافتراضي",
-            "Projects": "المشاريع",
-            "Portals": "البوابات",
-            "Heritage": "التراث",
-            "Gateway": "البوابة",
-            "Library": "المكتبة",
-            "Research": "البحوث",
-            "Theory": "النظرية",
-            "Experiments": "التجارب",
-            "Applications": "التطبيقات",
-            "Publications": "المنشورات",
-            "Biography": "السيرة الذاتية",
-            "Author": "المؤلف",
-            "Oasis": "الواحة",
-            "Sindbad": "سندباد",
-            "Yemen": "اليمن",
-            "Sana'a": "صنعاء",
-            "Shibam": "شبام",
-            "Socotra": "سقطرى",
-            "Hadramout": "حضرموت",
-            "Nobel": "نوبل",
-            "Archive": "أرشيف",
-            "Riemann": "ريمان",
-            "Sundus": "سندس",
-            "Jabri": "الجبري",
-            "Lab": "مختبر",
-            "Office": "المكتب",
-            "Checkout": "تدقيق",
-            "Router": "موجه",
-            "Core": "أساسي",
-            "Main": "رئيسي",
-            "CV": "السيرة الذاتية",
-            "Citations": "استشهادات",
-            "Source": "المصادر",
-            "Email": "البريد الإلكتروني",
-            "Google": "قوقل",
-            "Facebook": "فيسبوك",
-            "Instagram": "انستغرام",
-            "Telegram": "تليغرام",
-            "Wikipedia": "ويكيبيديا",
-            "ORCID": "أوركيد",
-            "Zenodo": "زينودو",
-            "Colab": "كولاب",
-            "Overleaf": "أوفرليف",
-        };
+<script>
+// ======================================================================
+// 1. قاموس الترجمة – زوده براحتك (يُفضل إضافة المصطلحات الخاصة بك)
+// ======================================================================
+const DICT = {
+  // عام
+  "Repository": "المستودع", "About": "حول", "Description": "الوصف",
+  "Installation": "التثبيت", "Usage": "طريقة الاستخدام", "Features": "المميزات",
+  "License": "الرخصة", "Contributing": "المساهمة", "Author": "المؤلف",
+  "Documentation": "التوثيق", "Table of Contents": "جدول المحتويات",
+  "Project Board": "لوحة المشروع", "Links": "الروابط", "Version": "الإصدار",
+  "Clone": "استنساخ", "Run": "تشغيل", "Requirements": "المتطلبات",
+  "Contact": "تواصل", "Example": "مثال", "Code": "الكود",
+  "DOI": "معرف الرقم", "Partnerships": "الشراكات", "Pull requests": "طلبات السحب",
+  "Issues": "المشاكل", "Actions": "الإجراءات", "Projects": "المشاريع",
+  "Wiki": "الويكي", "Insights": "الرؤى", "Settings": "الإعدادات",
+  "Releases": "الإصدارات", "Packages": "الحزم", "Contributors": "المساهمون",
+  "README": "ملف التعريف", "Star": "نجمة", "Fork": "تفرع", "Watch": "متابعة",
+  "Commit": "التزام", "Branch": "فرع", "Main": "رئيسي", "Merge": "دمج",
+  "Create": "إنشاء", "Delete": "حذف", "Edit": "تعديل", "Update": "تحديث",
+  "Close": "إغلاق", "Reopen": "إعادة فتح", "Assign": "تعيين",
+  "Labels": "تسميات", "Milestones": "معالم", "Status": "الحالة",
+  "Reviewers": "مراجعون", "File": "ملف", "Files": "ملفات", "Folder": "مجلد",
+  "Directory": "دليل", "Raw": "خام", "Blame": "إلقاء اللوم", "History": "التاريخ",
+  "Comment": "تعليق", "Comments": "تعليقات", "Reply": "رد", "Resolve": "حل",
+  "Approved": "مُوافق", "Review": "مراجعة", "Owner": "المالك", "Member": "عضو",
+  "Collaborator": "متعاون", "Admin": "مدير", "Watchers": "متابعون",
+  "Stargazers": "معطو النجمة", "Forks": "تفريعات", "Discussions": "المناقشات",
+  "Security": "الأمان", "Deploy": "نشر", "Build": "بناء", "Test": "اختبار",
+  "Workflows": "سير العمل", "Security policy": "سياسة الأمان",
+  "Dependency graph": "رسم التبعيات", "Dependabot": "ديبندابوت",
+  "Code scanning": "فحص الكود", "Secrets": "أسرار", "Environments": "البيئات",
+  "Pages": "الصفحات",
+  // نظرية السندباد – مصطلحات خاصة
+  "Unified Sinbad Theory": "نظرية السندباد الموحدة",
+  "Yemen Heritage": "تراث اليمن",
+  "Al-Jabri Oasis": "واحة الجبري",
+  "Heaven Al-Jabri": "واحة الجبري",
+  "Research": "بحث",
+  "Researcher": "باحث",
+  "Digital Archivist": "أمين أرشيف رقمي",
+  "Mission": "المهمة",
+  "Gateway": "بوابة",
+  "Router": "موجه",
+  "Dashboard": "لوحة التحكم"
+};
 
-        /**
-         * تترجم الكلمات الإنجليزية فقط في النص (لا تلمس النص العربي)
-         */
-        function translateText(text) {
-            let result = text;
-            for (const [en, ar] of Object.entries(DICT)) {
-                const regex = new RegExp('\\b' + en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
-                result = result.replace(regex, ar);
-            }
-            return result;
-        }
+function translateText(text) {
+  if (!text) return text;
+  let result = text;
+  // ترتيب المفاتيح من الأطول للأقصر لتجنب الترجمات الجزئية
+  const keys = Object.keys(DICT).sort((a, b) => b.length - a.length);
+  for (const en of keys) {
+    const regex = new RegExp(`\\b${en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
+    result = result.replace(regex, DICT[en]);
+  }
+  return result;
+}
 
-        // ================================================================
-        //  3. دالة تحميل وعرض المحتوى
-        // ================================================================
-        async function loadContent() {
-            const contentDiv = document.getElementById('content');
-            const repoInfo = document.getElementById('repoInfo');
+// ======================================================================
+// 2. قراءة البارامترات: repo و file
+// ======================================================================
+const params = new URLSearchParams(window.location.search);
+const repo = params.get('repo') || 'Jabri-web';
+const file = params.get('file') || 'README.md';
+const lang = params.get('lang') || 'ar';
 
-            // رابط الـ raw على GitHub
-            const rawUrl = `https://raw.githubusercontent.com/Jabri-web/${repo}/${branch}/${file}`;
-            repoInfo.textContent = `📁 ${repo}/${file}`;
+document.getElementById('repoDisplay').textContent = repo;
+document.getElementById('fileDisplay').textContent = file;
 
-            try {
-                const response = await fetch(rawUrl);
+// ======================================================================
+// 3. بناء الرابط الخام من GitHub
+// ======================================================================
+const rawUrl = `https://raw.githubusercontent.com/Jabri-web/${repo}/main/${file}`;
+const githubUrl = `https://github.com/Jabri-web/${repo}/blob/main/${file}`;
 
-                if (!response.ok) {
-                    throw new Error(`⚠️ HTTP ${response.status} - الملف غير موجود`);
-                }
+document.getElementById('backBtn').href = githubUrl;
 
-                let text = await response.text();
+// ======================================================================
+// 4. تحميل وعرض المحتوى
+// ======================================================================
+async function load() {
+  const contentDiv = document.getElementById('content');
+  
+  try {
+    const res = await fetch(rawUrl);
+    if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
+    
+    let md = await res.text();
 
-                // نترجم النص فقط لو كان الطلب عربي
-                if (langParam === 'ar') {
-                    text = translateText(text);
-                }
+    // تصحيح روابط الصور لتكون مطلقة
+    md = md.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, function(match, alt, src) {
+      return `![${alt}](https://raw.githubusercontent.com/Jabri-web/${repo}/main/${src})`;
+    });
 
-                // نعدل روابط الصور النسبية عشان تجيب الصور من GitHub
-                text = text.replace(
-                    /!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g,
-                    (match, alt, url) => {
-                        const cleanUrl = url.replace(/^\.\//, '');
-                        return `![${alt}](https://raw.githubusercontent.com/Jabri-web/${repo}/${branch}/${cleanUrl})`;
-                    }
-                );
+    // إذا كانت اللغة عربية، نترجم (مع الاحتفاظ بالنصوص الإنجليزية غير المترجمة)
+    if (lang === 'ar') {
+      md = translateText(md);
+      document.documentElement.dir = 'rtl';
+      document.documentElement.lang = 'ar';
+      document.getElementById('langBtn').innerHTML = '🇬🇧 English';
+    } else {
+      document.documentElement.dir = 'ltr';
+      document.documentElement.lang = 'en';
+      document.getElementById('langBtn').innerHTML = '🇸🇦 العربية';
+    }
 
-                // نعدل روابط الملفات النسبية
-                text = text.replace(
-                    /\[([^\]]+)\]\((?!https?:\/\/)([^)]+)\)/g,
-                    (match, label, url) => {
-                        const cleanUrl = url.replace(/^\.\//, '');
-                        
-                        // لو الرابط ينتهي بـ .md → نحوله للساحر
-                        if (cleanUrl.endsWith('.md')) {
-                            return `[${label}](https://jabri-com.vercel.app/magic-translator.html?repo=${repo}&file=${cleanUrl}&lang=${langParam})`;
-                        }
-                        
-                        // لو الرابط ينتهي بـ .html → نحوله للصفحة العادية
-                        if (cleanUrl.endsWith('.html')) {
-                            return `[${label}](https://jabri-com.vercel.app/${cleanUrl})`;
-                        }
-                        
-                        // أي رابط آخر نضيف له الـ repo
-                        return `[${label}](https://raw.githubusercontent.com/Jabri-web/${repo}/${branch}/${cleanUrl})`;
-                    }
-                );
+    // تحويل Markdown إلى HTML
+    const html = marked.parse(md);
+    contentDiv.innerHTML = html;
 
-                // نعرض المحتوى المحول من Markdown
-                const htmlContent = marked.parse(text);
-                contentDiv.innerHTML = htmlContent;
+  } catch (e) {
+    contentDiv.innerHTML = `
+      <div class="error">
+        <h2>⚠️ خطأ في التحميل</h2>
+        <p>الملف <strong>${file}</strong> غير موجود أو لا يمكن الوصول إليه.</p>
+        <p style="color:#888;font-size:0.9rem;">${e.message}</p>
+        <br>
+        <a href="${githubUrl}" class="btn btn-alt">📂 عرض الملف على جيتهاب</a>
+      </div>
+    `;
+    console.error('❌ خطأ:', e);
+  }
+}
 
-            } catch (error) {
-                contentDiv.innerHTML = `
-                    <div class="error">
-                        ⚠️ ${error.message}<br>
-                        <small>الملف: ${file} | المستودع: ${repo} | الفرع: ${branch}</small>
-                    </div>
-                `;
-            }
-        }
+// ======================================================================
+// 5. زر تبديل اللغة – يغير فقط lang
+// ======================================================================
+document.getElementById('langBtn').onclick = function() {
+  const newLang = lang === 'ar' ? 'en' : 'ar';
+  window.location.href = `?repo=${repo}&file=${file}&lang=${newLang}`;
+};
 
-        // ================================================================
-        //  4. تبديل لغة الواجهة (الساحر نفسه)
-        // ================================================================
-        function setUILang(lang) {
-            const isAr = lang === 'ar';
-            document.documentElement.lang = lang;
-            document.documentElement.dir = isAr ? 'rtl' : 'ltr';
-            document.body.classList.toggle('en', !isAr);
+// ======================================================================
+// 6. تشغيل التحميل
+// ======================================================================
+load();
 
-            // تحديث الأزرار
-            document.getElementById('langBtnAr').classList.toggle('active', isAr);
-            document.getElementById('langBtnEn').classList.toggle('active', !isAr);
+console.log('🔮 المترجم السحري جاهز (ديناميكي)');
+console.log(`📂 المستودع: ${repo}`);
+console.log(`📄 الملف: ${file}`);
+console.log(`🌍 اللغة: ${lang}`);
+console.log(`🔗 الرابط الخام: ${rawUrl}`);
+</script>
 
-            // تحديث الفوتر
-            const footer = document.getElementById('footerText');
-            if (isAr) {
-                footer.textContent = '© 2026 م/ عبدالله محمد ناصر الجبري';
-            } else {
-                footer.textContent = '© 2026 Eng. Abdulla Mohammed Nasser Al-Jabri';
-            }
-
-            localStorage.setItem('ui-lang', lang);
-        }
-
-        // نحمّل اللغة المحفوظة من المتصفح
-        const savedLang = localStorage.getItem('ui-lang') || 'ar';
-        setUILang(savedLang);
-
-        // ================================================================
-        //  5. تشغيل التحميل
-        // ================================================================
-        loadContent();
-
-        // جعل الدوال عالمية للاستخدام من HTML
-        window.setUILang = setUILang;
-    </script>
 </body>
 </html>
