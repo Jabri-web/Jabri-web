@@ -1,61 +1,51 @@
-<!-- ===== شريط تبديل اللغة (النسخة العربية النشطة) ===== -->
 <!-- ===== Language Switch Bar (Arabic Active) ===== -->
 <div align="center" style="margin: 10px 0 20px 0; padding: 8px; background: #161b22; border-radius: 30px; display: inline-block; width: auto; border: 1px solid #30363d;">
-    <a href="https://jabri-web.github.io/Jabri-web/magic-translator.html?file=ABOUT.md&lang=en" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
+    <a href="./ABOUT.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
         🇬🇧 English
     </a>
     <a href="./ABOUT-AR.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
-        🇾🇪 العربية (الافتراضية)
+        🇾🇪 العربية (الافتراضي)
     </a>
 </div>
 
 ---
-## 👋 عن الباحث
 
-**أنا م/ عبدالله محمد ناصر الجبري (Heaven Al-Jabri)**
-
-- 🧭 **الباحث**: نظرية السندباد الموحدة (Z+C+A=1)  
-- 🏛️ **التراث**: أرشيفي رقمي لليمن (صنعاء، شبام، سقطرى)
-- 🎓 **التعليم**: بكالوريوس علوم الحاسب - جامعة الملك فهد للبترول والمعادن KFUPM
-- 🌐 **الموقع الرسمي**: [jabri-com.vercel.app](https://jabri-com.vercel.app/)
-- 📫 **للتواصل**: jabri62018@gmail.com
-- 🔗 **ORCID**: [ضع رابط ORCID]
-- 🇾🇪 **الرسالة**: توثيق تراث اليمن + البحث النظري في الرياضيات والفيزياء
-
----
-# 📌 بطاقة تعريف المستودع
+# 📌 بطاقة هوية المستودع
 
 | الحقل | التفاصيل |
 | :--- | :--- |
 | **اسم المستودع** | `Jabri-web` |
 | **رابط GitHub** | [https://github.com/Jabri-web/Jabri-web](https://github.com/Jabri-web/Jabri-web) |
-| **رابط الصفحة** | [https://jabri-web.github.io/Jabri-web/](https://jabri-web.github.io/Jabri-web/) |
+| **GitHub Pages** | [https://jabri-web.github.io/Jabri-web/](https://jabri-web.github.io/Jabri-web/) |
 | **الملف الحالي** | `./ABOUT-AR.md` (العربية) |
-| **اللغة** | العربية (الافتراضية) / English (بديل) |
+| **اللغة** | العربية (الافتراضي) / English (Alternative) |
 | **DOI** | [10.5281/zenodo.20499365](https://doi.org/10.5281/zenodo.20499365) |
 | **المؤلف** | [م/ عبدالله محمد ناصر الجبري](https://github.com/Jabri-web) |
 | **الترخيص** | CC BY 4.0 |
 | **الهوية** | `Z + C + A = 1` |
 
 ---
+
 # 🌐 Jabri-web
 
 **الراوتر الرئيسي – بوابة جميع مشاريع ومنظمات Jabri-web على GitHub**
 
 ---
+
 <div align="center">
   <img src="Image/Dar2.png" width="80%" style="border-radius: 12px; border: 2px solid #6ae3ff;" alt="دار الحجر، اليمن">
   <p><i>🏛️ دار الحجر، اليمن – التراث الذي يربط الماضي العريق بمستقبل التكنولوجيا.</i></p>
 </div>
 
 ---
-## 📖 حول هذا المستودع
+
+## 📖 عن هذا المستودع
 
 **Jabri-web** هو **الراوتر والبوابة الرئيسية** لمنظمة GitHub بأكملها. يعمل كمركز مركزي يجمع وينظم ويوجه الزوار إلى جميع المستودعات النشطة، بدءاً من `Zx_Mother_Function_Jabri` إلى `Jabri_Checkout`.
 
 **فكر فيه كـ "الباب الأمامي"** – المحطة الأولى لأي شخص يستكشف منظومة Jabri-web. من هنا، يمكن للباحثين والمطورين والمهتمين التنقل إلى أي مشروع، والوصول إلى الـ DOIs، واكتشاف النطاق الكامل لإطار أبحاث الجبري.
 
-**المميزات الرئيسية:**
+**الميزات الرئيسية:**
 - 🚪 **بوابة مركزية** – نقطة دخول واحدة لأكثر من 11 مستودعاً.
 - 📚 **فهرس كامل** – قائمة بجميع المشاريع مع روابط مباشرة وDOIs.
 - 📊 **إحصائيات حية** – إحصائيات GitHub (الزوار، النجوم، المتابعين) معروضة في الوقت الفعلي.
@@ -63,6 +53,7 @@
 - 🌍 **ثنائي اللغة** – دعم كامل للعربية والإنجليزية لتوفير وصول عالمي.
 
 ---
+
 ## 🗂️ هيكل المستودع
 
 | الملف / المجلد | الوصف |
@@ -76,6 +67,7 @@
 | `LICENSE` | النص الكامل لرخصة CC BY 4.0. |
 
 ---
+
 ## 🔗 القائمة الكاملة للمستودعات والـ DOIs
 
 | # | المشروع | GitHub Pages | DOI Zenodo |
@@ -100,6 +92,7 @@
 > **تم التحقق 2026-06-09 بواسطة الجبري**: جميع الروابط 1–11 شغالة. جميع الـ DOIs من `10.5281`. لا تعديل بعد اليوم.
 
 ---
+
 ## 📑 الأوراق المنشورة مع DOI
 
 | الورقة | DOI |
@@ -114,15 +107,17 @@
 | Zx_RieOS v1.1 | [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594) |
 
 ---
+
 ## 📊 إحصائيات GitHub
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=Jabri-web&theme=radical&hide_border=true" alt="GitHub Streak"/>
 <br><br>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jabri-web&layout=compact&theme=radical&hide_border=true" alt="أكثر اللغات استخداماً"/>
 </div>
 
 ---
+
 ## 🔗 روابط سريعة
 
 - **الصفحة المباشرة:** [https://jabri-web.github.io/Jabri-web/](https://jabri-web.github.io/Jabri-web/)
@@ -133,12 +128,14 @@
 - **ملف المؤلف:** [https://github.com/Jabri-web](https://github.com/Jabri-web)
 
 ---
+
 ## 📄 الترخيص
 
 **CC BY 4.0** – حرية الاستخدام مع الإشارة إلى المصدر.  
 **هوية الجبري:** `Z + C + A = 1`
 
 ---
+
 <div align="center">
-<i>"From Riemann zeros to the structure of the universe"</i>
+<i>"من أصفار ريمان إلى بنية الكون"</i>
 </div>

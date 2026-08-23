@@ -1,27 +1,15 @@
-
 <!-- ===== Language Switch Bar (English Active) ===== -->
 <div align="center" style="margin: 10px 0 20px 0; padding: 8px; background: #161b22; border-radius: 30px; display: inline-block; width: auto; border: 1px solid #30363d;">
     <a href="./ABOUT.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
         🇬🇧 English (Default)
     </a>
-    <a href="https://jabri-web.github.io/Jabri-web/magic-translator.html?file=ABOUT.md&lang=ar" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
+    <a href="./ABOUT-AR.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
         🇾🇪 العربية
     </a>
 </div>
----
-## 👋 About the Researcher
-
-**Hello, I'm Abdulla Al-Jabri (Heaven Al-Jabri)**
-
-- 🧭 **Researcher**: Unified Sinbad Theory (Z+C+A=1)  
-- 🏛️ **Heritage**: Digital Archivist for Yemen (Sana'a, Shibam, Socotra)
-- 🎓 **Education**: B.Sc. Computer Science - KFUPM
-- 🌐 **Official Portfolio**: [jabri-com.vercel.app](https://jabri-com.vercel.app/)
-- 📫 **Contact**: jabri62018@gmail.com
-- 🔗 **ORCID**: [Add your ORCID link]
-- 🇾🇪 **Mission**: Documenting Yemeni Heritage + Theoretical Research in Math & Physics
 
 ---
+
 # 📌 Repository Identity Card
 
 | Field | Details |
@@ -37,20 +25,23 @@
 | **Identity** | `Z + C + A = 1` |
 
 ---
+
 # 🌐 Jabri-web
 
-**The Main Router – Gateway to All Jabri-web GitHub Projects & Repositories**
+**The Main Router – Gateway to All Jabri-web GitHub Projects & Organization**
 
 ---
+
 <div align="center">
   <img src="Image/Dar2.png" width="80%" style="border-radius: 12px; border: 2px solid #6ae3ff;" alt="Dar Al-Hajar, Yemen">
   <p><i>🏛️ Dar Al-Hajar, Yemen – The heritage that bridges the ancient past to the future of technology.</i></p>
 </div>
 
 ---
+
 ## 📖 About This Repository
 
-**Jabri-web** is the **primary router and gateway** for the entire Jabri-web GitHub organization. It serves as the central hub that aggregates, organizes, and directs visitors to all active repositories, from the `Zx_Mother_Function_Jabri` to `Jabri_Checkout`.
+**Jabri-web** is the **main router and gateway** to the entire GitHub organization. It acts as a central hub that aggregates, organizes, and directs visitors to all active repositories, from `Zx_Mother_Function_Jabri` to `Jabri_Checkout`.
 
 **Think of it as the "front door"** – the first stop for anyone exploring the Jabri-web ecosystem. From here, researchers, developers, and enthusiasts can navigate to any project, access DOIs, and discover the full scope of the Al-Jabri research framework.
 
@@ -62,19 +53,21 @@
 - 🌍 **Bilingual** – Full Arabic and English support for global accessibility.
 
 ---
+
 ## 🗂️ Repository Structure
 
-| Directory / File | Description |
+| File / Directory | Description |
 | :--- | :--- |
 | `Image/` | Visual assets: `Jabri-photo.png`, `Dar2.png`, `Zx_Equations.png`, `Zx_Eq_figure.png`. |
 | `README.md` | Main landing page with overview, badges, and links to all repositories. |
-| `ABOUT.md` | (This file) – Detailed explanation of the repository's role and structure. |
-| `ABOUT-AR.md` | Arabic version of this file. |
+| `ABOUT.md` | (English version) – Detailed explanation of the repository's role and structure. |
+| `ABOUT-AR.md` | (Arabic version) – Detailed explanation of the repository's role and structure. |
 | `_config.yml` | (If present) – Jekyll configuration for GitHub Pages. |
 | `.github/` | GitHub-specific files (issue templates, workflows, etc.). |
 | `LICENSE` | Full text of the CC BY 4.0 license. |
 
 ---
+
 ## 🔗 Complete List of Repositories & DOIs
 
 | # | Project | GitHub Pages | DOI Zenodo |
@@ -89,16 +82,17 @@
 | 5.3 | └─ Jabri_gab | - | [20148344](https://doi.org/10.5281/zenodo.20148344) |
 | 5.4 | └─ Jabri_Navier | - | [20149618](https://doi.org/10.5281/zenodo.20149618) |
 | 5.7 | └─ Jabri_Identity | - | [20114317](https://doi.org/10.5281/zenodo.20114317) |
-| 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | قيد النشر |
+| 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | Publishing |
 | 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
 | 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
 | 9 | **Jabri_Checkout** | [Pages](https://jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
 | 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
 
-> **Verified 2026-06-09 by Al-Jabri**: All links 1–11 are active. All DOIs are from `10.5281`. No changes after today.
+> **Verified 2026-06-09 by Al-Jabri**: All links 1–11 are working. All DOIs are `10.5281`. No changes after today.
 
 ---
+
 ## 📑 Published Papers with DOI
 
 | Paper | DOI |
@@ -113,6 +107,7 @@
 | Zx_RieOS v1.1 | [10.5281/zenodo.20070594](https://doi.org/10.5281/zenodo.20070594) |
 
 ---
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -122,6 +117,7 @@
 </div>
 
 ---
+
 ## 🔗 Quick Links
 
 - **Live Page:** [https://jabri-web.github.io/Jabri-web/](https://jabri-web.github.io/Jabri-web/)
@@ -132,12 +128,14 @@
 - **Author Profile:** [https://github.com/Jabri-web](https://github.com/Jabri-web)
 
 ---
+
 ## 📄 License
 
 **CC BY 4.0** – Free to use with attribution.  
-**Al-Jabri Identity:** `Z + C + A = 1`
+**Jabri Identity:** `Z + C + A = 1`
 
 ---
+
 <div align="center">
 <i>"From Riemann zeros to the structure of the universe"</i>
 </div>
