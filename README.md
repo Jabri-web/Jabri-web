@@ -6,7 +6,7 @@
     <a href="./README.md" style="background: #6ae3ff; color: #0a0a0f; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block;">
         🇬🇧 English (Default)
     </a>
-    <a href="https://jabri-web.github.io/Jabri-web/magic-translator.html?file=README.md&lang=ar" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
+    <a href="./README-AR.md" style="background: transparent; color: #c9d1d9; padding: 6px 22px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin: 0 5px; display: inline-block; border: 1px solid #30363d;">
         🇾🇪 Arabic
     </a>
 </div>
@@ -36,7 +36,7 @@ Bachelor of Science in Computer Engineering... King Fahd University of Petroleum
 [![Visit Profile](https://img.shields.io/badge/Visit-GitHub%20Profile-6ae3ff?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
 [![Profile Views](https://komarev.com/ghpvc/?username=Jabri-web&color=6ae3ff&style=for-the-badge&label=Visitors)](https://github.com/Jabri-web)
 [![GitHub Stars](https://img.shields.io/github/stars/Jabri-web?color=yellow&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=repositories)
-[![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style=for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
+[![GitHub Followers](https://img.shields.io/github/followers/Jabri-web?color=green&style-for-the-badge&logo=github)](https://github.com/Jabri-web?tab=followers)
 
 ### 🏆 Achievements
 [![YOLO](https://img.shields.io/badge/YOLO-Explorer-00ffc8?style=for-the-badge&logo=github)](https://github.com/Jabri-web)
@@ -93,9 +93,9 @@ Database of all Zx projects + Links + DOI
 | 6 | **Jabri_lab** | [Pages](https://jabri-web.github.io/jabri_lab/) | Publishing |
 | 7 | **Zx_RieOS_v1.1** | [Pages](https://Jabri-web.github.io/Zx_RieOS_v1.1/) | [19981688](https://doi.org/10.5281/zenodo.19981688) / [20070594](https://doi.org/10.5281/zenodo.20070594) |
 | 8 | **Jabri_RiemannOS** | [Pages](https://jabri-web.github.io/Jabri-RiemannOS/) | - |
-| 9 | **Jabri_Checkout** | [Pages](https://Jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
+| 9 | **Jabri_Checkout** | [Pages](https://jabri-web.github.io/Jabri_Checkout/) | [20513840](https://doi.org/10.5281/zenodo.20513840) |
 | 10 | **Jabri-web** | [Pages](https://jabri-web.github.io/Jabri-web/) | [20499365](https://doi.org/10.5281/zenodo.20499365) |
-| 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/Jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
+| 11 | **Jabri-com** | [Pages](https://jabri-web.github.io/jabri-com/) | [21003990](https://doi.org/10.5281/zenodo.21003990) |
 
 > **Verified 2026-06-09 by Al-Jabri**: All links 1-11 are working. All DOI `10.5281`. No changes after today.
 
@@ -117,8 +117,6 @@ Database of all Zx projects + Links + DOI
 
 ## 🤝 Partnerships & Contact
 Interested in research collaboration or paid advertisement? Contact me:
-
-![Dbases](Image/dbase.png)
 
 ### 🔗 Contact
 - **ORCID:** [0009-0003-3319-3822](https://orcid.org/0009-0003-3319-3822)  
