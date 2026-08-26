@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>عرض المنشور | واحة الجبري</title>
+    <style>
+        body { background: #f4f0e9; font-family: Arial; direction: rtl; padding: 20px; }
+        .post { max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 12px; border-right: 6px solid #8b0000; }
+        .post h1 { color: #8b0000; }
+        .post .meta { color: #777; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .post .content { line-height: 1.8; }
+        .share-buttons { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .share-buttons button { padding: 10px 20px; border: none; border-radius: 30px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<div class="post" id="postContainer">
+    <h1 id="postTitle">عنوان المنشور</h1>
+    <div class="meta" id="postMeta">#عبدالله_الجبري (صنعاء-اليمن)</div>
+    <div class="content" id="postContent">نص المنشور...</div>
+    <div class="share-buttons">
+        <button onclick="shareTo('whatsapp')">📱 واتساب</button>
+        <button onclick="shareTo('twitter')">🐦 تويتر</button>
+        <button onclick="shareTo('facebook')">📘 فيسبوك</button>
+        <button onclick="shareTo('telegram')">✈️ تيليجرام</button>
+        <button onclick="copyLink()">📋 نسخ الرابط</button>
+    </div>
+</div>
+<script>
+    // قراءة المعاملات من الرابط
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('postTitle').textContent = params.get('title') || 'بدون عنوان';
+    document.getElementById('postContent').textContent = params.get('content') || '...';
+    // دوال المشاركة (كما سبق)
+</script>
+</body>
+</html>
