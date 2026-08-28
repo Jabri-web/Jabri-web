@@ -3,122 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نشر منشور جديد | واحة الجبري</title>
+    <link rel="manifest" href="manifest.json">
+    <title>واحة الجبري</title>
     <style>
-        * { box-sizing: border-box; }
-        body { background: #f4f0e9; font-family: 'Arial', sans-serif; direction: rtl; padding: 20px; margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; }
-        .container { max-width: 700px; width: 100%; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 6px solid #8b0000; }
-        h2 { color: #8b0000; font-size: 24px; margin-top: 0; margin-bottom: 20px; text-align: center; }
-        label { font-weight: bold; color: #333; display: block; margin-top: 10px; }
-        input, textarea { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 2px solid #e0d6c8; border-radius: 10px; font-size: 16px; background: #fcfaf7; }
-        input:focus, textarea:focus { border-color: #8b0000; outline: none; background: #fff; }
-        textarea { resize: vertical; min-height: 150px; }
-        .button-group { display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
-        .btn-primary { background: #8b0000; color: white; padding: 14px 30px; border: none; border-radius: 10px; cursor: pointer; font-size: 16px; font-weight: bold; flex: 1; }
-        .btn-secondary { background: #2c3e50; color: white; padding: 14px 30px; border: none; border-radius: 10px; cursor: pointer; font-size: 16px; font-weight: bold; flex: 1; }
-        #status { margin-top: 15px; padding: 12px; border-radius: 8px; text-align: center; font-weight: bold; display: none; white-space: pre-wrap; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #f4f0e9;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 6px solid #8b0000;
+        }
+        h2 {
+            color: #8b0000;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0 15px 0;
+            border: 2px solid #e0d6c8;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #fcfaf7;
+        }
+        input:focus, textarea:focus {
+            border-color: #8b0000;
+            outline: none;
+        }
+        textarea { min-height: 120px; resize: vertical; }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 1;
+            color: white;
+        }
+        .btn-primary { background: #8b0000; }
+        .btn-secondary { background: #2c3e50; }
+        .btn-success { background: #27ae60; }
+        #status {
+            margin: 15px 0;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+            white-space: pre-wrap;
+        }
         #status.show { display: block; }
         #status.success { background: #e6f7e6; color: #2d7a2d; }
         #status.error { background: #fde8e8; color: #8b0000; }
         #status.loading { background: #f0f0f0; color: #555; }
-        #shareOptions { display: none; margin-top: 20px; padding: 15px; background: #f9f6f0; border-radius: 12px; border: 2px solid #8b0000; }
-        #shareOptions.show { display: block; }
-        .share-btn { border: none; padding: 10px 20px; border-radius: 30px; cursor: pointer; color: white; margin: 5px; }
+        .share-buttons {
+            display: none;
+            margin-top: 15px;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .share-buttons.show { display: flex; }
+        .share-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            flex: 1;
+        }
         .share-btn.whatsapp { background: #25D366; }
         .share-btn.twitter { background: #1DA1F2; }
         .share-btn.copy { background: #6c757d; }
+        .post-list {
+            margin-top: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .post-item {
+            background: #f9f6f0;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-right: 4px solid #8b0000;
+        }
+        .post-item h4 { color: #8b0000; margin-bottom: 5px; }
+        .post-item small { color: #888; font-size: 12px; }
     </style>
 </head>
 <body>
 <div class="container">
-    <h2>✍️ نشر منشور جديد</h2>
+    <h2>✍️ واحة الجبري</h2>
+    
     <form id="publishForm">
-        <label for="title">العنوان</label>
+        <label>العنوان</label>
         <input type="text" id="title" placeholder="اكتب عنوان المنشور..." required>
-        <label for="content">المحتوى</label>
-        <textarea id="content" rows="8" placeholder="اكتب نص المنشور هنا..." required></textarea>
-        <div class="button-group">
-            <button type="submit" class="btn-primary">📤 نشر</button>
-            <button type="button" id="previewBtn" class="btn-secondary">👁️ عرض</button>
-            <button type="button" id="listBtn" class="btn-secondary">📂 المنشورات</button>
+        <label>المحتوى</label>
+        <textarea id="content" placeholder="اكتب نص المنشور..." required></textarea>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary">📤 نشر</button>
+            <button type="button" id="listBtn" class="btn btn-secondary">📂 المنشورات</button>
+            <button type="button" id="clearBtn" class="btn btn-success">🗑️ حذف الكل</button>
         </div>
     </form>
+    
     <div id="status"></div>
-    <div id="shareOptions">
-        <h4>🌐 اختر منصة النشر:</h4>
+    
+    <div class="share-buttons" id="shareOptions">
         <button class="share-btn whatsapp" onclick="shareTo('whatsapp')">📱 واتساب</button>
         <button class="share-btn twitter" onclick="shareTo('twitter')">🐦 تويتر</button>
         <button class="share-btn copy" onclick="shareTo('copy')">📋 نسخ</button>
     </div>
+    
+    <div class="post-list" id="postList"></div>
 </div>
 
 <script>
-    const form = document.getElementById('publishForm');
-    const titleInput = document.getElementById('title');
-    const contentInput = document.getElementById('content');
-    const statusDiv = document.getElementById('status');
-
-    function setStatus(message, type) {
-        statusDiv.textContent = message;
-        statusDiv.className = 'show ' + type;
+    // === دوال التخزين المحلي ===
+    function getPosts() {
+        return JSON.parse(localStorage.getItem('posts') || '[]');
     }
-
-    // === زر المنشورات - نسخة تصحيح مؤقتة ===
-    document.getElementById('listBtn').addEventListener('click', async () => {
-        try {
-            setStatus('⏳ جاري التحقق من الخادم...', 'loading');
-            const res = await fetch('/api/list-posts');
-            if(!res.ok) throw new Error(res.status + ' ' + res.statusText);
-            const data = await res.json();
-            if (data.success && data.files && data.files.length > 0) {
-                let list = '📂 المنشورات المحفوظة:\n\n';
-                data.files.forEach((file, index) => {
-                    list += `${index + 1}. ${file.name.replace('.txt', '')}\n   🔗 ${file.url}\n\n`;
-                });
-                setStatus(list, 'success');
-            } else {
-                setStatus('📭 لا توجد منشورات محفوظة.', 'error');
-            }
-        } catch (err) {
-            setStatus('❌ الخادم غير متاح: ' + err.message + '\nتأكد ان /api/list-posts.js موجود', 'error');
+    
+    function savePosts(posts) {
+        localStorage.setItem('posts', JSON.stringify(posts));
+    }
+    
+    function addPost(title, content) {
+        const posts = getPosts();
+        posts.unshift({ 
+            title, 
+            content, 
+            date: new Date().toLocaleString('ar-EG'),
+            id: Date.now()
+        });
+        savePosts(posts);
+        return posts;
+    }
+    
+    function deleteAllPosts() {
+        savePosts([]);
+    }
+    
+    // === عرض المنشورات ===
+    function displayPosts() {
+        const posts = getPosts();
+        const container = document.getElementById('postList');
+        if (posts.length === 0) {
+            container.innerHTML = '<p style="color:#888;text-align:center;">📭 لا توجد منشورات</p>';
+            return;
+        }
+        container.innerHTML = posts.map(p => `
+            <div class="post-item">
+                <h4>📌 ${p.title}</h4>
+                <p>${p.content}</p>
+                <small>🕐 ${p.date}</small>
+            </div>
+        `).join('');
+    }
+    
+    // === حالة الرسائل ===
+    function setStatus(msg, type = 'success') {
+        const div = document.getElementById('status');
+        div.textContent = msg;
+        div.className = 'show ' + type;
+        setTimeout(() => div.className = '', 5000);
+    }
+    
+    // === أزرار ===
+    document.getElementById('listBtn').addEventListener('click', () => {
+        displayPosts();
+        const posts = getPosts();
+        setStatus(`📂 ${posts.length} منشور محفوظ`, 'success');
+    });
+    
+    document.getElementById('clearBtn').addEventListener('click', () => {
+        if (confirm('⚠️ هل أنت متأكد من حذف جميع المنشورات؟')) {
+            deleteAllPosts();
+            displayPosts();
+            setStatus('🗑️ تم حذف جميع المنشورات', 'error');
+            document.getElementById('shareOptions').classList.remove('show');
         }
     });
-
-    // === نشر ===
-    form.addEventListener('submit', async (e) => {
+    
+    // === نشر منشور جديد ===
+    document.getElementById('publishForm').addEventListener('submit', (e) => {
         e.preventDefault();
-        const title = titleInput.value.trim();
-        const content = contentInput.value.trim();
-        if (!title || !content) return setStatus('⚠️ الرجاء ملء العنوان والمحتوى.', 'error');
-        
-        setStatus('⏳ جاري النشر...', 'loading');
-        try {
-            const response = await fetch('/api/publish', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ title, content })
-            });
-            const data = await response.json();
-            if (data.success) {
-                setStatus('✅ تم النشر بنجاح!', 'success');
-                document.getElementById('shareOptions').classList.add('show');
-            } else {
-                setStatus('❌ حدث خطأ: ' + (data.error || 'غير معروف'), 'error');
-            }
-        } catch (err) {
-            setStatus('❌ فشل الاتصال بالخادم. تأكد ان /api/publish.js موجود', 'error');
+        const title = document.getElementById('title').value.trim();
+        const content = document.getElementById('content').value.trim();
+        if (!title || !content) {
+            setStatus('⚠️ الرجاء ملء جميع الحقول', 'error');
+            return;
         }
+        
+        addPost(title, content);
+        setStatus('✅ تم النشر وحفظه بنجاح!', 'success');
+        document.getElementById('shareOptions').classList.add('show');
+        document.getElementById('title').value = '';
+        document.getElementById('content').value = '';
+        displayPosts();
     });
-
+    
+    // === مشاركة ===
     window.shareTo = function(platform) {
-        const text = `${titleInput.value}\n\n${contentInput.value}\n\n#عبدالله_الجبري #فلسطين_عربية`;
+        const posts = getPosts();
+        if (posts.length === 0) {
+            alert('⚠️ لا يوجد منشورات للمشاركة');
+            return;
+        }
+        const latest = posts[0];
+        const text = `${latest.title}\n\n${latest.content}\n\n#عبدالله_الجبري #فلسطين_عربية`;
         const url = 'https://jabri-com.vercel.app';
-        let shareUrl = '';
-        if(platform==='whatsapp') shareUrl = `https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`;
-        if(platform==='twitter') shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
-        if(platform==='copy') { navigator.clipboard.writeText(text); alert('✅ تم النسخ'); return; }
-        window.open(shareUrl, '_blank');
+        
+        if (platform === 'whatsapp') {
+            window.open(`https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`, '_blank');
+        } else if (platform === 'twitter') {
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
+        } else if (platform === 'copy') {
+            navigator.clipboard.writeText(text + '\n' + url);
+            alert('✅ تم نسخ النص');
+        }
     };
+    
+    // === تحميل أولي ===
+    displayPosts();
+    
+    // === تسجيل Service Worker (للتشغيل بدون إنترنت) ===
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
 </script>
 </body>
 </html>
