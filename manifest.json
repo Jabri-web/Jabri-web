@@ -1,11 +1,11 @@
 {
-  "name": "واحة الجبري",
-  "short_name": "الواحة",
-  "description": "موقع واحة الجبري الرسمي",
-  "start_url": "/",
+  "name": "Heaven Al-Jabri",
+  "short_name": "Al-Jabri",
+  "start_url": "/Header.html",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0a0a23",
-  "theme_color": "#00d4ff",
+  "background_color": "#0a0a0f",
+  "theme_color": "#ffd700",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     },
     {
-      "src": "/icon-512.png", 
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
