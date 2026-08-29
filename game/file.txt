@@ -1,0 +1,7 @@
+10-Jabri-web/game/
+├── chess.html          # ✅ لعبة الشطرنج (جاهزة)
+├── tic-tac-toe.html    # ✅ لعبة XO (جاهزة)
+├── memory.html         # 🔜 لعبة الذاكرة
+├── sudoku.html         # 🔜 سودوكو
+├── puzzle.html         # 🔜 ألغاز الصور
+└── hangman.html        # 🔜 الرجل المشنوق
