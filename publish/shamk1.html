@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇾🇪 ياخيول الزعيم | ابو شامخ فضل علي الدروبي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================================
+           التصميم المتكامل - قصيدة وطنية يمنية
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a12;
+            color: #e8e4d8;
+            font-family: 'Tajawal', sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: 
+                radial-gradient(ellipse at 20% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, rgba(0, 255, 136, 0.02) 0%, transparent 60%);
+        }
+
+        .poem-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(16, 16, 30, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 28px;
+            padding: 40px 36px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(212, 175, 55, 0.05) inset;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .poem-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg at 50% 50%, 
+                rgba(212, 175, 55, 0.02), 
+                rgba(0, 255, 136, 0.02), 
+                rgba(212, 175, 55, 0.02));
+            animation: rotateGlow 30s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .poem-container>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ============================================================
+           الرأس - العلم والهوية
+           ============================================================ */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.08);
+            padding-bottom: 20px;
+        }
+
+        .flag {
+            font-size: 2.5rem;
+            letter-spacing: 8px;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            font-size: 2.4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #D4AF37, #f5e56b, #D4AF37);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .subtitle span {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .hashtag {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 18px;
+            background: rgba(212, 175, 55, 0.06);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 20px;
+            color: #D4AF37;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* ============================================================
+           نص القصيدة
+           ============================================================ */
+        .poem-body {
+            padding: 10px 0;
+        }
+
+        .stanza {
+            margin-bottom: 20px;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border-right: 3px solid rgba(212, 175, 55, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .stanza:hover {
+            background: rgba(255, 255, 255, 0.035);
+            border-right-color: rgba(212, 175, 55, 0.3);
+            transform: translateX(-4px);
+        }
+
+        .stanza .line {
+            font-size: 1.1rem;
+            line-height: 2.2;
+            color: #d4c8a0;
+            padding: 2px 0;
+            transition: color 0.3s ease;
+        }
+
+        .stanza .line:hover {
+            color: #f0e8d0;
+        }
+
+        .stanza .line .highlight {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .stanza .line .yemen {
+            color: #ff6b6b;
+            font-weight: 700;
+        }
+
+        .stanza .line .emoji {
+            font-style: normal;
+        }
+
+        /* البيت المكرر - ياخيول الزعيم */
+        .refrain {
+            color: #D4AF37 !important;
+            font-weight: 900;
+            font-size: 1.15rem;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.05);
+            border-top: 1px solid rgba(212, 175, 55, 0.05);
+            padding-top: 8px;
+            margin-top: 4px;
+        }
+
+        .refrain::before {
+            content: '✦ ';
+            color: #D4AF37;
+            opacity: 0.3;
+        }
+
+        .refrain::after {
+            content: ' ✦';
+            color: #D4AF37;
+            opacity: 0.3;
+        }
+
+        /* ============================================================
+           التذييل - الشاعر
+           ============================================================ */
+        .footer-poem {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(212, 175, 55, 0.08);
+        }
+
+        .poet-name {
+            font-size: 1.1rem;
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .poet-name span {
+            color: #888;
+            font-weight: 400;
+        }
+
+        .final-verse {
+            font-size: 1.2rem;
+            color: #D4AF37;
+            font-weight: 900;
+            margin-top: 10px;
+            padding: 12px;
+            background: rgba(212, 175, 55, 0.04);
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+
+        .final-verse .flag {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+        }
+
+        /* ============================================================
+           الأزرار والروابط
+           ============================================================ */
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            padding-top: 16px;
+            border-top: 1px solid rgba(212, 175, 55, 0.08);
+            margin-top: 20px;
+        }
+
+        .nav-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+            padding: 4px 12px;
+            border: 1px solid rgba(212, 175, 55, 0.05);
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            color: #D4AF37;
+            border-color: rgba(212, 175, 55, 0.15);
+        }
+
+        .btn-chess {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .btn-chess:hover { transform: translateY(-2px); }
+        .btn-chess:active { transform: scale(0.95); }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37, #b8952e);
+            color: #0a0a12;
+        }
+        .btn-gold:hover { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); }
+
+        .btn-share {
+            background: rgba(255, 255, 255, 0.05);
+            color: #888;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .btn-share:hover {
+            background: rgba(212, 175, 55, 0.05);
+            color: #D4AF37;
+            border-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(212, 175, 55, 0.08);
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: #D4AF37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover { color: #f5e56b; }
+
+        /* ============================================================
+           تصميم متجاوب
+           ============================================================ */
+        @media (max-width: 600px) {
+            .poem-container { padding: 20px 16px; border-radius: 20px; }
+            .title { font-size: 1.8rem; }
+            .stanza .line { font-size: 0.95rem; line-height: 2; }
+            .refrain { font-size: 1rem; }
+            .flag { font-size: 1.8rem; letter-spacing: 4px; }
+            .final-verse { font-size: 1rem; }
+        }
+
+        @media (max-width: 400px) {
+            .poem-container { padding: 12px; }
+            .title { font-size: 1.4rem; }
+            .stanza { padding: 12px 14px; }
+            .stanza .line { font-size: 0.85rem; }
+            .header .flag { font-size: 1.4rem; letter-spacing: 2px; }
+        }
+
+        /* ============================================================
+           تأثيرات إضافية
+           ============================================================ */
+        .pulse-flag {
+            animation: pulseFlag 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseFlag {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.05);
+        }
+
+        /* تنسيق شريط التمرير */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.02); }
+        ::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.2); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(212, 175, 55, 0.3); }
+
+        /* وضع الطباعة */
+        @media print {
+            body { background: white; }
+            .poem-container { box-shadow: none; border: 1px solid #ddd; }
+            .poem-container::before { display: none; }
+            .stanza:hover { transform: none; }
+            .btn-chess, .nav-links, .share-buttons { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="poem-container">
+    
+    <!-- ============================================================
+         الرأس
+    ============================================================ -->
+    <div class="header">
+        <div class="flag pulse-flag">🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪🇾🇪</div>
+        <h1 class="title">ياخيول الزعيم</h1>
+        <div class="subtitle">
+            <span>قصيدة وطنية يمنية</span> · Yemeni National Poem
+        </div>
+        <div class="hashtag">#العلم_وحدوي_هيبة_على_هيبة</div>
+    </div>
+
+    <!-- ============================================================
+         نص القصيدة
+    ============================================================ -->
+    <div class="poem-body">
+
+        <!-- المقطع الأول -->
+        <div class="stanza">
+            <div class="line">مؤتمر مؤتمر شعبي وجمهوري</div>
+            <div class="line">في الشمال والجنوب الشاب والشيبة</div>
+            <div class="line">تحت راية وطن بايجتمع شوري</div>
+            <div class="line"><span class="highlight">والعلم 🇾🇪 وحدوي هيبة على هيبة</span></div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع الثاني -->
+        <div class="stanza">
+            <div class="line">بايعود الحصان والقايد الثوري</div>
+            <div class="line">فوق طقم الحرس من بعد تنصيبة</div>
+            <div class="line">في المنصة رئيس في ظل دستوري</div>
+            <div class="line">بمنح احمد علي صوتي✅ وباهي بة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع الثالث -->
+        <div class="stanza">
+            <div class="line">سامح الشعب ياعفاش i'm sorry</div>
+            <div class="line">انت رمز الوفاء والجود والطيبة</div>
+            <div class="line">لُم بعد الشتات صفي وطابوري</div>
+            <div class="line">قد قطعنا خلاص 🤝 الشك والريبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع الرابع -->
+        <div class="stanza">
+            <div class="line">بعد ما رحت حال الشعب في بوري</div>
+            <div class="line">والموضف حرام ما فلس في جيبة</div>
+            <div class="line">الفساد والظلام خيم حجب نوري</div>
+            <div class="line">والوطن والمواطن تم تعذيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع الخامس -->
+        <div class="stanza">
+            <div class="line">الفلل للسلالي والرصيد فوري</div>
+            <div class="line">والذهب والجواهر في دواليبة</div>
+            <div class="line">والجميع منتظر للأعب الدوري</div>
+            <div class="line">ذي زبط نعمتة بطرة وتشعيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع السادس -->
+        <div class="stanza">
+            <div class="line">اااح قد كان معانا قائد اسطوري</div>
+            <div class="line">يرفع الراس بلانا الله با الخيبة</div>
+            <div class="line">خيرة الله علية ياالدايرة دوري</div>
+            <div class="line">كم ويااااكم تحملنا 👌 اكاذيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع السابع -->
+        <div class="stanza">
+            <div class="line">يحسب المملكة والشاجع الكوري</div>
+            <div class="line">والولايات با تقبل مطاليبة</div>
+            <div class="line">هم معاهم سلاح ذري وفسفوري</div>
+            <div class="line">والقبيلي بيستعرض 😂 بلعيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع الثامن -->
+        <div class="stanza">
+            <div class="line">شوف على بارجات ياصاحب الهوري</div>
+            <div class="line">شوف بعينك على جيش تم تدريبة</div>
+            <div class="line">لا تقلي معاك بالجو 🐦 عصفوري</div>
+            <div class="line">رد كل السلاح ذي وررث 😂 الشيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+        <!-- المقطع التاسع -->
+        <div class="stanza">
+            <div class="line">وانتبة باالاخير لا شفت منشوري</div>
+            <div class="line">تنوي الغدر 😂 والتنكيل والعيبة</div>
+            <div class="line">رغم انف الهكر بايفتح استوري</div>
+            <div class="line">راتبي والحساب والله ما اسيبة</div>
+            <div class="line refrain">ياخيول الزعيم ليش طالت الغيبة</div>
+        </div>
+
+    </div>
+
+    <!-- ============================================================
+         التذييل - الشاعر والخاتمة
+    ============================================================ -->
+    <div class="footer-poem">
+        <div class="final-verse">
+            <span class="flag">🇾🇪</span>
+            والعلم وحدوي هيبة على هيبة
+            <span class="flag">🇾🇪</span>
+        </div>
+        
+        <div class="poet-name" style="margin-top:16px;">
+            ✍ <span>كلمات الشاعر</span> ابو شامخ فضل علي الدروبي
+        </div>
+        
+        <div style="margin-top:8px; font-size:0.8rem; color:#666;">
+            #كلمات_الشاعرابوشامخ_فضل_علي_الدروبي
+        </div>
+
+        <!-- أزرار المشاركة -->
+        <div class="share-buttons">
+            <button class="btn-chess btn-share" onclick="sharePoem('twitter')">
+                🐦 تويتر
+            </button>
+            <button class="btn-chess btn-share" onclick="sharePoem('whatsapp')">
+                💬 واتساب
+            </button>
+            <button class="btn-chess btn-share" onclick="sharePoem('telegram')">
+                📱 تليجرام
+            </button>
+            <button class="btn-chess btn-share" onclick="sharePoem('copy')">
+                📋 نسخ الرابط
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         الروابط
+    ============================================================ -->
+    <div class="nav-links">
+        <a href="/">🏠 الرئيسية</a>
+        <a href="/Sanaa.html">🏛️ صنعاء</a>
+        <a href="/handsa.html">🧮 هندسة الأعداد</a>
+        <a href="/journal.html">📰 المجلة</a>
+        <a href="/game/">🎮 الألعاب</a>
+        <a href="/publish/publish.html">💬 واتساب الواحة</a>
+    </div>
+
+    <footer>
+        ✍ <strong class="text-gold">#عبدالله_الجبري</strong> · صنعاء — اليمن
+        <br>
+        <a href="https://github.com/jabri-com" target="_blank">🐙 GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://t.me/Jabri2025" target="_blank">📱 Telegram</a>
+        &nbsp;·&nbsp;
+        <a href="https://jabri-com.vercel.app/" target="_blank">🌐 Vercel</a>
+    </footer>
+</div>
+
+<!-- ============================================================
+     سكربت المشاركة
+     ============================================================ -->
+<script>
+    (function() {
+        'use strict';
+
+        const pageUrl = encodeURIComponent(window.location.href);
+        const pageTitle = encodeURIComponent('🇾🇪 ياخيول الزعيم - قصيدة وطنية يمنية');
+
+        window.sharePoem = function(platform) {
+            const urls = {
+                twitter: `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`,
+                whatsapp: `https://api.whatsapp.com/send?text=${pageTitle}%20${pageUrl}`,
+                telegram: `https://t.me/share/url?url=${pageUrl}&text=${pageTitle}`
+            };
+
+            if (platform === 'copy') {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('✅ تم نسخ الرابط!');
+                }).catch(() => {
+                    // Fallback
+                    const input = document.createElement('input');
+                    input.value = window.location.href;
+                    document.body.appendChild(input);
+                    input.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(input);
+                    alert('✅ تم نسخ الرابط!');
+                });
+                return;
+            }
+
+            if (urls[platform]) {
+                window.open(urls[platform], '_blank', 'width=600,height=400');
+            }
+        };
+
+        console.log('🇾🇪 قصيدة ياخيول الزعيم');
+        console.log('✍ ابو شامخ فضل علي الدروبي');
+        console.log('📅 نشرت في واحة الجبري');
+
+    })();
+</script>
+
+</body>
+</html>
